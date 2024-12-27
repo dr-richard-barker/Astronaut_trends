@@ -1,0 +1,291 @@
+"","FirstMissionYear","CitizenCleaned","DurationBinned","Count"
+"1",1961,"Russia","1 hour to 1 week",2
+"2",1961,"USA","1 hour to 1 week",1
+"3",1961,"USA","1 week to 50 days",1
+"4",1962,"Russia","1 week to 50 days",2
+"5",1962,"USA","1 hour to 1 week",1
+"6",1962,"USA","1 week to 50 days",2
+"7",1962,"USA","less than 1 hour",1
+"8",1963,"Russia","1 hour to 1 week",1
+"9",1963,"Russia","1 week to 50 days",1
+"10",1963,"USA","1 week to 50 days",1
+"11",1963,"USA","less than 1 hour",2
+"12",1964,"Russia","1 hour to 1 week",3
+"13",1965,"Russia","1 hour to 1 week",1
+"14",1965,"Russia","1 week to 50 days",1
+"15",1965,"USA","1 hour to 1 week",1
+"16",1965,"USA","1 week to 50 days",7
+"17",1965,"USA","less than 1 hour",1
+"18",1966,"USA","1 week to 50 days",6
+"19",1966,"USA","less than 1 hour",1
+"20",1967,"USA","less than 1 hour",2
+"21",1968,"Russia","1 hour to 1 week",1
+"22",1968,"USA","1 hour to 1 week",1
+"23",1968,"USA","1 week to 50 days",2
+"24",1969,"Russia","1 hour to 1 week",2
+"25",1969,"Russia","1 week to 50 days",6
+"26",1969,"Russia","50 days to 1 year",1
+"27",1969,"USA","1 week to 50 days",1
+"28",1969,"USA","50 days to 1 year",1
+"29",1970,"Russia","50 days to 1 year",1
+"30",1970,"USA","1 hour to 1 week",2
+"31",1971,"Other","1 week to 50 days",1
+"32",1971,"Russia","1 week to 50 days",2
+"33",1971,"USA","1 week to 50 days",4
+"34",1972,"USA","1 week to 50 days",4
+"35",1973,"Russia","1 hour to 1 week",1
+"36",1973,"Russia","1 week to 50 days",1
+"37",1973,"Russia","50 days to 1 year",2
+"38",1973,"USA","1 week to 50 days",2
+"39",1973,"USA","50 days to 1 year",5
+"40",1974,"Russia","1 hour to 1 week",2
+"41",1974,"Russia","1 week to 50 days",1
+"42",1975,"Russia","1 week to 50 days",1
+"43",1975,"Russia","50 days to 1 year",1
+"44",1975,"USA","1 week to 50 days",2
+"45",1976,"Other","1 week to 50 days",1
+"46",1976,"Russia","1 hour to 1 week",2
+"47",1976,"Russia","1 week to 50 days",1
+"48",1977,"Russia","1 week to 50 days",1
+"49",1977,"Russia","50 days to 1 year",1
+"50",1977,"Russia","more than 1 year",2
+"51",1978,"Other","1 week to 50 days",3
+"52",1978,"Russia","50 days to 1 year",2
+"53",1979,"Other","1 hour to 1 week",1
+"54",1979,"Russia","50 days to 1 year",1
+"55",1980,"Other","1 week to 50 days",3
+"56",1980,"Russia","1 week to 50 days",1
+"57",1980,"Russia","50 days to 1 year",2
+"58",1980,"Russia","more than 1 year",1
+"59",1981,"Other","1 week to 50 days",2
+"60",1981,"Russia","50 days to 1 year",1
+"61",1981,"USA","1 week to 50 days",2
+"62",1982,"Other","1 week to 50 days",1
+"63",1982,"Russia","1 week to 50 days",1
+"64",1982,"Russia","50 days to 1 year",1
+"65",1982,"Russia","more than 1 year",1
+"66",1982,"USA","1 hour to 1 week",1
+"67",1982,"USA","1 week to 50 days",4
+"68",1983,"Other","1 week to 50 days",1
+"69",1983,"Russia","50 days to 1 year",1
+"70",1983,"Russia","more than 1 year",1
+"71",1983,"USA","1 hour to 1 week",1
+"72",1983,"USA","1 week to 50 days",11
+"73",1983,"USA","50 days to 1 year",2
+"74",1984,"Other","1 week to 50 days",2
+"75",1984,"Russia","1 week to 50 days",1
+"76",1984,"Russia","50 days to 1 year",2
+"77",1984,"USA","1 hour to 1 week",3
+"78",1984,"USA","1 week to 50 days",16
+"79",1985,"Other","1 hour to 1 week",1
+"80",1985,"Other","1 week to 50 days",5
+"81",1985,"Russia","50 days to 1 year",1
+"82",1985,"Russia","more than 1 year",1
+"83",1985,"USA","1 hour to 1 week",6
+"84",1985,"USA","1 week to 50 days",22
+"85",1985,"USA","50 days to 1 year",4
+"86",1986,"USA","1 hour to 1 week",2
+"87",1986,"USA","1 week to 50 days",1
+"88",1986,"USA","50 days to 1 year",1
+"89",1987,"Other","1 week to 50 days",1
+"90",1987,"Russia","1 week to 50 days",1
+"91",1987,"Russia","50 days to 1 year",1
+"92",1987,"Russia","more than 1 year",2
+"93",1988,"Other","1 week to 50 days",2
+"94",1988,"Russia","more than 1 year",3
+"95",1988,"USA","1 week to 50 days",1
+"96",1988,"USA","50 days to 1 year",1
+"97",1989,"USA","1 hour to 1 week",2
+"98",1989,"USA","1 week to 50 days",8
+"99",1989,"USA","50 days to 1 year",1
+"100",1990,"Other","1 week to 50 days",1
+"101",1990,"Russia","50 days to 1 year",2
+"102",1990,"Russia","more than 1 year",1
+"103",1990,"USA","1 week to 50 days",10
+"104",1990,"USA","50 days to 1 year",3
+"105",1991,"Other","1 week to 50 days",3
+"106",1991,"Other","50 days to 1 year",1
+"107",1991,"USA","1 hour to 1 week",1
+"108",1991,"USA","1 week to 50 days",15
+"109",1991,"USA","50 days to 1 year",2
+"110",1992,"Other","1 week to 50 days",8
+"111",1992,"Russia","more than 1 year",2
+"112",1992,"USA","1 week to 50 days",10
+"113",1992,"USA","50 days to 1 year",2
+"114",1992,"USA","more than 1 year",1
+"115",1993,"Other","1 week to 50 days",2
+"116",1993,"Other","50 days to 1 year",1
+"117",1993,"Russia","50 days to 1 year",1
+"118",1993,"Russia","more than 1 year",1
+"119",1993,"USA","1 week to 50 days",9
+"120",1993,"USA","50 days to 1 year",6
+"121",1994,"Other","1 week to 50 days",2
+"122",1994,"Other","50 days to 1 year",1
+"123",1994,"Russia","50 days to 1 year",1
+"124",1994,"Russia","more than 1 year",2
+"125",1994,"USA","1 week to 50 days",5
+"126",1994,"USA","50 days to 1 year",5
+"127",1995,"Other","50 days to 1 year",2
+"128",1995,"Russia","50 days to 1 year",2
+"129",1995,"Russia","more than 1 year",1
+"130",1995,"USA","1 week to 50 days",6
+"131",1995,"USA","50 days to 1 year",6
+"132",1996,"Other","1 week to 50 days",4
+"133",1996,"Other","50 days to 1 year",1
+"134",1996,"Other","more than 1 year",1
+"135",1996,"Russia","more than 1 year",2
+"136",1996,"USA","1 week to 50 days",5
+"137",1996,"USA","50 days to 1 year",2
+"138",1997,"Other","1 week to 50 days",4
+"139",1997,"Russia","50 days to 1 year",1
+"140",1997,"Russia","more than 1 year",1
+"141",1997,"USA","1 week to 50 days",8
+"142",1997,"USA","50 days to 1 year",2
+"143",1998,"Other","1 week to 50 days",2
+"144",1998,"Other","50 days to 1 year",1
+"145",1998,"Russia","1 week to 50 days",1
+"146",1998,"Russia","50 days to 1 year",1
+"147",1998,"Russia","more than 1 year",1
+"148",1998,"USA","1 week to 50 days",8
+"149",1998,"USA","50 days to 1 year",2
+"150",1999,"Other","1 week to 50 days",2
+"151",1999,"Russia","50 days to 1 year",1
+"152",1999,"USA","1 week to 50 days",2
+"153",1999,"USA","more than 1 year",1
+"154",2000,"Other","1 week to 50 days",1
+"155",2000,"Russia","1 week to 50 days",1
+"156",2000,"Russia","50 days to 1 year",1
+"157",2000,"USA","1 week to 50 days",1
+"158",2000,"USA","50 days to 1 year",2
+"159",2000,"USA","more than 1 year",1
+"160",2001,"Russia","1 week to 50 days",1
+"161",2001,"Russia","50 days to 1 year",1
+"162",2001,"Russia","more than 1 year",1
+"163",2001,"USA","1 week to 50 days",6
+"164",2001,"USA","50 days to 1 year",3
+"165",2002,"Other","1 week to 50 days",3
+"166",2002,"Other","50 days to 1 year",1
+"167",2002,"Russia","50 days to 1 year",1
+"168",2002,"Russia","more than 1 year",1
+"169",2002,"USA","1 week to 50 days",8
+"170",2002,"USA","50 days to 1 year",1
+"171",2002,"USA","more than 1 year",1
+"172",2002,"USA",NA,1
+"173",2003,"China","1 hour to 1 week",1
+"174",2003,"Other","1 week to 50 days",1
+"175",2003,"USA","1 week to 50 days",3
+"176",2004,"Other","50 days to 1 year",1
+"177",2004,"Russia","1 week to 50 days",1
+"178",2004,"USA","less than 1 hour",2
+"179",2004,"USA","more than 1 year",1
+"180",2005,"China","50 days to 1 year",2
+"181",2005,"Other","50 days to 1 year",1
+"182",2005,"USA","1 week to 50 days",2
+"183",2006,"Other","1 week to 50 days",2
+"184",2006,"USA","1 week to 50 days",8
+"185",2006,"USA","50 days to 1 year",1
+"186",2006,"USA",NA,1
+"187",2007,"Other","1 week to 50 days",1
+"188",2007,"Other","50 days to 1 year",1
+"189",2007,"Russia","more than 1 year",1
+"190",2007,"USA","1 week to 50 days",6
+"191",2007,"USA","50 days to 1 year",3
+"192",2007,"USA","more than 1 year",1
+"193",2008,"China","50 days to 1 year",3
+"194",2008,"Other","1 week to 50 days",1
+"195",2008,"Other","50 days to 1 year",1
+"196",2008,"Russia","more than 1 year",2
+"197",2008,"USA","1 week to 50 days",8
+"198",2008,"USA","50 days to 1 year",6
+"199",2008,"USA","more than 1 year",1
+"200",2009,"Other","1 week to 50 days",1
+"201",2009,"Russia","50 days to 1 year",2
+"202",2009,"USA","1 week to 50 days",5
+"203",2009,"USA","50 days to 1 year",11
+"204",2009,"USA","more than 1 year",2
+"205",2009,"USA",NA,1
+"206",2010,"Other","1 week to 50 days",1
+"207",2010,"Russia","50 days to 1 year",1
+"208",2010,"Russia","more than 1 year",3
+"209",2010,"USA","1 week to 50 days",2
+"210",2010,"USA","50 days to 1 year",2
+"211",2011,"Other","more than 1 year",1
+"212",2011,"Russia","50 days to 1 year",2
+"213",2011,"Russia","more than 1 year",2
+"214",2012,"China","1 week to 50 days",1
+"215",2012,"China","50 days to 1 year",1
+"216",2012,"Other","more than 1 year",1
+"217",2012,"Russia","50 days to 1 year",2
+"218",2013,"China","1 week to 50 days",1
+"219",2013,"China","50 days to 1 year",1
+"220",2013,"Other","more than 1 year",1
+"221",2013,"Russia","50 days to 1 year",2
+"222",2013,"USA","50 days to 1 year",1
+"223",2014,"Other","50 days to 1 year",1
+"224",2014,"Other","more than 1 year",1
+"225",2014,"Russia","50 days to 1 year",1
+"226",2014,"Russia","more than 1 year",1
+"227",2014,"USA","50 days to 1 year",1
+"228",2015,"Other","1 week to 50 days",1
+"229",2015,"Other","50 days to 1 year",3
+"230",2015,"USA","50 days to 1 year",1
+"231",2016,"China","50 days to 1 year",1
+"232",2016,"Other","50 days to 1 year",1
+"233",2016,"Other","more than 1 year",1
+"234",2016,"Russia","50 days to 1 year",1
+"235",2016,"Russia",NA,1
+"236",2016,"USA","50 days to 1 year",1
+"237",2017,"Other","50 days to 1 year",1
+"238",2017,"USA","50 days to 1 year",2
+"239",2017,"USA","more than 1 year",1
+"240",2018,"Other","50 days to 1 year",1
+"241",2018,"Russia","more than 1 year",1
+"242",2018,"USA","50 days to 1 year",2
+"243",2018,"USA","less than 1 hour",1
+"244",2018,"USA",NA,1
+"245",2019,"Other","1 week to 50 days",1
+"246",2019,"Other","less than 1 hour",1
+"247",2019,"USA","1 hour to 1 week",2
+"248",2019,"USA","50 days to 1 year",3
+"249",2020,"Russia","50 days to 1 year",1
+"250",2020,"Russia",NA,1
+"251",2020,"USA","50 days to 1 year",1
+"252",2021,"China","50 days to 1 year",1
+"253",2021,"China","more than 1 year",1
+"254",2021,"Other","1 week to 50 days",2
+"255",2021,"Other","50 days to 1 year",1
+"256",2021,"Other","less than 1 hour",5
+"257",2021,"Russia","1 week to 50 days",2
+"258",2021,"Russia","50 days to 1 year",1
+"259",2021,"USA","1 hour to 1 week",3
+"260",2021,"USA","1 week to 50 days",1
+"261",2021,"USA","50 days to 1 year",2
+"262",2021,"USA","less than 1 hour",12
+"263",2022,"China","50 days to 1 year",2
+"264",2022,"China",NA,1
+"265",2022,"Other","1 week to 50 days",2
+"266",2022,"Other","less than 1 hour",5
+"267",2022,"Russia","50 days to 1 year",3
+"268",2022,"Russia","more than 1 year",1
+"269",2022,"USA","1 week to 50 days",1
+"270",2022,"USA","50 days to 1 year",4
+"271",2022,"USA","less than 1 hour",12
+"272",2022,"USA","more than 1 year",1
+"273",2023,"China","50 days to 1 year",4
+"274",2023,"Other","1 week to 50 days",3
+"275",2023,"Other","50 days to 1 year",1
+"276",2023,"Other","less than 1 hour",9
+"277",2023,"Russia","50 days to 1 year",2
+"278",2023,"Russia","more than 1 year",1
+"279",2023,"USA","1 week to 50 days",1
+"280",2023,"USA","50 days to 1 year",3
+"281",2023,"USA","less than 1 hour",10
+"282",2024,"China","50 days to 1 year",2
+"283",2024,"China",NA,2
+"284",2024,"Other","1 week to 50 days",3
+"285",2024,"Other","less than 1 hour",8
+"286",2024,"Russia","50 days to 1 year",1
+"287",2024,"Russia",NA,1
+"288",2024,"USA","1 hour to 1 week",3
+"289",2024,"USA","50 days to 1 year",2
+"290",2024,"USA","less than 1 hour",17
