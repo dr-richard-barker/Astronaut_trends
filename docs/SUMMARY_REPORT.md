@@ -92,6 +92,14 @@ post-2021 phenomenon: suborbital passengers on Blue Origin and Virgin Galactic. 
 the single biggest change in the character of human spaceflight in the dataset, and it is
 why the 2020s "Other" and "USA" counts balloon while long-duration numbers stay flat.
 
+Making the **orbital / suborbital** split explicit sharpens the point. Of 773 astronauts,
+**637 (82%) reached orbit** and **136 (18%) flew suborbital only** — and that suborbital
+group is overwhelmingly a post-2021 wave. Russia and China have flown **zero** suborbital
+astronauts; the phenomenon is entirely a US-and-partners story. In the dashboard, a single
+*Flight* toggle re-draws every chart for just the orbital or just the suborbital population.
+
+![Orbital vs suborbital over time](../figures/fig6_orbital_suborbital.png)
+
 ---
 
 ## 4. Women in spaceflight

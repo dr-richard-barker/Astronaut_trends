@@ -10,6 +10,11 @@ Duration bins (ordered): `less than 1 hour` < `1 hour to 1 week` < `1 week to 50
 Citizenship groups: `USA` (US), `Russia` (RU, incl. USSR), `China` (CN), `Other`
 (all other nationalities). Derived from the catalogue's citizenship code.
 
+Flight class: `Orbital` = reached orbit on at least one mission; `Suborbital` =
+flew to space but never reached orbit. Derived from the mission `OrbID` field
+(`ORB*` = orbital, `SO*` = suborbital); an astronaut with any orbital flight is
+`Orbital`.
+
 ---
 
 ## `data/raw/astro.html`, `data/raw/missions.html`
@@ -26,6 +31,7 @@ One row per flown astronaut (the tidy base table).
 | `Citizen` | string | Raw citizenship code (e.g. `US`, `RU`, `CN`, `F`, `J`). |
 | `CitizenGroup` | string | Cleaned group: USA / Russia / China / Other. |
 | `Gender` | string | Male / Female / Unknown (from the catalogue's `G` field). |
+| `FlightClass` | string | Orbital / Suborbital (blank if only aborted launches). |
 | `BornYear` | int | Year of birth, if recorded. |
 | `FirstMissionYear` | int | Launch year of the astronaut's earliest mission. |
 | `LastMissionYear` | int | Launch year of the astronaut's latest mission. |
@@ -72,6 +78,15 @@ New-astronaut counts by first-flight year × gender.
 |---|---|---|
 | `FirstMissionYear` | int | Year of first spaceflight. |
 | `Gender` | string | Male / Female / Unknown. |
+| `Count` | int | Number of astronauts. |
+
+## `data/processed/flightclass_by_year.csv`
+New-astronaut counts by first-flight year × flight class (Orbital / Suborbital).
+
+| Column | Type | Description |
+|---|---|---|
+| `FirstMissionYear` | int | Year of first spaceflight. |
+| `FlightClass` | string | Orbital / Suborbital / Unknown. |
 | `Count` | int | Number of astronauts. |
 
 ## `data/astronaut_summary_v1_2024.csv`

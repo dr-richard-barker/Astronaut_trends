@@ -41,6 +41,7 @@ This README doubles as the project roadmap. Items marked ✅ are done in this re
 - ⬜ Unit tests / data-validation checks on the parser.
 
 **Analysis — "better ways to look at it"**
+- ✅ Distinguish **orbital vs suborbital** astronauts — a filter that reshapes *every* chart, plus a dedicated timeline. Reveals that the recent boom is almost entirely suborbital.
 - ✅ Add **gender** as an analysis dimension (women's share over time).
 - ✅ Analyse **career-duration distributions** (box-and-whisker) rather than just counts.
 - ✅ Compare national **"duration fingerprints"** (radar) — each country has a distinct style.
@@ -65,9 +66,12 @@ This README doubles as the project roadmap. Items marked ✅ are done in this re
 - **Russia/USSR flies long**: 131 astronauts with a median career of **~195 days** and the single longest career on record (**> 1,100 days** cumulative).
 - **China** (27 astronauts, all since **2003**) clusters in the **50 days – 1 year** band — a focused, station-oriented programme.
 - **The 2020s are already the busiest debut decade ever** (199 new astronauts, vs 168 in the 1990s ISS build-up) — driven overwhelmingly by **suborbital commercial spaceflight** (the "< 1 hour" band explodes after 2021).
+- **Orbital vs suborbital:** **637 (82%)** of all astronauts have reached orbit; **136 (18%)** are suborbital-only — and almost all of those are post-2021 Blue Origin / Virgin Galactic passengers. Russia and China have flown **zero** suborbital astronauts; the split is a US-and-partners phenomenon.
 - **Women remain a minority**: just **14.7%** of all astronauts, a share that rises over time but has never approached parity.
 
 ![New astronauts per year by country](figures/fig1_timeline.png)
+
+![Orbital vs suborbital over time](figures/fig6_orbital_suborbital.png)
 
 <p align="center">
   <img src="figures/fig2_box_country.png" width="48%" alt="Career duration by country">
@@ -80,8 +84,9 @@ See [`docs/SUMMARY_TABLES.md`](docs/SUMMARY_TABLES.md) for the full numeric tabl
 
 ## 🖥️ The interactive dashboard
 
-The [live site](https://dr-richard-barker.github.io/Astronaut_trends/) contains **13 linked visualisations**, all filterable by country and theme-aware (light/dark):
+The [live site](https://dr-richard-barker.github.io/Astronaut_trends/) is filterable by **country** *and* by **flight class (orbital / suborbital / all)** — every chart re-renders for the selected population — and is theme-aware (light/dark):
 
+0. **★ Orbital vs suborbital over time** — the featured chart; always shows both classes
 1. **Stacked timeline** — new astronauts per year by country (zoomable)
 2. **Small multiples** — the original study figure, rebuilt interactively (duration mix over time, per country)
 3. **Box & whisker** — career duration by country

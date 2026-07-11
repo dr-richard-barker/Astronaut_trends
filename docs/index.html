@@ -14,6 +14,7 @@
     --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
     --usa: #2a78d6; --russia: #e34948; --china: #eda100; --other: #1baf7a;
     --b1: #86b6ef; --b2: #5598e7; --b3: #2a78d6; --b4: #1c5cab; --b5: #104281;
+    --orbital: #2a78d6; --suborbital: #eb6834;
     --accent: #2a78d6;
     --shadow: 0 1px 2px rgba(11,11,11,0.04), 0 8px 24px rgba(11,11,11,0.05);
   }
@@ -23,6 +24,7 @@
     --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
     --usa: #3987e5; --russia: #e66767; --china: #c98500; --other: #199e70;
     --b1: #b7d3f6; --b2: #86b6ef; --b3: #5598e7; --b4: #3987e5; --b5: #256abf;
+    --orbital: #3987e5; --suborbital: #d95926;
     --accent: #3987e5;
     --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.5);
   }
@@ -62,6 +64,11 @@
   .chip .dot { width: 11px; height: 11px; border-radius: 3px; flex: none; }
   .chip.off { opacity: 0.38; }
   .chip:hover { border-color: var(--axis); }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; background: var(--surface-2); }
+  .seg button { border: none; background: transparent; color: var(--ink-2); font-family: inherit; font-size: 0.85rem; padding: 6px 14px; cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button.active { background: var(--accent); color: #fff; }
+  .seg button:not(.active):hover { color: var(--ink); }
 
   section.block { margin-top: 34px; }
   .block h2 { font-size: 1.18rem; margin: 0 0 4px; letter-spacing: -0.01em; }
@@ -102,14 +109,31 @@
   <div class="kpis" id="kpis"></div>
 
   <div class="controls">
-    <span class="lbl">Filter country</span>
+    <span class="lbl">Country</span>
     <span class="chip" data-c="USA"><span class="dot" style="background:var(--usa)"></span>USA</span>
     <span class="chip" data-c="Russia"><span class="dot" style="background:var(--russia)"></span>Russia</span>
     <span class="chip" data-c="China"><span class="dot" style="background:var(--china)"></span>China</span>
     <span class="chip" data-c="Other"><span class="dot" style="background:var(--other)"></span>Other</span>
+    <span class="lbl" style="margin-left:6px">Flight</span>
+    <span class="seg" id="classSeg">
+      <button data-fc="All" class="active">All</button>
+      <button data-fc="Orbital">Orbital</button>
+      <button data-fc="Suborbital">Suborbital</button>
+    </span>
     <span style="flex:1"></span>
-    <span class="note">Filters the country-aware charts &amp; table below</span>
+    <span class="note">Every chart below reflects these filters</span>
   </div>
+
+  <!-- Featured: orbital vs suborbital -->
+  <section class="block">
+    <h2>★ Orbital vs suborbital spaceflight over time</h2>
+    <p class="cap">Two eras in one chart. For six decades almost everyone who "went to space" reached <em>orbit</em>; since 2021 a wave of <em>suborbital</em> passengers (Blue Origin, Virgin Galactic) has redefined the astronaut count. An astronaut is counted <strong>Suborbital</strong> only if they never reached orbit. This panel always shows both classes; the <em>Flight</em> filter above drives every other chart.</p>
+    <div class="legend-inline">
+      <span><i style="background:var(--orbital)"></i>Orbital (reached orbit)</span>
+      <span><i style="background:var(--suborbital)"></i>Suborbital only</span>
+    </div>
+    <div class="card"><div id="c_class" class="chart"></div></div>
+  </section>
 
   <!-- 1. Timeline -->
   <section class="block">
@@ -234,6 +258,7 @@ function theme(){
     dark,
     country: { USA: cssv("--usa"), Russia: cssv("--russia"), China: cssv("--china"), Other: cssv("--other") },
     bins: [cssv("--b1"),cssv("--b2"),cssv("--b3"),cssv("--b4"),cssv("--b5")],
+    cls: { Orbital: cssv("--orbital"), Suborbital: cssv("--suborbital") },
     ink: cssv("--ink"), ink2: cssv("--ink-2"), muted: cssv("--muted"),
     grid: cssv("--grid"), axis: cssv("--axis"), surface: cssv("--surface"),
   };
@@ -242,7 +267,7 @@ const fmt = new Intl.NumberFormat("en-US");
 
 let DATA = null;
 const charts = [];              // {inst, render}
-const state = { countries: new Set(COUNTRIES) };
+const state = { countries: new Set(COUNTRIES), flightClass: "All" };
 
 function register(dom, renderFn){
   const inst = echarts.init(dom, null, { renderer: "canvas" });
@@ -263,7 +288,7 @@ function boot(){
     `<strong>${fmt.format(m.n_astronauts)}</strong> flown astronauts · <strong>${fmt.format(m.n_missions)}</strong> crewed missions · ${m.year_min}–${m.year_max} · data generated ${m.generated}`;
   document.getElementById("footMeta").textContent = `Snapshot: ${m.n_astronauts} astronauts, ${m.n_missions} missions. Generated ${m.generated}. Source updated by J. McDowell.`;
   buildKPIs();
-  buildTable();
+  renderTable();
   wireControls();
   buildAll();
   window.addEventListener("resize", () => { charts.forEach(c => c.inst.resize()); drawChord(); });
@@ -275,20 +300,20 @@ function buildKPIs(){
   const total = A.length;
   const byC = Object.fromEntries(COUNTRIES.map(c => [c, A.filter(a => a.CitizenGroup===c).length]));
   const female = A.filter(a => a.Gender==="Female").length;
+  const orbital = A.filter(a => a.FlightClass==="Orbital").length;
+  const sub = total - orbital;
   const longest = A.reduce((mx,a)=> a.DurationDays>mx.DurationDays?a:mx, A[0]);
   const overYear = A.filter(a=>a.DurationBin==="more than 1 year").length;
-  const decadeCount = {};
-  A.forEach(a => { const dcd = Math.floor(a.FirstMissionYear/10)*10; decadeCount[dcd]=(decadeCount[dcd]||0)+1; });
-  const peakDecade = Object.entries(decadeCount).sort((a,b)=>b[1]-a[1])[0];
   const kpis = [
     { v: fmt.format(total), l: "Flown astronauts", s: `${DATA.meta.year_min}–${DATA.meta.year_max}` },
+    { v: fmt.format(orbital), l: "reached orbit", s: `${(100*orbital/total).toFixed(0)}% of all flyers` },
+    { v: fmt.format(sub), l: "suborbital only", s: `never reached orbit` },
     { v: fmt.format(byC.USA), l: "from the USA", s: `${(100*byC.USA/total).toFixed(0)}% of all flyers` },
     { v: fmt.format(byC.Russia), l: "from Russia / USSR", s: "longest-duration legacy" },
     { v: fmt.format(byC.China), l: "from China", s: "all since 2003" },
     { v: `${(100*female/total).toFixed(1)}%`, l: "were women", s: `${female} astronauts` },
     { v: `${Math.round(longest.DurationDays)} d`, l: "longest career in space", s: longest.Name.split(",")[0] },
     { v: fmt.format(overYear), l: "logged > 1 year aloft", s: "cumulative career time" },
-    { v: `${peakDecade[0]}s`, l: "busiest debut decade", s: `${peakDecade[1]} new flyers` },
   ];
   document.getElementById("kpis").innerHTML = kpis.map(k =>
     `<div class="kpi"><div class="v">${k.v}</div><div class="l">${k.l}</div><div class="s">${k.s}</div></div>`).join("");
@@ -302,9 +327,14 @@ function wireControls(){
       if (state.countries.has(c)) { state.countries.delete(c); chip.classList.add("off"); }
       else { state.countries.add(c); chip.classList.remove("off"); }
       if (state.countries.size === 0) { state.countries.add(c); chip.classList.remove("off"); return; }
-      charts.forEach(c => c.render());
-      drawChord();
-      filterTable();
+      rerenderAll();
+    });
+  });
+  document.querySelectorAll("#classSeg button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.flightClass = btn.dataset.fc;
+      document.querySelectorAll("#classSeg button").forEach(b => b.classList.toggle("active", b === btn));
+      rerenderAll();
     });
   });
   document.getElementById("themeBtn").addEventListener("click", () => {
@@ -314,18 +344,36 @@ function wireControls(){
     charts.forEach(c => c.render());
     drawChord();
   });
-  document.getElementById("tblSearch").addEventListener("input", filterTable);
+  document.getElementById("tblSearch").addEventListener("input", renderTable);
 }
+function rerenderAll(){ charts.forEach(c => c.render()); drawChord(); renderTable(); }
 const activeCountries = () => COUNTRIES.filter(c => state.countries.has(c));
+
+// ---- filtering + aggregation over the per-astronaut table ----
+const decadeStr = y => (Math.floor(y/10)*10) + "s";
+// country ∩ flight-class — the population every country/duration chart uses
+function filtered(){
+  return DATA.astronaut_level.filter(a =>
+    state.countries.has(a.CitizenGroup) &&
+    (state.flightClass === "All" || a.FlightClass === state.flightClass));
+}
+// country only (ignores the flight-class filter) — for the class chart itself
+function byCountryOnly(){
+  return DATA.astronaut_level.filter(a => state.countries.has(a.CitizenGroup));
+}
+const allYears = () => [...new Set(DATA.astronaut_level.map(a=>a.FirstMissionYear))].sort((a,b)=>a-b);
+function countIn(list, pred){ let n=0; for(const a of list) if(pred(a)) n++; return n; }
 
 // ---- shared axis helpers ----
 function baseGrid(t, over){ return Object.assign({ left: 54, right: 20, top: 40, bottom: 54 }, over||{}); }
 function axisText(t){ return { color: t.muted }; }
+const classNote = t => state.flightClass==="All" ? "" : `  ·  ${state.flightClass} only`;
 
 // ======================================================================
 //  CHART BUILDERS
 // ======================================================================
 function buildAll(){
+  register(document.getElementById("c_class"), optClass);
   register(document.getElementById("c_timeline"), optTimeline);
   register(document.getElementById("c_facets"), optFacets);
   register(document.getElementById("c_boxcountry"), optBoxCountry);
@@ -340,21 +388,40 @@ function buildAll(){
   drawChord();
 }
 
+// ★ orbital vs suborbital over time (respects country filter, NOT class filter)
+function optClass(t){
+  const A = byCountryOnly();
+  const years = allYears();
+  const cnt = (y,fc)=> countIn(A, a=>a.FirstMissionYear===y && a.FlightClass===fc);
+  return {
+    tooltip:{ trigger:"axis", axisPointer:{type:"shadow"} },
+    legend:{ data:["Orbital","Suborbital"], textStyle:{color:t.ink2}, top:2 },
+    grid: baseGrid(t, { top: 34, bottom: 54 }),
+    xAxis:{ type:"category", data: years, axisLabel:{ color:t.muted, interval: 9 }, axisLine:{lineStyle:{color:t.axis}}, name:"First-flight year", nameLocation:"middle", nameGap:34, nameTextStyle:{color:t.muted} },
+    yAxis:{ type:"value", name:"new astronauts", axisLabel: axisText(t), splitLine:{lineStyle:{color:t.grid}}, nameTextStyle:{color:t.muted} },
+    series:[
+      { name:"Orbital", type:"bar", stack:"fc", data: years.map(y=>cnt(y,"Orbital")), itemStyle:{ color:t.cls.Orbital }, emphasis:{focus:"series"} },
+      { name:"Suborbital", type:"bar", stack:"fc", data: years.map(y=>cnt(y,"Suborbital")), itemStyle:{ color:t.cls.Suborbital }, emphasis:{focus:"series"} }
+    ]
+  };
+}
+
 // 1 · stacked timeline by country
 function optTimeline(t){
-  const years = [...new Set(DATA.summary.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
+  const years = allYears();
   const cs = activeCountries();
+  const A = filtered();
   const series = cs.map(c => ({
     name: c, type: "bar", stack: "all", emphasis: { focus: "series" },
     itemStyle: { color: t.country[c] },
-    data: years.map(y => DATA.summary.filter(r=>r.FirstMissionYear===y && r.CitizenCleaned===c).reduce((s,r)=>s+r.Count,0))
+    data: years.map(y => countIn(A, a=>a.FirstMissionYear===y && a.CitizenGroup===c))
   }));
   return {
     color: cs.map(c=>t.country[c]),
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
     legend: { data: cs, textStyle: { color: t.ink2 }, top: 4 },
     grid: baseGrid(t, { bottom: 70 }),
-    xAxis: { type: "category", data: years, axisLabel: axisText(t), axisLine: { lineStyle:{color:t.axis} }, name: "First-flight year", nameLocation:"middle", nameGap: 34, nameTextStyle:{color:t.muted} },
+    xAxis: { type: "category", data: years, axisLabel: axisText(t), axisLine: { lineStyle:{color:t.axis} }, name: "First-flight year"+classNote(t), nameLocation:"middle", nameGap: 34, nameTextStyle:{color:t.muted} },
     yAxis: { type: "value", name: "New astronauts", axisLabel: axisText(t), splitLine: { lineStyle:{color:t.grid} }, nameTextStyle:{color:t.muted} },
     dataZoom: [{ type: "slider", start: 0, end: 100, bottom: 8, height: 18 }, { type: "inside" }],
     series
@@ -364,7 +431,8 @@ function optTimeline(t){
 // 2 · small multiples: count by bin, one grid per country
 function optFacets(t){
   const cs = activeCountries();
-  const years = [...new Set(DATA.summary.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
+  const years = allYears();
+  const A = filtered();
   const cols = cs.length <= 2 ? cs.length : 2;
   const rows = Math.ceil(cs.length/cols);
   const grids=[], xAxes=[], yAxes=[], series=[];
@@ -381,12 +449,11 @@ function optFacets(t){
       series.push({
         name: BIN_SHORT[b], type:"line", smooth:true, symbol:"none", xAxisIndex:i, yAxisIndex:i,
         lineStyle:{ width: 1.8, color: t.bins[bi] }, itemStyle:{ color: t.bins[bi] },
-        data: years.map(y => DATA.summary.filter(rr=>rr.FirstMissionYear===y && rr.CitizenCleaned===c && rr.DurationBinned===b).reduce((s,rr)=>s+rr.Count,0)),
+        data: years.map(y => countIn(A, a=>a.FirstMissionYear===y && a.CitizenGroup===c && a.DurationBin===b)),
         emphasis:{ focus:"series" }
       });
     });
   });
-  // title per facet
   const titles = cs.map((c,i)=>({ text:c, left: grids[i].left, top: (parseFloat(grids[i].top)-4)+"%", textStyle:{ color:t.ink, fontSize:13, fontWeight:600 } }));
   return {
     title: titles,
@@ -420,7 +487,7 @@ function boxOption(t, groups, dict, colorFn, xName){
       ? `${cats[p.dataIndex]}<br/>max ${p.value[4].toFixed(1)} d<br/>Q3 ${p.value[3].toFixed(1)} d<br/>median <b>${p.value[2].toFixed(1)} d</b><br/>Q1 ${p.value[1].toFixed(1)} d<br/>min ${p.value[0].toFixed(1)} d`
       : `outlier: ${(+p.value[1]).toFixed(1)} d` },
     grid: baseGrid(t, { left: 62, bottom: 40 }),
-    xAxis: { type:"category", data: cats, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, name:xName, nameLocation:"middle", nameGap:30, nameTextStyle:{color:t.muted} },
+    xAxis: { type:"category", data: cats, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, name:xName+classNote(t), nameLocation:"middle", nameGap:30, nameTextStyle:{color:t.muted} },
     yAxis: { type:"log", name:"days in space (career)", axisLabel:{ color:t.muted }, splitLine:{lineStyle:{color:t.grid}}, nameTextStyle:{color:t.muted} },
     series: [
       { name:"box", type:"boxplot", data: boxData, boxWidth:[10,40] },
@@ -428,23 +495,32 @@ function boxOption(t, groups, dict, colorFn, xName){
     ]
   };
 }
+function durationsBy(list, keyFn){
+  const dict={};
+  for(const a of list){ if(a.DurationDays==null) continue; const k=keyFn(a); if(k==null) continue; (dict[k]||(dict[k]=[])).push(a.DurationDays); }
+  return dict;
+}
 function optBoxCountry(t){
   const cs = activeCountries();
-  return boxOption(t, cs, DATA.duration_by_group, g=>t.country[g], "citizenship group");
+  const dict = durationsBy(filtered(), a=>a.CitizenGroup);
+  return boxOption(t, cs, dict, g=>t.country[g], "citizenship group");
 }
 function optBoxDecade(t){
-  const decs = Object.keys(DATA.duration_by_decade);
-  return boxOption(t, decs, DATA.duration_by_decade, (g,i)=>t.bins[Math.min(i, t.bins.length-1)], "decade of first flight");
+  const A = filtered();
+  const decs = [...new Set(A.map(a=>decadeStr(a.FirstMissionYear)))].sort();
+  const dict = durationsBy(A, a=>decadeStr(a.FirstMissionYear));
+  return boxOption(t, decs, dict, (g,i)=>t.bins[Math.min(i, t.bins.length-1)], "decade of first flight");
 }
 
 // 5 · bar by country
 function optBarCountry(t){
   const cs = activeCountries();
-  const counts = cs.map(c => DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length);
+  const A = filtered();
+  const counts = cs.map(c => countIn(A, a=>a.CitizenGroup===c));
   return {
     tooltip: { trigger:"axis", axisPointer:{type:"shadow"} },
     grid: baseGrid(t, { left: 64, bottom: 36 }),
-    xAxis: { type:"value", axisLabel: axisText(t), splitLine:{lineStyle:{color:t.grid}} },
+    xAxis: { type:"value", axisLabel: axisText(t), splitLine:{lineStyle:{color:t.grid}}, name: classNote(t).trim().replace(/^·\s*/,""), nameLocation:"middle", nameGap:26, nameTextStyle:{color:t.muted} },
     yAxis: { type:"category", data: cs, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, inverse:true },
     series: [{ type:"bar", data: cs.map((c,i)=>({ value: counts[i], itemStyle:{ color: t.country[c] } })),
       barWidth: "55%", itemStyle:{ borderRadius:[0,4,4,0] },
@@ -455,11 +531,12 @@ function optBarCountry(t){
 // 6 · composition 100% stacked
 function optComposition(t){
   const cs = activeCountries();
-  const totby = Object.fromEntries(cs.map(c=>[c, DATA.astronaut_level.filter(a=>a.CitizenGroup===c && a.DurationBin).length]));
+  const A = filtered();
+  const totby = Object.fromEntries(cs.map(c=>[c, countIn(A, a=>a.CitizenGroup===c && a.DurationBin)]));
   const series = BINS.map((b,bi)=>({
     name: BIN_SHORT[b], type:"bar", stack:"x", itemStyle:{ color: t.bins[bi] },
     emphasis:{focus:"series"},
-    data: cs.map(c => { const n = DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0); return totby[c]? +(100*n/totby[c]).toFixed(1):0; })
+    data: cs.map(c => { const n = countIn(A, a=>a.CitizenGroup===c && a.DurationBin===b); return totby[c]? +(100*n/totby[c]).toFixed(1):0; })
   }));
   return {
     color: t.bins,
@@ -475,11 +552,12 @@ function optComposition(t){
 // 7 · sankey country -> bin
 function optSankey(t){
   const cs = activeCountries();
+  const A = filtered();
   const nodes=[], links=[];
   cs.forEach(c => nodes.push({ name: c, itemStyle:{ color:t.country[c] } }));
   BINS.forEach((b,bi) => nodes.push({ name: BIN_SHORT[b], itemStyle:{ color:t.bins[bi] } }));
   cs.forEach(c => BINS.forEach(b => {
-    const v = DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0);
+    const v = countIn(A, a=>a.CitizenGroup===c && a.DurationBin===b);
     if (v>0) links.push({ source:c, target:BIN_SHORT[b], value:v });
   }));
   return {
@@ -494,13 +572,17 @@ function optSankey(t){
 // 9 · network country - decade
 function optNetwork(t){
   const cs = activeCountries();
-  const rows = DATA.decade_by_country.filter(r=>cs.includes(r.CitizenGroup));
-  const decades = [...new Set(rows.map(r=>r.Decade))].sort();
+  const A = filtered();
+  const pairs = {};
+  A.forEach(a => { const d=decadeStr(a.FirstMissionYear); const k=a.CitizenGroup+"|"+d; pairs[k]=(pairs[k]||0)+1; });
+  const decades = [...new Set(A.map(a=>decadeStr(a.FirstMissionYear)))].sort();
+  const cCount = Object.fromEntries(cs.map(c=>[c, countIn(A, a=>a.CitizenGroup===c)]));
+  const maxC = Math.max(1, ...Object.values(cCount));
   const nodes=[], links=[];
-  const maxC = Math.max(...cs.map(c=>DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length));
-  cs.forEach(c => nodes.push({ name:c, category:0, symbol:"rect", symbolSize: 18+34*DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length/maxC, itemStyle:{color:t.country[c]}, label:{show:true,color:t.ink,fontWeight:600} }));
+  cs.forEach(c => nodes.push({ name:c, category:0, symbol:"rect", symbolSize: 18+34*cCount[c]/maxC, itemStyle:{color:t.country[c]}, label:{show:true,color:t.ink,fontWeight:600} }));
   decades.forEach(d => nodes.push({ name:d, category:1, symbolSize: 14, itemStyle:{color:t.muted}, label:{show:true,color:t.ink2,fontSize:10} }));
-  rows.forEach(r => links.push({ source:r.CitizenGroup, target:r.Decade, value:r.Count, lineStyle:{ width: Math.max(1, Math.sqrt(r.Count)), color:t.country[r.CitizenGroup], opacity:0.5, curveness:0.08 } }));
+  Object.entries(pairs).forEach(([k,v]) => { const [c,d]=k.split("|");
+    links.push({ source:c, target:d, value:v, lineStyle:{ width: Math.max(1, Math.sqrt(v)), color:t.country[c], opacity:0.5, curveness:0.08 } }); });
   return {
     tooltip:{ formatter: p => p.dataType==="edge" ? `${p.data.source} → ${p.data.target}: ${p.data.value}` : p.name },
     legend:{ data:["Country","Decade"], textStyle:{color:t.ink2}, top:2 },
@@ -514,12 +596,12 @@ function optNetwork(t){
 // 10 · radar
 function optRadar(t){
   const cs = activeCountries();
+  const A = filtered();
+  const share = (c,b)=>{ const tot=countIn(A, a=>a.CitizenGroup===c && a.DurationBin); return tot? countIn(A, a=>a.CitizenGroup===c && a.DurationBin===b)/tot : 0; };
   const indicators = BINS.map(b => {
-    const mx = Math.max(...COUNTRIES.map(c => share(c,b)));
-    return { name: BIN_SHORT[b], max: Math.max(0.05, mx) };
+    const mx = Math.max(0.05, ...cs.map(c => share(c,b)));
+    return { name: BIN_SHORT[b], max: mx };
   });
-  function share(c,b){ const tot=DATA.astronaut_level.filter(a=>a.CitizenGroup===c && a.DurationBin).length;
-    const n=DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0); return tot? n/tot:0; }
   return {
     tooltip:{ trigger:"item" },
     legend:{ data: cs, textStyle:{color:t.ink2}, top:2 },
@@ -534,10 +616,11 @@ function optRadar(t){
 
 // 11 · heatmap decade x bin
 function optHeat(t){
-  const decs = [...new Set(DATA.decade_by_country.map(r=>r.Decade))].sort();
+  const A = filtered();
+  const decs = [...new Set(A.map(a=>decadeStr(a.FirstMissionYear)))].sort();
   const cells=[]; let mx=0;
   decs.forEach((d,di) => BINS.forEach((b,bi) => {
-    const v = DATA.astronaut_level.filter(a=> (Math.floor(a.FirstMissionYear/10)*10)+"s"===d && a.DurationBin===b).length;
+    const v = countIn(A, a=> decadeStr(a.FirstMissionYear)===d && a.DurationBin===b);
     cells.push([bi,di,v]); if(v>mx)mx=v;
   }));
   return {
@@ -545,17 +628,18 @@ function optHeat(t){
     grid: baseGrid(t, { left: 62, right: 20, top: 12, bottom: 78 }),
     xAxis:{ type:"category", data: BINS.map(b=>BIN_SHORT[b]), axisLabel:{ color:t.muted, rotate: 30 }, splitArea:{show:true}, axisLine:{lineStyle:{color:t.axis}} },
     yAxis:{ type:"category", data: decs, axisLabel: axisText(t), splitArea:{show:true}, axisLine:{lineStyle:{color:t.axis}} },
-    visualMap:{ min:0, max:mx, calculable:true, orient:"horizontal", left:"center", bottom:8,
+    visualMap:{ min:0, max:Math.max(1,mx), calculable:true, orient:"horizontal", left:"center", bottom:8,
       inRange:{ color: t.dark ? ["#14202e","#1c5cab","#86b6ef"] : ["#eaf2fd","#5598e7","#104281"] }, textStyle:{color:t.muted} },
     series:[{ type:"heatmap", data: cells, label:{ show:true, color:t.dark?"#dfe8f5":"#0b0b0b", fontSize:10 },
       itemStyle:{ borderColor:t.surface, borderWidth:2 }, emphasis:{ itemStyle:{ borderColor:t.ink } } }]
   };
 }
 
-// 12 · gender stacked area by year
+// 12 · gender stacked bar by year
 function optGender(t){
-  const years=[...new Set(DATA.gender_by_year.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
-  const g = (y,sex)=> DATA.gender_by_year.filter(r=>r.FirstMissionYear===y && r.Gender===sex).reduce((s,r)=>s+r.Count,0);
+  const A = filtered();
+  const years = allYears();
+  const g = (y,sex)=> countIn(A, a=>a.FirstMissionYear===y && a.Gender===sex);
   const male = cssv("--muted"), female = cssv("--china");
   return {
     tooltip:{ trigger:"axis" },
@@ -580,14 +664,16 @@ function drawChordImpl(){
   el.innerHTML = "";
   const t = theme();
   const cs = activeCountries();
-  const decades = [...new Set(DATA.decade_by_country.map(r=>r.Decade))].sort();
+  const A = filtered();
+  const decades = [...new Set(A.map(a=>decadeStr(a.FirstMissionYear)))].sort();
   const names = [...decades, ...cs];
   const idx = Object.fromEntries(names.map((n,i)=>[n,i]));
   const n = names.length;
   const matrix = Array.from({length:n}, ()=>new Array(n).fill(0));
-  DATA.decade_by_country.filter(r=>cs.includes(r.CitizenGroup)).forEach(r => {
-    const a=idx[r.Decade], b=idx[r.CitizenGroup];
-    matrix[a][b]+=r.Count; matrix[b][a]+=r.Count;
+  A.forEach(a => {
+    const i=idx[decadeStr(a.FirstMissionYear)], j=idx[a.CitizenGroup];
+    if(i==null||j==null) return;
+    matrix[i][j]++; matrix[j][i]++;
   });
   const rect = el.getBoundingClientRect();
   const W = rect.width || 520, H = rect.height || 480;
@@ -619,19 +705,19 @@ function drawChordImpl(){
     .append("title").text(d => `${names[d.source.index]} ↔ ${names[d.target.index]}: ${matrix[d.source.index][d.target.index]}`);
 }
 
-// ---- table ----
-function buildTable(){
-  const tb = document.querySelector("#reportTable tbody");
-  tb.innerHTML = DATA.summary.map(r =>
-    `<tr data-c="${r.CitizenCleaned}"><td>${r.FirstMissionYear}</td><td>${r.CitizenCleaned}</td><td>${r.DurationBinned}</td><td class="num">${r.Count}</td></tr>`).join("");
+// ---- table (recomputed from the filtered population) ----
+function tableRows(){
+  const A = filtered();
+  const m = new Map();
+  A.forEach(a => { if(!a.DurationBin) return; const k=a.FirstMissionYear+"|"+a.CitizenGroup+"|"+a.DurationBin; m.set(k,(m.get(k)||0)+1); });
+  return [...m.entries()].map(([k,v])=>{ const [y,c,b]=k.split("|"); return {y:+y,c,b,v}; })
+    .sort((p,q)=> p.y-q.y || p.c.localeCompare(q.c) || BINS.indexOf(p.b)-BINS.indexOf(q.b));
 }
-function filterTable(){
+function renderTable(){
   const q = (document.getElementById("tblSearch").value||"").toLowerCase();
-  document.querySelectorAll("#reportTable tbody tr").forEach(tr => {
-    const okC = state.countries.has(tr.dataset.c);
-    const okQ = !q || tr.textContent.toLowerCase().includes(q);
-    tr.style.display = (okC && okQ) ? "" : "none";
-  });
+  const rows = tableRows().filter(r => !q || `${r.y} ${r.c} ${r.b}`.toLowerCase().includes(q));
+  document.querySelector("#reportTable tbody").innerHTML = rows.map(r =>
+    `<tr><td>${r.y}</td><td>${r.c}</td><td>${r.b}</td><td class="num">${r.v}</td></tr>`).join("");
 }
 </script>
 </body>

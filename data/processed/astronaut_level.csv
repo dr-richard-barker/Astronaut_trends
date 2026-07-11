@@ -1,784 +1,784 @@
-Name,Citizen,CitizenGroup,Gender,BornYear,FirstMissionYear,LastMissionYear,CareerSpanYears,NumMissions,DurationSeconds,DurationDays,DurationBin
-"Gagarin, Yuriy Alekseevich",RU,Russia,Male,1934,1961,1961,0,1,6000,0.069,1 hour to 1 week
-"Shepard, Alan Bartlett, Jr",US,USA,Male,1923,1961,1971,10,2,778639,9.012,1 week to 50 days
-"Grissom, Virgil Ivan 'Gus'",US,USA,Male,1926,1961,1965,4,2,18488,0.214,1 hour to 1 week
-"Titov, German Stepanovich",RU,Russia,Male,1935,1961,1961,0,1,90900,1.052,1 hour to 1 week
-"Glenn, John Herschel, Jr",US,USA,Male,1921,1962,1998,36,2,787159,9.111,1 week to 50 days
-"Carpenter, Malcolm *Scott",US,USA,Male,1925,1962,1962,0,1,17765,0.206,1 hour to 1 week
-"White, Robert Michael",US,USA,Male,1924,1962,1962,0,4,621,0.007,less than 1 hour
-"Nikolaev, Andriyan Grigorevich",RU,Russia,Male,1929,1962,1970,8,2,1869175,21.634,1 week to 50 days
-"Popovich, Pavel Romanovich",RU,Russia,Male,1930,1962,1974,12,2,1613951,18.68,1 week to 50 days
-"Schirra, Walter Marty, Jr",US,USA,Male,1923,1962,1968,6,4,1062816,12.301,1 week to 50 days
-"Walker, Joseph Albert",US,USA,Male,1921,1963,1963,0,6,1937,0.022,less than 1 hour
-"Cooper, Leroy *Gordon, Jr",US,USA,Male,1927,1963,1965,2,2,810903,9.385,1 week to 50 days
-"Bykovskiy, Valeriy Fyodorovich",RU,Russia,Male,1934,1963,1978,15,3,1791683,20.737,1 week to 50 days
-"Tereshkova, Valentina Vladimirovna",RU,Russia,Female,1937,1963,1963,0,1,254708,2.948,1 hour to 1 week
-"Rushworth, Robert Aitken",US,USA,Male,1924,1963,1963,0,1,628,0.007,less than 1 hour
-"Komarov, Vladimir Mikhailovich",RU,Russia,Male,1927,1964,1967,3,2,183895,2.128,1 hour to 1 week
-"Feoktistov, Konstantin Petrovich",RU,Russia,Male,1926,1964,1964,0,1,87423,1.012,1 hour to 1 week
-"Yegorov, Boris Borisovich",RU,Russia,Male,1937,1964,1964,0,1,87423,1.012,1 hour to 1 week
-"Belyaev, Pavel Ivanovich",RU,Russia,Male,1925,1965,1965,0,1,93737,1.085,1 hour to 1 week
-"Leonov, Aleksei Arkhipovich",RU,Russia,Male,1934,1965,1975,10,2,606788,7.023,1 week to 50 days
-"Young, John Watts",US,USA,Male,1930,1965,1983,18,6,3008508,34.821,1 week to 50 days
-"McDivitt, James Alton",US,USA,Male,1929,1965,1969,4,2,1220225,14.123,1 week to 50 days
-"White, Edward Higgins, II",US,USA,Male,1930,1965,1965,0,1,352571,4.081,1 hour to 1 week
-"Engle, Joe Henry",US,USA,Male,1932,1965,1985,20,5,811127,9.388,1 week to 50 days
-"Conrad, Charles 'Pete' Jr",US,USA,Male,1930,1965,1973,8,4,4246722,49.152,1 week to 50 days
-"McKay, John Barron",US,USA,Male,1922,1965,1965,0,1,716,0.008,less than 1 hour
-"Borman, Frederick 'Frank', II",US,USA,Male,1928,1965,1968,3,2,1719342,19.9,1 week to 50 days
-"Lovell, James Arthur, Jr",US,USA,Male,1928,1965,1970,5,4,2574291,29.795,1 week to 50 days
-"Stafford, Thomas Patten",US,USA,Male,1930,1965,1975,10,5,1827838,21.156,1 week to 50 days
-"Armstrong, Neil Alden",US,USA,Male,1930,1966,1969,3,2,741601,8.583,1 week to 50 days
-"Scott, David Randolph",US,USA,Male,1932,1966,1971,5,3,1968853,22.788,1 week to 50 days
-"Cernan, Eugene Andrew 'Gene'",US,USA,Male,1934,1966,1972,6,3,2038572,23.595,1 week to 50 days
-"Collins, Michael",US,USA,Male,1930,1966,1969,3,2,957913,11.087,1 week to 50 days
-"Gordon, Richard Francis, Jr",US,USA,Male,1929,1966,1969,3,2,1137220,13.162,1 week to 50 days
-"Dana, William Harvey",US,USA,Male,1930,1966,1968,2,2,1206,0.014,less than 1 hour
-"Aldrin, Edwin 'Buzz' Eugene, Jr",US,USA,Male,1930,1966,1969,3,2,1043586,12.079,1 week to 50 days
-"Knight, William Joseph 'Pete'",US,USA,Male,1929,1967,1967,0,1,606,0.007,less than 1 hour
-"Adams, Michael James",US,USA,Male,1930,1967,1967,0,1,291,0.003,less than 1 hour
-"Eisele, Donn Fulton",US,USA,Male,1930,1968,1968,0,1,936543,10.84,1 week to 50 days
-"Cunningham, Ronald *Walter",US,USA,Male,1932,1968,1968,0,1,936543,10.84,1 week to 50 days
-"Beregovoy, Georgiy Timofeevich",RU,Russia,Male,1921,1968,1968,0,1,341445,3.952,1 hour to 1 week
-"Anders, William Alison",US,USA,Male,1933,1968,1968,0,1,529242,6.125,1 hour to 1 week
-"Shatalov, Vladimir Aleksandrovich",RU,Russia,Male,1927,1969,1971,2,3,856650,9.915,1 week to 50 days
-"Volynov, Boris Valentinovich",RU,Russia,Male,1934,1969,1976,7,2,4519067,52.304,50 days to 1 year
-"Yeliseev, Aleksei Stanislavovich",RU,Russia,Male,1934,1969,1971,2,3,771753,8.932,1 week to 50 days
-"Khrunov, Yevgeniy Vasil'evich",RU,Russia,Male,1933,1969,1969,0,1,171950,1.99,1 hour to 1 week
-"Schweickart, Russell Louis 'Rusty'",US,USA,Male,1935,1969,1969,0,1,867654,10.042,1 week to 50 days
-"Shonin, Georgiy Stepanovich",RU,Russia,Male,1935,1969,1969,0,1,427367,4.946,1 hour to 1 week
-"Kubasov, Valeriy Nikolaevich",RU,Russia,Male,1935,1969,1980,11,3,1619962,18.75,1 week to 50 days
-"Filipchenko, Anatoli Vasilevich",RU,Russia,Male,1928,1969,1974,5,2,939838,10.878,1 week to 50 days
-"Volkov, Vladislav Nikolaevich 'Vadim'",RU,Russia,Male,1935,1969,1971,2,2,2480526,28.71,1 week to 50 days
-"Gorbatko, Viktor Vasilevich",RU,Russia,Male,1934,1969,1980,11,3,2638100,30.534,1 week to 50 days
-"Bean, Alan Lavern",US,USA,Male,1932,1969,1973,4,2,6018337,69.657,50 days to 1 year
-"Swigert, John Leonard 'Jack', Jr",US,USA,Male,1931,1970,1970,0,1,514478,5.955,1 hour to 1 week
-"Haise, Fred Wallace, Jr",US,USA,Male,1933,1970,1970,0,1,514478,5.955,1 hour to 1 week
-"Sevastyanov, Vitaliy Ivanovich",RU,Russia,Male,1935,1970,1975,5,2,6970743,80.68,50 days to 1 year
-"Roosa, Stuart Allen",US,USA,Male,1933,1971,1971,0,1,777717,9.001,1 week to 50 days
-"Mitchell, Edgar Dean",US,USA,Male,1930,1971,1971,0,1,777717,9.001,1 week to 50 days
-"Rukavishnikov, Nikolai Nikolaevich",RU,Russia,Male,1932,1971,1979,8,3,853835,9.882,1 week to 50 days
-"Dobrovol'skiy, Georgiy Timofeevich",UA,Other,Male,1928,1971,1971,0,1,2053303,23.765,1 week to 50 days
-"Patsaev, Viktor Ivanovich",RU,Russia,Male,1933,1971,1971,0,1,2053303,23.765,1 week to 50 days
-"Worden, Alfred Merrill",US,USA,Male,1932,1971,1971,0,1,1062713,12.3,1 week to 50 days
-"Irwin, James Benson",US,USA,Male,1930,1971,1971,0,1,1062713,12.3,1 week to 50 days
-"Mattingly, Thomas *Kenneth 'T.K.', II",US,USA,Male,1936,1972,1985,13,3,1830848,21.19,1 week to 50 days
-"Duke, Charles Moss, Jr",US,USA,Male,1935,1972,1972,0,1,957065,11.077,1 week to 50 days
-"Evans, Ronald Ellwin",US,USA,Male,1933,1972,1972,0,1,1086719,12.578,1 week to 50 days
-"Schmitt, Harrison Hagan 'Jack'",US,USA,Male,1935,1972,1972,0,1,1086719,12.578,1 week to 50 days
-"Kerwin, Joseph Peter",US,USA,Male,1932,1973,1973,0,1,2422188,28.035,1 week to 50 days
-"Weitz, Paul Joseph",US,USA,Male,1932,1973,1983,10,2,2855610,33.051,1 week to 50 days
-"Garriott, Owen Kay, Jr",US,USA,Male,1930,1973,1983,10,2,6029788,69.789,50 days to 1 year
-"Lousma, Jack Robert",US,USA,Male,1936,1973,1982,9,2,5829229,67.468,50 days to 1 year
-"Lazarev, Vasiliy Grigor'evich",RU,Russia,Male,1928,1973,1975,2,2,171419,1.984,1 hour to 1 week
-"Makarov, Oleg Grigor'evich",RU,Russia,Male,1933,1973,1980,7,4,1791819,20.739,1 week to 50 days
-"Carr, Gerald Paul",US,USA,Male,1932,1973,1973,0,1,7262132,84.052,50 days to 1 year
-"Gibson, Edward George",US,USA,Male,1936,1973,1973,0,1,7262132,84.052,50 days to 1 year
-"Pogue, William Reid",US,USA,Male,1930,1973,1973,0,1,7262132,84.052,50 days to 1 year
-"Klimuk, Pyotr Ilich",RU,Russia,Male,1942,1973,1978,5,3,6805122,78.763,50 days to 1 year
-"Lebedev, Valentin Vitalevich",RU,Russia,Male,1942,1973,1982,9,2,18943206,219.25,50 days to 1 year
-"Artyukhin, Yuri Petrovich",RU,Russia,Male,1930,1974,1974,0,1,1359028,15.729,1 week to 50 days
-"Sarafanov, Gennadiy Vasilevich",RU,Russia,Male,1942,1974,1974,0,1,173531,2.008,1 hour to 1 week
-"Dyomin, Lev Stepanovich",RU,Russia,Male,1926,1974,1974,0,1,173531,2.008,1 hour to 1 week
-"Gubarev, Aleksey Aleksandrovich",RU,Russia,Male,1932,1975,1978,3,2,3238545,37.483,1 week to 50 days
-"Grechko, Georgiy Mikhailovich",RU,Russia,Male,1931,1975,1985,10,3,11651578,134.856,50 days to 1 year
-"Brand, Vance DeVoe",US,USA,Male,1931,1975,1990,15,4,2685832,31.086,1 week to 50 days
-"Slayton, Donald Kent 'Deke'",US,USA,Male,1924,1975,1975,0,1,782903,9.061,1 week to 50 days
-"Zholobov, Vitaliy Mikhailovich",UA,Other,Male,1937,1976,1976,0,1,4256612,49.266,1 week to 50 days
-"Aksyonov, Vladimir Viktorovich",RU,Russia,Male,1935,1976,1980,4,2,1023107,11.842,1 week to 50 days
-"Zudov, Vyacheslav Dmitrievich",RU,Russia,Male,1942,1976,1976,0,1,173195,2.005,1 hour to 1 week
-"Rozhdestvenskiy, Valeriy Ilich",RU,Russia,Male,1939,1976,1976,0,1,173195,2.005,1 hour to 1 week
-"Glazkov, Yuriy Nikolaevich",RU,Russia,Male,1939,1977,1977,0,1,1531558,17.726,1 week to 50 days
-"Kovalyonok, Vladimir Vasilevich",RU,Russia,Male,1942,1977,1981,4,3,18695380,216.382,50 days to 1 year
-"Ryumin, Valeriy Viktorovich",RU,Russia,Male,1939,1977,1998,21,4,32117157,371.726,more than 1 year
-"Romanenko, Yuriy Viktorovich",RU,Russia,Male,1944,1977,1987,10,3,37218089,430.765,more than 1 year
-"Dzhanibekov, Vladimir Aleksandrovich",RU,Russia,Male,1942,1978,1985,7,5,12585515,145.666,50 days to 1 year
-"Remek, Vladimir",CSSR,Other,Male,1948,1978,1978,0,1,684960,7.928,1 week to 50 days
-"Ivanchenkov, Aleksandr Sergeevich",RU,Russia,Male,1940,1978,1982,4,2,12746304,147.527,50 days to 1 year
-"Hermaszewski, Miroslaw",PL,Other,Male,1941,1978,1978,0,1,684179,7.919,1 week to 50 days
-"Jahn, Sigmund Werner Paul",DD,Other,Male,1937,1978,1978,0,1,679744,7.867,1 week to 50 days
-"Lyakhov, Vladimir Afanas'evich",RU,Russia,Male,1941,1979,1988,9,3,28799285,333.325,50 days to 1 year
-"Ivanov, Georgi Ivanov",BG,Other,Male,1940,1979,1979,0,1,169266,1.959,1 hour to 1 week
-"Popov, Leonid Ivanovich",RU,Russia,Male,1945,1980,1982,2,3,17333151,200.615,50 days to 1 year
-Farkas Bertalan,HU,Other,Male,1949,1980,1980,0,1,679544,7.865,1 week to 50 days
-"Malyshev, Yuriy Vasilevich",RU,Russia,Male,1941,1980,1984,4,2,1022376,11.833,1 week to 50 days
-Pham Tuan,VN,Other,Male,1947,1980,1980,0,1,679319,7.862,1 week to 50 days
-"Tamayo Mendez, Arnaldo",CU,Other,Male,1942,1980,1980,0,1,679403,7.863,1 week to 50 days
-"Kizim, Leonid Denisovich",RU,Russia,Male,1941,1980,1986,6,3,32378262,374.748,more than 1 year
-"Strekalov, Gennadiy Mikhailovich",RU,Russia,Male,1940,1980,1995,15,6,23236199,268.937,50 days to 1 year
-"Savinykh, Viktor Petrovich",RU,Russia,Male,1940,1981,1988,7,3,21836270,252.735,50 days to 1 year
-"Gurragcha, Jugderdemidiyn",MN,Other,Male,1947,1981,1981,0,1,679323,7.863,1 week to 50 days
-"Crippen, Robert 'Crip' Laurel",US,USA,Male,1937,1981,1984,3,4,2036906,23.575,1 week to 50 days
-"Prunariu, Dumitru Dorin",RO,Other,Male,1952,1981,1981,0,1,679312,7.862,1 week to 50 days
-"Truly, Richard Harrison",US,USA,Male,1937,1981,1983,2,2,717716,8.307,1 week to 50 days
-"Fullerton, Charles *Gordon",US,USA,Male,1936,1982,1985,3,3,1378211,15.952,1 week to 50 days
-"Berezovoy, Anatoliy Nikolaevich",RU,Russia,Male,1942,1982,1982,0,1,18263071,211.378,50 days to 1 year
-"Chretien, Jean-Loup Jacques Marie",F,Other,Male,1938,1982,1997,15,3,3755951,43.472,1 week to 50 days
-"Hartsfield, Henry Warren 'Hank'",US,USA,Male,1933,1982,1985,3,4,1738235,20.118,1 week to 50 days
-"Serebrov, Aleksandr Aleksandrovich",RU,Russia,Male,1944,1982,1993,11,4,32223229,372.954,more than 1 year
-"Savitskaya, Svetlana Evgen'evna",RU,Russia,Female,1948,1982,1984,2,2,1703220,19.713,1 week to 50 days
-"Overmyer,  Robert Franklyn",US,USA,Male,1936,1982,1985,3,2,1045392,12.099,1 week to 50 days
-"Allen, Joseph Percival, IV",US,USA,Male,1937,1982,1984,2,2,1130362,13.083,1 week to 50 days
-"Lenoir, William Benjamin",US,USA,Male,1939,1982,1982,0,1,440066,5.093,1 hour to 1 week
-"Bobko, Karol Joseph 'Bo'",US,USA,Male,1937,1983,1985,2,3,1389823,16.086,1 week to 50 days
-"Musgrave, Franklin *Story",US,USA,Male,1935,1983,1996,13,7,4615107,53.416,50 days to 1 year
-"Peterson, Donald Herod",US,USA,Male,1933,1983,1983,0,1,433422,5.016,1 hour to 1 week
-"Titov, Vladimir Georgevich",RU,Russia,Male,1947,1983,1997,14,5,33439883,387.036,more than 1 year
-"Hauck, Frederick Hamilton 'Rick'",US,USA,Male,1941,1983,1988,5,3,1566546,18.131,1 week to 50 days
-"Fabian, John McCreary",US,USA,Male,1939,1983,1985,2,2,1137771,13.169,1 week to 50 days
-"Ride, Sally Kristen",US,USA,Female,1951,1983,1984,1,2,1237652,14.325,1 week to 50 days
-"Thagard, Norman Earl",US,USA,Male,1943,1983,1995,12,5,12144418,140.56,50 days to 1 year
-"Aleksandrov, Aleksandr Pavlovich",RU,Russia,Male,1943,1983,1987,4,2,26762579,309.752,50 days to 1 year
-"Brandenstein, Daniel Charles",US,USA,Male,1943,1983,1992,9,4,2840749,32.879,1 week to 50 days
-"Bluford, Guion 'Guy' Stewart, Jr",US,USA,Male,1942,1983,1992,9,4,2478942,28.691,1 week to 50 days
-"Gardner, Dale Allen",US,USA,Male,1948,1983,1984,1,2,1212819,14.037,1 week to 50 days
-"Thornton, William Edgar",US,USA,Male,1929,1983,1985,2,2,1127849,13.054,1 week to 50 days
-"Shaw, Brewster Hopkinson, Jr",US,USA,Male,1945,1983,1989,6,3,1921942,22.245,1 week to 50 days
-"Parker, Robert Allan Ridley",US,USA,Male,1936,1983,1990,7,2,1666352,19.286,1 week to 50 days
-"Merbold, Ulf Dietrich",D,Other,Male,1941,1983,1994,11,3,4311484,49.901,1 week to 50 days
-"Lichtenberg, Byron Kurt",US,USA,Male,1948,1983,1992,9,2,1663011,19.248,1 week to 50 days
-"Gibson, Robert Lee 'Hoot'",US,USA,Male,1946,1984,1995,11,5,3125883,36.179,1 week to 50 days
-"McNair, Ronald Erwin",US,USA,Male,1950,1984,1986,2,2,688841,7.973,1 week to 50 days
-"Stewart, Robert Lee",US,USA,Male,1942,1984,1985,1,2,1040433,12.042,1 week to 50 days
-"McCandless, Bruce, II",US,USA,Male,1937,1984,1990,6,2,1125119,13.022,1 week to 50 days
-"Solov'yov, Vladimir Alekseevich",RU,Russia,Male,1946,1984,1986,2,2,31272600,361.951,50 days to 1 year
-"At'kov, Oleg Yur'evich",RU,Russia,Male,1949,1984,1984,0,1,20472544,236.951,50 days to 1 year
-"Sharma, Rakesh",IN,Other,Male,1949,1984,1984,0,1,682806,7.903,1 week to 50 days
-"Scobee, Francis *Richard 'Dick'",US,USA,Male,1939,1984,1986,2,2,603893,6.99,1 hour to 1 week
-"Hart, Terry Jonathan",US,USA,Male,1946,1984,1984,0,1,603607,6.986,1 hour to 1 week
-"Van Hoften, James Douglas Adrianus 'Ox'",US,USA,Male,1944,1984,1985,1,2,1216669,14.082,1 week to 50 days
-"Nelson, George Driver 'Pinky'",US,USA,Male,1950,1984,1988,4,3,1478649,17.114,1 week to 50 days
-"Volk, Igor Petrovich",RU,Russia,Male,1937,1984,1984,0,1,1019676,11.802,1 week to 50 days
-"Coats, Michael Loyd",US,USA,Male,1946,1984,1991,7,4,1670233,19.331,1 week to 50 days
-"Mullane, Richard *Michael",US,USA,Male,1945,1984,1990,6,4,1282803,14.847,1 week to 50 days
-"Hawley, Steven Alan",US,USA,Male,1951,1984,1999,15,6,2774564,32.113,1 week to 50 days
-"Resnik, Judith Arlene",US,USA,Female,1949,1984,1986,2,3,522050,6.042,1 hour to 1 week
-"Walker, Charles David",US,USA,Male,1948,1984,1985,1,4,1720576,19.914,1 week to 50 days
-"McBride, Jon Andrew",US,USA,Male,1943,1984,1984,0,1,710613,8.225,1 week to 50 days
-"Sullivan, Kathryn Dwyer",US,USA,Female,1951,1984,1992,8,3,1918144,22.201,1 week to 50 days
-"Leestma, David Cornell",US,USA,Male,1949,1984,1992,8,3,1917189,22.19,1 week to 50 days
-"Garneau, Joseph Jean-Pierre *Marc",CA,Other,Male,1949,1984,2000,16,3,2512819,29.084,1 week to 50 days
-"Scully-Power, Paul Desmond",US,USA,Male,1944,1984,1984,0,1,710613,8.225,1 week to 50 days
-"Walker, David Mathieson",US,USA,Male,1944,1984,1995,11,4,2608206,30.188,1 week to 50 days
-"Fisher (Tingle), Anna Lee",US,USA,Female,1949,1984,1984,0,1,690296,7.99,1 week to 50 days
-"Shriver, Loren James",US,USA,Male,1944,1985,1992,7,3,1389869,16.086,1 week to 50 days
-"Onizuka, Ellison Shoji",US,USA,Male,1946,1985,1986,1,2,265089,3.068,1 hour to 1 week
-"Buchli, James Frederick",US,USA,Male,1945,1985,1991,6,4,1765480,20.434,1 week to 50 days
-"Payton, Gary Eugene",US,USA,Male,1948,1985,1985,0,1,264803,3.065,1 hour to 1 week
-"Williams, Donald Edward",US,USA,Male,1942,1985,1989,4,2,1035284,11.982,1 week to 50 days
-"Seddon, Margaret *Rhea",US,USA,Female,1947,1985,1993,8,3,2600536,30.099,1 week to 50 days
-"Griggs, Stanley *David",US,USA,Male,1939,1985,1985,0,1,604523,6.997,1 hour to 1 week
-"Hoffman, Jeffrey Alan",US,USA,Male,1944,1985,1996,11,5,4362868,50.496,50 days to 1 year
-"Garn, Edwin *Jacob 'Jake'",US,USA,Male,1932,1985,1985,0,1,604523,6.997,1 hour to 1 week
-"Gregory, Frederick Drew",US,USA,Male,1941,1985,1991,6,3,1638373,18.963,1 week to 50 days
-"Lind, Don Leslie",US,USA,Male,1930,1985,1985,0,1,605326,7.006,1 week to 50 days
-"Wang, Taylor Gun-Jin",US,USA,Male,1940,1985,1985,0,1,605326,7.006,1 week to 50 days
-"Van den Berg, Lodewijk",US,USA,Male,1932,1985,1985,0,1,605326,7.006,1 week to 50 days
-"Creighton, John Oliver",US,USA,Male,1943,1985,1991,6,3,1455892,16.851,1 week to 50 days
-"Nagel, Steven Ray",US,USA,Male,1946,1985,1993,8,5,2597787,30.067,1 week to 50 days
-"Lucid (Wells), Matilda *Shannon",US,USA,Female,1943,1985,1996,11,5,19277542,223.12,50 days to 1 year
-"Al-Saud,Sultan ibn Salman ibn Abdulaziz",SA,Other,Male,1956,1985,1985,0,1,610732,7.069,1 week to 50 days
-"Baudry, Patrick Pierre Roger",F,Other,Male,1946,1985,1985,0,1,610732,7.069,1 week to 50 days
-"Bridges, Roy Dunbard, Jr",US,USA,Male,1943,1985,1985,0,2,686726,7.948,1 week to 50 days
-"Henize, Karl Gordon",US,USA,Male,1926,1985,1985,0,2,686726,7.948,1 week to 50 days
-"England, Anthony Wayne",US,USA,Male,1942,1985,1985,0,2,686726,7.948,1 week to 50 days
-"Acton, Loren Wilbur",US,USA,Male,1936,1985,1985,0,2,686726,7.948,1 week to 50 days
-"Bartoe, John-David Francis",US,USA,Male,1944,1985,1985,0,2,686726,7.948,1 week to 50 days
-"Covey, Richard Oswalt",US,USA,Male,1946,1985,1993,8,4,2322654,26.883,1 week to 50 days
-"Lounge, John Michael",US,USA,Male,1946,1985,1990,5,3,1736581,20.099,1 week to 50 days
-"Fisher, William Frederick",US,USA,Male,1946,1985,1985,0,1,613062,7.096,1 week to 50 days
-"Vasyutin, Vladimir Vladimirovich",RU,Russia,Male,1952,1985,1985,0,1,5608328,64.911,50 days to 1 year
-"Volkov, Aleksandr Aleksandrovich",RU,Russia,Male,1948,1985,1991,6,3,33825116,391.494,more than 1 year
-"Grabe, Ronald John",US,USA,Male,1945,1985,1993,8,4,2259643,26.153,1 week to 50 days
-"Hilmers, David Carl",US,USA,Male,1950,1985,1992,7,4,1779475,20.596,1 week to 50 days
-"Pailes, William Arthur",US,USA,Male,1952,1985,1985,0,1,351878,4.073,1 hour to 1 week
-"Dunbar, Bonnie Jeanne",US,USA,Female,1949,1985,1998,13,5,4350285,50.351,50 days to 1 year
-"Furrer, Reinhard Alfred",D,Other,Male,1940,1985,1985,0,1,607491,7.031,1 week to 50 days
-"Messerschmid, Ernst Willi",D,Other,Male,1945,1985,1985,0,1,607491,7.031,1 week to 50 days
-"Ockels, Wubbo Johannes",NL,Other,Male,1946,1985,1985,0,1,607491,7.031,1 week to 50 days
-"O'Connor, Bryan Daniel",US,USA,Male,1946,1985,1991,6,2,1379949,15.972,1 week to 50 days
-"Ross, Jerry Lynn",US,USA,Male,1948,1985,2002,17,8,5014468,58.038,50 days to 1 year
-"Cleave, Mary Louise",US,USA,Female,1947,1985,1989,4,2,943276,10.918,1 week to 50 days
-"Spring, Sherwood Clark",US,USA,Male,1944,1985,1985,0,1,594289,6.878,1 hour to 1 week
-"Neri Vela, Rodolfo",MX,Other,Male,1952,1985,1985,0,1,594289,6.878,1 hour to 1 week
-"Bolden, Charles Frank, Jr",US,USA,Male,1946,1986,1994,8,4,2450324,28.36,1 week to 50 days
-"Chang-Diaz, Franklin Ramon",US,USA,Male,1950,1986,2002,16,7,5768211,66.762,50 days to 1 year
-"Cenker, Robert Jospeh",US,USA,Male,1948,1986,1986,0,1,525831,6.086,1 hour to 1 week
-"Nelson, Clarence *William 'Bill', Jr",US,USA,Male,1942,1986,1986,0,1,525831,6.086,1 hour to 1 week
-"Laveykin, Aleksandr Ivanovich",RU,Russia,Male,1951,1987,1987,0,1,15045956,174.143,50 days to 1 year
-"Viktorenko, Aleksandr Stepanovich",RU,Russia,Male,1947,1987,1994,7,4,42255317,489.066,more than 1 year
-"Faris, Muhammed Ahmed",SY,Other,Male,1951,1987,1987,0,1,687895,7.962,1 week to 50 days
-"Manarov, Musa Khiramanovich",RU,Russia,Male,1951,1987,1990,3,2,46744178,541.021,more than 1 year
-"Levchenko, Anatoliy Semenovich",RU,Russia,Male,1941,1987,1987,0,1,683892,7.915,1 week to 50 days
-"Solov'yov, Anatoliy Yakovlevich",RU,Russia,Male,1948,1988,1997,9,5,56246506,651.001,more than 1 year
-"Alexandrov, Alexander Panayotov",BG,Other,Male,1951,1988,1988,0,1,850159,9.84,1 week to 50 days
-"Polyakov, Valeriy Vladimirovich",RU,Russia,Male,1942,1988,1994,6,2,58638798,678.69,more than 1 year
-"Momand (Mohmand), Abdol Ahad",AF,Other,Male,1959,1988,1988,0,1,764787,8.852,1 week to 50 days
-"Krikalyov, Sergey Konstantinovich",RU,Russia,Male,1958,1988,2005,17,6,69413913,803.402,more than 1 year
-"Gardner, Guy Spence",US,USA,Male,1948,1988,1990,2,2,1152645,13.341,1 week to 50 days
-"Shepherd, William McMichael",US,USA,Male,1949,1988,2000,12,4,13765846,159.327,50 days to 1 year
-"Blaha, John Elmer",US,USA,Male,1942,1989,1996,7,5,13920446,161.116,50 days to 1 year
-"Springer, Robert Clyde",US,USA,Male,1942,1989,1990,1,2,855195,9.898,1 week to 50 days
-"Bagian, James Philip",US,USA,Male,1952,1989,1991,2,2,1216388,14.079,1 week to 50 days
-"Lee, Mark Charles",US,USA,Male,1952,1989,1997,8,4,2843638,32.912,1 week to 50 days
-"Richards, Richard Noel",US,USA,Male,1946,1989,1994,5,4,2928616,33.896,1 week to 50 days
-"Adamson, James Craig",US,USA,Male,1946,1989,1991,2,2,1203694,13.932,1 week to 50 days
-"Brown, Mark Neil",US,USA,Male,1951,1989,1991,2,2,898067,10.394,1 week to 50 days
-"McCulley, Michael James",US,USA,Male,1943,1989,1989,0,1,430761,4.986,1 hour to 1 week
-"Baker (Shulman), Ellen Louise",US,USA,Female,1953,1989,1995,6,3,2471504,28.605,1 week to 50 days
-"Carter, Manley Lanier 'Sonny', Jr",US,USA,Male,1947,1989,1989,0,1,432405,5.005,1 hour to 1 week
-"Thornton (Cordell), Kathryn",US,USA,Female,1952,1989,1995,6,4,3510918,40.636,1 week to 50 days
-"Wetherbee, James Donald",US,USA,Male,1952,1990,2002,12,6,5739775,66.433,50 days to 1 year
-"Ivins, Marsha Sue",US,USA,Female,1951,1990,2001,11,5,4830464,55.908,50 days to 1 year
-"Low, George *David",US,USA,Male,1956,1990,1993,3,3,2570815,29.755,1 week to 50 days
-"Balandin, Aleksandr Nikolaevich",RU,Russia,Male,1953,1990,1990,0,1,15470277,179.054,50 days to 1 year
-"Casper, John Howard",US,USA,Male,1943,1990,1996,6,4,2973164,34.412,1 week to 50 days
-"Thuot, Pierre Joseph",US,USA,Male,1955,1990,1994,4,3,2357561,27.287,1 week to 50 days
-"Manakov, Gennadiy Mikhailovich",RU,Russia,Male,1951,1990,1993,3,2,26774376,309.889,50 days to 1 year
-"Cabana, Robert Donald",US,USA,Male,1949,1990,1998,8,4,3278565,37.946,1 week to 50 days
-"Melnick, Bruce Edward",US,USA,Male,1949,1990,1992,2,2,1121260,12.978,1 week to 50 days
-"Akers, Thomas Dale",US,USA,Male,1951,1990,1996,6,4,2933080,33.948,1 week to 50 days
-"Culbertson, Frank Lee, Jr",US,USA,Male,1949,1990,2001,11,4,12408631,143.618,50 days to 1 year
-"Meade, Carl Joseph",US,USA,Male,1950,1990,1994,4,3,2564072,29.677,1 week to 50 days
-"Gemar, Charles Donald 'Sam'",US,USA,Male,1955,1990,1994,4,3,2093926,24.235,1 week to 50 days
-"Durrance, Samuel Thornton",US,USA,Male,1943,1990,1995,5,2,2211235,25.593,1 week to 50 days
-"Parise, Ronald Anthony",US,USA,Male,1951,1990,1995,5,2,2211235,25.593,1 week to 50 days
-"Afanas'ev, Viktor Mikhailovich",RU,Russia,Male,1948,1990,2001,11,4,48018832,555.774,more than 1 year
-Akiyama Toyohiro,J,Other,Male,1942,1990,1990,0,1,683680,7.913,1 week to 50 days
-"Cameron, Kenneth Donald",US,USA,Male,1949,1991,1995,4,3,2023907,23.425,1 week to 50 days
-"Godwin, Linda Maxine",US,USA,Female,1952,1991,2001,10,4,3305630,38.26,1 week to 50 days
-"Apt, Jerome 'Jay', III",US,USA,Male,1949,1991,1996,5,4,3049861,35.299,1 week to 50 days
-"Hammond, Lloyd *Blaine, Jr",US,USA,Male,1952,1991,1994,3,2,1663941,19.259,1 week to 50 days
-"Harbaugh, Gregory Jordan",US,USA,Male,1956,1991,1997,6,4,2944805,34.083,1 week to 50 days
-"McMonagle, Donald Ray",US,USA,Male,1952,1991,1994,3,3,2180080,25.232,1 week to 50 days
-"Veach, Charles *Lacy",US,USA,Male,1944,1991,1992,1,2,1570713,18.18,1 week to 50 days
-"Hieb, Richard James",US,USA,Male,1955,1991,1994,3,3,2759700,31.941,1 week to 50 days
-"Artsebarskiy, Anatoliy Pavlovich",UA,Other,Male,1956,1991,1991,0,1,12496910,144.64,50 days to 1 year
-"Sharman, Helen Patricia",UK,Other,Female,1963,1991,1991,0,1,681225,7.885,1 week to 50 days
-"Gutierrez, Sidney McNeill",US,USA,Male,1951,1991,1994,3,2,1757029,20.336,1 week to 50 days
-"Jernigan, Tamara Elizabeth",US,USA,Female,1959,1991,1999,8,5,5448340,63.059,50 days to 1 year
-"Gaffney, Francis Andrew 'Drew'",US,USA,Male,1946,1991,1991,0,1,785660,9.093,1 week to 50 days
-"Hughes-Fulford, Millie Elizabeth Wiley",US,USA,Female,1945,1991,1991,0,1,785660,9.093,1 week to 50 days
-"Baker, Michael Allen",US,USA,Male,1953,1991,1997,6,5,3473947,40.208,1 week to 50 days
-"Reightler, Kenneth Stanley, Jr",US,USA,Male,1951,1991,1994,3,2,1179420,13.651,1 week to 50 days
-"Aubakirov, Tokhtar Ongarb'evich",KZ,Other,Male,1946,1991,1991,0,1,684760,7.925,1 week to 50 days
-"Viehbock, Franz Artur",AT,Other,Male,1960,1991,1991,0,1,684760,7.925,1 week to 50 days
-"Henricks, Terence *Thomas 'Tom'",US,USA,Male,1952,1991,1996,5,5,3695905,42.777,1 week to 50 days
-"Voss, James Shelton",US,USA,Male,1949,1991,2001,10,5,17472564,202.229,50 days to 1 year
-"Runco, Mario, Jr",US,USA,Male,1952,1991,1996,5,3,1984103,22.964,1 week to 50 days
-"Hennen, Thomas John",US,USA,Male,1952,1991,1991,0,1,600642,6.952,1 hour to 1 week
-"Oswald, Stephen Scot",US,USA,Male,1951,1992,1995,3,3,2932310,33.939,1 week to 50 days
-"Readdy, William Francis",US,USA,Male,1952,1992,1996,4,4,2421856,28.031,1 week to 50 days
-"Bondar, Roberta Lynn",CA,Other,Female,1945,1992,1992,0,1,695684,8.052,1 week to 50 days
-"Kaleri, Aleksandr Yurievich",RU,Russia,Male,1956,1992,2010,18,5,66465292,769.274,more than 1 year
-"Flade, Klaus-Dietrich",D,Other,Male,1952,1992,1992,0,1,683792,7.914,1 week to 50 days
-"Duffy, Brian",US,USA,Male,1953,1992,2000,8,4,3519463,40.735,1 week to 50 days
-"Foale, Colin *Michael",US,USA,Male,1957,1992,2003,11,6,32293044,373.762,more than 1 year
-"Frimout, Dirk Dries David Damiaan",B,Other,Male,1941,1992,1992,0,1,770967,8.923,1 week to 50 days
-"Chilton, Kevin Patrick",US,USA,Male,1954,1992,1996,4,3,2535780,29.349,1 week to 50 days
-"Bowersox, Kenneth Dwane",US,USA,Male,1956,1992,2002,10,5,18281567,211.592,50 days to 1 year
-"DeLucas, Lawrence James",US,USA,Male,1950,1992,1992,0,1,1193405,13.813,1 week to 50 days
-"Trinh, Eugene Huu-Chau",US,USA,Male,1950,1992,1992,0,1,1193405,13.813,1 week to 50 days
-"Avdeev, Sergei Vasil'evich",RU,Russia,Male,1956,1992,1998,6,3,64591945,747.592,more than 1 year
-"Tognini, Michel Ange-Charles",F,Other,Male,1949,1992,1999,7,2,1619156,18.74,1 week to 50 days
-"Allen, Andrew Michael",US,USA,Male,1955,1992,1996,4,3,3255124,37.675,1 week to 50 days
-"Nicollier, Claude",CH,Other,Male,1944,1992,1999,7,4,3672284,42.503,1 week to 50 days
-"Malerba, Franco",I,Other,Male,1946,1992,1992,0,1,688502,7.969,1 week to 50 days
-"Brown, Curtis Lee, Jr",US,USA,Male,1956,1992,1999,7,6,4979130,57.629,50 days to 1 year
-"Davis, Nancy *Jan (Smotherman)",US,USA,Female,1953,1992,1997,5,3,2426803,28.088,1 week to 50 days
-"Jemison, Mae Carol",US,USA,Female,1956,1992,1992,0,1,685822,7.938,1 week to 50 days
-"Mohri, Mamoru 'Mark'",J,Other,Male,1948,1992,2000,8,2,1656546,19.173,1 week to 50 days
-"MacLean, Steven Glenwood",CA,Other,Male,1954,1992,2006,14,2,1872162,21.669,1 week to 50 days
-"Clifford, Michael *Richard Uram",US,USA,Male,1952,1992,1996,4,3,2399109,27.767,1 week to 50 days
-"Helms, Susan Jane",US,USA,Female,1958,1993,2001,8,5,18227152,210.962,50 days to 1 year
-"Poleshchuk, Aleksandr Fyodorovich",RU,Russia,Male,1953,1993,1993,0,1,15468225,179.03,50 days to 1 year
-"Cockrell, Kenneth Dale 'Taco'",US,USA,Male,1950,1993,2002,9,5,5574331,64.518,50 days to 1 year
-"Ochoa, Ellen Lauri",US,USA,Female,1958,1993,2002,9,4,3526683,40.818,1 week to 50 days
-"Precourt, Charles Joseph",US,USA,Male,1955,1993,1998,5,5,3356174,38.845,1 week to 50 days
-"Harris, Bernard Anthony, Jr",US,USA,Male,1956,1993,1995,2,3,1577295,18.256,1 week to 50 days
-"Walter, Ulrich Hans",D,Other,Male,1954,1993,1993,0,2,862800,9.986,1 week to 50 days
-"Schlegel, Hans-Wilhelm",D,Other,Male,1951,1993,2008,15,3,1965699,22.751,1 week to 50 days
-"Currie, Nancy Jane (Decker Sherlock)",US,USA,Female,1958,1993,2002,9,4,3598366,41.648,1 week to 50 days
-"Wisoff, Peter *Jeffrey Kelsay 'Jeff'",US,USA,Male,1958,1993,2000,7,5,3830945,44.34,1 week to 50 days
-"Voss, Janice Elaine",US,USA,Female,1956,1993,2000,7,5,4247346,49.159,1 week to 50 days
-"Tsibliev, Vasiliy Vasilevich",RU,Russia,Male,1954,1993,1997,4,2,32975582,381.662,more than 1 year
-"Haignere, Jean-Pierre",F,Other,Male,1948,1993,1999,6,2,18102311,209.517,50 days to 1 year
-"Newman, James Hansen",US,USA,Male,1956,1993,2002,9,5,3751667,43.422,1 week to 50 days
-"Bursch, Daniel Wheeler",US,USA,Male,1957,1993,2001,8,6,19606494,226.927,50 days to 1 year
-"Walz, Carl Erwin",US,USA,Male,1955,1993,2001,8,5,19918968,230.544,50 days to 1 year
-"Searfoss, Richard Alan",US,USA,Male,1956,1993,1998,5,3,3381505,39.138,1 week to 50 days
-"McArthur, William Surles 'Bill', Jr",US,USA,Male,1951,1993,2005,12,4,19433909,224.93,50 days to 1 year
-"Wolf, David Alexander",US,USA,Male,1956,1993,2009,16,4,14547373,168.372,50 days to 1 year
-"Fettman, Martin Joseph",US,USA,Male,1956,1993,1993,0,1,1210353,14.009,1 week to 50 days
-"Usachyov, Yuriy Vladimirovich",RU,Russia,Male,1957,1994,2001,7,4,47773475,552.934,more than 1 year
-"Sega, Ronald Michael",US,USA,Male,1952,1994,1996,2,2,1513515,17.518,1 week to 50 days
-"Jones, Thomas David",US,USA,Male,1955,1994,2001,7,5,4582140,53.034,50 days to 1 year
-"Malenchenko, Yuriy Ivanovich",RU,Russia,Male,1961,1994,2015,21,6,71486599,827.391,more than 1 year
-"Musabaev, Talgat Amangel'dievich",KZ,Other,Male,1951,1994,2001,7,3,29497726,341.409,50 days to 1 year
-"Halsell, James Donald, Jr",US,USA,Male,1956,1994,2000,6,5,4530727,52.439,50 days to 1 year
-"Chiao, Leroy",US,USA,Male,1960,1994,2004,10,4,19816824,229.361,50 days to 1 year
-"Thomas, Donald Alan",US,USA,Male,1955,1994,1997,3,4,3744741,43.342,1 week to 50 days
-Mukai (Naito) Chiaki,J,Other,Female,1952,1994,1998,4,2,2043537,23.652,1 week to 50 days
-"Linenger, Jerry Michael",US,USA,Male,1955,1994,1997,3,2,12365421,143.118,50 days to 1 year
-"Wilcutt, Terrence Wade",US,USA,Male,1949,1994,2000,6,5,3628947,42.002,1 week to 50 days
-"Smith, Steven Lee",US,USA,Male,1958,1994,2002,8,5,3457004,40.012,1 week to 50 days
-"Kondakova, Yelena Vladimirovna",RU,Russia,Female,1957,1994,1997,3,2,15417691,178.445,50 days to 1 year
-"Tanner, Joseph Richard",US,USA,Male,1950,1994,2006,12,4,3762903,43.552,1 week to 50 days
-"Clervoy, Jean-Francois Andre",F,Other,Male,1958,1994,1999,5,3,2430285,28.128,1 week to 50 days
-"Parazynski, Scott Edward",US,USA,Male,1961,1994,2007,13,5,4980711,57.647,50 days to 1 year
-"Collins, Eileen Marie",US,USA,Female,1956,1995,2005,10,4,3139810,36.34,1 week to 50 days
-"Gregory, William George",US,USA,Male,1957,1995,1995,0,1,1436927,16.631,1 week to 50 days
-"Grunsfeld, John Mace",US,USA,Male,1958,1995,2009,14,5,5065314,58.626,50 days to 1 year
-"Lawrence, Wendy Barrien",US,USA,Female,1959,1995,2005,10,4,4420563,51.164,50 days to 1 year
-"Dezhurov, Vladimir Nikolaevich",RU,Russia,Male,1962,1995,2001,6,2,21101280,244.228,50 days to 1 year
-"Budarin, Nikolai Nikolaevich",RU,Russia,Male,1953,1995,2002,7,3,38366762,444.06,more than 1 year
-"Kregel, Kevin Richard",US,USA,Male,1956,1995,2000,5,4,4558829,52.764,50 days to 1 year
-"Weber, Mary Ellen",US,USA,Female,1962,1995,2000,5,2,1621756,18.77,1 week to 50 days
-"Gidzenko, Yuriy Pavlovich",RU,Russia,Male,1962,1995,2002,7,3,28507558,329.949,50 days to 1 year
-"Reiter, Thomas Arthur",D,Other,Male,1958,1995,2006,11,2,30260149,350.233,50 days to 1 year
-"Gernhardt, Michael Landon",US,USA,Male,1956,1995,2001,6,4,3740465,43.292,1 week to 50 days
-"Rominger, Kent Vernon",US,USA,Male,1956,1995,2001,6,5,5799342,67.122,50 days to 1 year
-"Coleman, Catherine Grace 'Cady'",US,USA,Female,1960,1995,2010,15,3,15566353,180.166,50 days to 1 year
-"Lopez-Alegria, Michael Eladio",US,USA,Male,1958,1995,2024,29,6,25632868,296.677,50 days to 1 year
-"Leslie, Fred Weldon",US,USA,Male,1951,1995,1995,0,1,1374741,15.911,1 week to 50 days
-"Sacco, Albert, Jr",US,USA,Male,1949,1995,1995,0,1,1374741,15.911,1 week to 50 days
-"Hadfield, Chris Austin",CA,Other,Male,1959,1995,2012,17,3,14314737,165.68,50 days to 1 year
-"Jett, Brent Ward, Jr",US,USA,Male,1958,1996,2006,10,4,3607194,41.75,1 week to 50 days
-"Scott, Winston Elliott",US,USA,Male,1950,1996,1997,1,2,2126083,24.607,1 week to 50 days
-Wakata Koichi,J,Other,Male,1963,1996,2022,26,5,43612362,504.773,more than 1 year
-"Barry, Daniel Thomas",US,USA,Male,1953,1996,2001,5,3,2643989,30.602,1 week to 50 days
-"Onufrienko, Yuriy Ivanovich",RU,Russia,Male,1961,1996,2001,5,2,33662750,389.615,more than 1 year
-"Horowitz, Scott Jay",US,USA,Male,1957,1996,2001,5,4,4099164,47.444,1 week to 50 days
-"Cheli, Maurizio",I,Other,Male,1959,1996,1996,0,1,1359621,15.736,1 week to 50 days
-"Guidoni, Umberto",I,Other,Male,1954,1996,2001,5,2,2387422,27.632,1 week to 50 days
-"Thomas, Andrew Sydney Withiel",US,USA,Male,1951,1996,2005,9,4,15326009,177.384,50 days to 1 year
-"Linnehan, Richard Michael",US,USA,Male,1957,1996,2008,12,4,5140699,59.499,50 days to 1 year
-"Brady, Charles Eldon, Jr",US,USA,Male,1951,1996,1996,0,1,1460856,16.908,1 week to 50 days
-"Favier, Jean-Jacques",F,Other,Male,1949,1996,1996,0,1,1460856,16.908,1 week to 50 days
-"Thirsk, Robert Brent",CA,Other,Male,1953,1996,2009,13,2,17692097,204.77,50 days to 1 year
-"Korzun, Valeriy Grigor'evich",RU,Russia,Male,1953,1996,2002,6,2,32974834,381.653,more than 1 year
-"Haignere (Andre-Deshays), Claudie",F,Other,Female,1957,1996,2001,5,2,2211808,25.6,1 week to 50 days
-"Lazutkin, Aleksandr Ivanovich",RU,Russia,Male,1957,1997,1997,0,1,15977260,184.922,50 days to 1 year
-"Ewald, Reinhold",D,Other,Male,1956,1997,1997,0,1,1701283,19.691,1 week to 50 days
-"Kilrain (Still), Susan Leigh",US,USA,Female,1961,1997,1997,0,2,1699033,19.665,1 week to 50 days
-"Crouch, Roger Keith",US,USA,Male,1940,1997,1997,0,2,1699033,19.665,1 week to 50 days
-"Linteris, Gregory Thomas",US,USA,Male,1957,1997,1997,0,2,1699033,19.665,1 week to 50 days
-"Noriega, Carlos Ismael",US,USA,Male,1959,1997,2000,3,2,1732638,20.054,1 week to 50 days
-"Lu, Edward Tsang",US,USA,Male,1963,1997,2003,6,3,17795841,205.97,50 days to 1 year
-"Vinogradov, Pavel Vladimirovich",RU,Russia,Male,1953,1997,2013,16,3,47255582,546.94,more than 1 year
-"Curbeam, Robert Lee",US,USA,Male,1962,1997,2006,9,3,3249087,37.605,1 week to 50 days
-"Robinson, Stephen Kern",US,USA,Male,1955,1997,2010,13,4,4182579,48.409,1 week to 50 days
-"Tryggvason, Bjarni Valdimar",CA,Other,Male,1945,1997,1997,0,1,1024019,11.852,1 week to 50 days
-"Bloomfield, Michael John",US,USA,Male,1959,1997,2002,5,3,2804454,32.459,1 week to 50 days
-"Lindsey, Steven Wayne",US,USA,Male,1960,1997,2011,14,5,5438013,62.94,50 days to 1 year
-"Chawla, Kalpana",US,USA,Female,1961,1997,2003,6,2,2732172,31.622,1 week to 50 days
-Doi Takao,J,Other,Male,1954,1997,2008,11,2,2717096,31.448,1 week to 50 days
-"Kadenyuk, Leonid Konstantinovich",UA,Other,Male,1950,1997,1997,0,1,1355642,15.69,1 week to 50 days
-"Edwards, Joe Frank, Jr.",US,USA,Male,1958,1998,1998,0,1,762415,8.824,1 week to 50 days
-"Reilly, James Francis, II",US,USA,Male,1954,1998,2007,9,3,3062005,35.44,1 week to 50 days
-"Anderson, Michael Phillip",US,USA,Male,1959,1998,2003,5,2,2138945,24.756,1 week to 50 days
-"Sharipov, Salizhan Shakirovich",RU,Russia,Male,1964,1998,2004,6,2,17419736,201.617,50 days to 1 year
-"Eyharts, Leopold",F,Other,Male,1957,1998,2008,10,2,5952626,68.896,50 days to 1 year
-"Altman, Scott Douglas",US,USA,Male,1959,1998,2009,11,4,4452475,51.533,50 days to 1 year
-"Hire, Kathryn Patricia 'Kay'",US,USA,Female,1959,1998,2010,12,2,2562980,29.664,1 week to 50 days
-"Williams, Dafydd Rhys",CA,Other,Male,1954,1998,2007,9,2,2475934,28.657,1 week to 50 days
-"Buckey, Jay Clark, Jr",US,USA,Male,1956,1998,1998,0,1,1374599,15.91,1 week to 50 days
-"Pawelczyk, James Anthony",US,USA,Male,1960,1998,1998,0,1,1374599,15.91,1 week to 50 days
-"Gorie, Dominic Lee Pudwill",US,USA,Male,1957,1998,2008,10,4,4202362,48.638,1 week to 50 days
-"Kavandi (Sellers), Janet Lynn",US,USA,Female,1959,1998,2001,3,3,2923660,33.839,1 week to 50 days
-"Padalka, Gennadiy Ivanovich",RU,Russia,Male,1958,1998,2015,17,5,75900602,878.479,more than 1 year
-"Baturin, Yuriy Mikhailovich",RU,Russia,Male,1949,1998,2001,3,2,1705541,19.74,1 week to 50 days
-"Duque Duque, Pedro Francisco",E,Other,Male,1963,1998,2003,5,2,1622773,18.782,1 week to 50 days
-"Sturckow, Frederick Wilford 'C.J.'",US,USA,Male,1961,1998,2023,25,9,4446888,51.469,50 days to 1 year
-"Bella, Ivan",SK,Other,Male,1964,1999,1999,0,1,683789,7.914,1 week to 50 days
-"Husband, Rick Douglas",US,USA,Male,1957,1999,2003,4,2,2223313,25.733,1 week to 50 days
-"Payette, Julie",CA,Other,Female,1963,1999,2009,10,2,2203083,25.499,1 week to 50 days
-"Tokarev, Valeriy Ivanovich",RU,Russia,Male,1952,1999,2005,6,2,17247934,199.629,50 days to 1 year
-"Ashby, Jeffrey Shears",US,USA,Male,1954,1999,2002,3,3,2391446,27.679,1 week to 50 days
-"Kelly, Scott Joseph",US,USA,Male,1964,1999,2015,16,4,44965918,520.439,more than 1 year
-"Thiele, Gerhard Paul Julius",D,Other,Male,1953,2000,2000,0,1,970724,11.235,1 week to 50 days
-"Zalyotin, Sergey Viktorovich",RU,Russia,Male,1962,2000,2002,2,2,7230925,83.691,50 days to 1 year
-"Williams, Jeffrey Nels",US,USA,Male,1958,2000,2016,16,4,46061321,533.117,more than 1 year
-"Mastracchio, Richard Alan",US,USA,Male,1960,2000,2013,13,4,19661853,227.568,50 days to 1 year
-"Burbank, Daniel Christopher",US,USA,Male,1961,2000,2011,11,3,16321739,188.909,50 days to 1 year
-"Morukov, Boris Vladimirovich",RU,Russia,Male,1950,2000,2000,0,1,1019457,11.799,1 week to 50 days
-"Melroy, Pamela Ann",US,USA,Female,1961,2000,2007,7,3,3355409,38.836,1 week to 50 days
-"Polansky, Mark Lewis",US,USA,Male,1956,2001,2009,8,3,3581368,41.451,1 week to 50 days
-"Kelly, James McNeal 'Vegas'",US,USA,Male,1964,2001,2005,4,2,2308916,26.724,1 week to 50 days
-"Richards, Paul William",US,USA,Male,1964,2001,2001,0,1,1108173,12.826,1 week to 50 days
-"Phillips, John Lynch",US,USA,Male,1951,2001,2009,8,3,17601786,203.724,50 days to 1 year
-"Lonchakov, Yuriy Valentinovich",RU,Russia,Male,1965,2001,2008,7,3,17347007,200.776,50 days to 1 year
-"Tito, Dennis",US,USA,Male,1940,2001,2001,0,1,684248,7.92,1 week to 50 days
-"Hobaugh, Charles Owen",US,USA,Male,1961,2001,2009,8,3,3138402,36.324,1 week to 50 days
-"Forrester, Patrick Graham",US,USA,Male,1957,2001,2009,8,3,3421082,39.596,1 week to 50 days
-"Tyurin, Mikhail Vladislavovich",RU,Russia,Male,1960,2001,2013,12,3,45975071,532.119,more than 1 year
-"Kozeev, Konstantin Mironovich",RU,Russia,Male,1967,2001,2001,0,1,849591,9.833,1 week to 50 days
-"Kelly, Mark Edward",US,USA,Male,1964,2001,2011,10,4,4673040,54.086,50 days to 1 year
-"Tani, Daniel Michio",US,USA,Male,1961,2001,2007,6,2,11383474,131.753,50 days to 1 year
-"Carey, Duane Gene",US,USA,Male,1957,2002,2002,0,1,943790,10.923,1 week to 50 days
-"Massimino, Michael James",US,USA,Male,1962,2002,2009,7,2,2058419,23.824,1 week to 50 days
-"Frick, Stephen Nathaniel",US,USA,Male,1964,2002,2008,6,2,2037858,23.586,1 week to 50 days
-"Walheim, Rex Joseph",US,USA,Male,1962,2002,2011,9,3,3141129,36.356,1 week to 50 days
-"Morin, Lee Miller Emile",US,USA,Male,1952,2002,2002,0,1,934959,10.821,1 week to 50 days
-"Vittori, Roberto",I,Other,Male,1964,2002,2011,9,3,3068742,35.518,1 week to 50 days
-"Shuttleworth, Mark Richard",ZA,Other,Male,1973,2002,2002,0,1,854718,9.893,1 week to 50 days
-"Lockhart, Paul Scott",US,USA,Male,1956,2002,2002,0,2,2388140,27.641,1 week to 50 days
-"Perrin, Phillipe",F,Other,Male,1963,2002,2002,0,1,1197294,13.858,1 week to 50 days
-"Whitson, Peggy Annette",US,USA,Female,1960,2002,2025,23,5,60072595,695.285,more than 1 year
-"Treshchyov, Sergey Yevgenievich",RU,Russia,Male,1958,2002,2002,0,1,15977664,184.927,50 days to 1 year
-"Magnus (Hall), Sandra Hall",US,USA,Female,1964,2002,2011,9,3,13596207,157.364,50 days to 1 year
-"Sellers, Piers John",US,USA,Male,1955,2002,2010,8,3,3056556,35.377,1 week to 50 days
-"Yurchikhin, Fyodor Nikolaevich",RU,Russia,Male,1959,2002,2017,15,5,58135172,672.861,more than 1 year
-"De Winne, Frank",B,Other,Male,1961,2002,2009,7,2,17170430,198.732,50 days to 1 year
-"Herrington, John Bennett",US,USA,Male,1958,2002,2002,0,1,1190846,13.783,1 week to 50 days
-"Pettit, Donald Roy",US,USA,Male,1955,2002,2024,22,4,50981995,590.069,more than 1 year
-"McCool, William Cameron",US,USA,Male,1961,2003,2003,0,1,1376530,15.932,1 week to 50 days
-"Brown, David McDowell",US,USA,Male,1956,2003,2003,0,1,1376530,15.932,1 week to 50 days
-"Clark (Salton), Laurel Blair",US,USA,Female,1961,2003,2003,0,1,1376530,15.932,1 week to 50 days
-"Ramon (Wolferman), Ilan",IL,Other,Male,1954,2003,2003,0,1,1376530,15.932,1 week to 50 days
-Yang Liwei,CN,China,Male,1965,2003,2003,0,1,76977,0.891,1 hour to 1 week
-"Fincke, Edward *Michael",US,USA,Male,1967,2004,2025,21,4,47376362,548.338,more than 1 year
-"Kuipers, Andre",NL,Other,Male,1958,2004,2011,7,2,17596241,203.66,50 days to 1 year
-"Melvill, Michael Winston",US,USA,Male,1940,2004,2004,0,2,2891,0.033,less than 1 hour
-"Binnie, William *Brian",US,USA,Male,1953,2004,2004,0,1,1436,0.017,less than 1 hour
-"Shargin, Yuriy Georgievich",RU,Russia,Male,1960,2004,2004,0,1,854923,9.895,1 week to 50 days
-Noguchi Soichi,J,Other,Male,1965,2005,2020,15,3,29756061,344.399,50 days to 1 year
-"Camarda, Charles Joseph",US,USA,Male,1952,2005,2005,0,1,1200743,13.897,1 week to 50 days
-"Olsen, Gregory Hammond",US,USA,Male,1945,2005,2005,0,1,854095,9.885,1 week to 50 days
-Fei Junlong,CN,China,Male,1965,2005,2022,17,2,16513053,191.123,50 days to 1 year
-Nie Haisheng,CN,China,Male,1964,2005,2021,16,3,9641605,111.593,50 days to 1 year
-"Pontes, Marcos Cesar",BR,Other,Male,1963,2006,2006,0,1,854224,9.887,1 week to 50 days
-"Fossum, Michael Edward",US,USA,Male,1957,2006,2011,5,3,16743739,193.793,50 days to 1 year
-"Nowak (Caputo), Lisa Marie",US,USA,Female,1963,2006,2006,0,1,1103808,12.776,1 week to 50 days
-"Wilson, Stephanie Diana",US,USA,Female,1966,2006,2010,4,3,3714417,42.991,1 week to 50 days
-"Ferguson, Christopher John",US,USA,Male,1961,2006,2011,5,3,3492229,40.419,1 week to 50 days
-"Stefanyshyn-Piper, Heidemarie Martha",US,USA,Female,1963,2006,2008,2,2,2388958,27.65,1 week to 50 days
-"Ansari (Raishiyan), Anousheh",US,USA,Female,1966,2006,2006,0,1,939895,10.878,1 week to 50 days
-"Oefelein, William Anthony",US,USA,Male,1965,2006,2006,0,1,1111464,12.864,1 week to 50 days
-"Patrick, Nicholas James MacDonald",US,USA,Male,1964,2006,2010,4,2,2299845,26.619,1 week to 50 days
-"Fuglesang, Arne *Christer",S,Other,Male,1957,2006,2009,3,2,2309887,26.735,1 week to 50 days
-"Higginbotham, Joan Elizabeth Miller",US,USA,Female,1964,2006,2006,0,1,1111464,12.864,1 week to 50 days
-"Williams, Sunita Lyn (Pandya Krishna)",US,USA,Female,1965,2006,2024,18,3,52532412,608.014,more than 1 year
-"Kotov, Oleg Val'erevich",RU,Russia,Male,1965,2007,2013,6,3,45464525,526.21,more than 1 year
-Simonyi Karoly (Charles),US,USA,Male,1948,2007,2009,2,2,2298342,26.601,1 week to 50 days
-"Archambault, Lee Joseph",US,USA,Male,1960,2007,2009,2,2,2302876,26.654,1 week to 50 days
-"Swanson, Steven Ray",US,USA,Male,1960,2007,2014,7,3,16922820,195.866,50 days to 1 year
-"Olivas, John Daniel",US,USA,Male,1966,2007,2009,2,2,2394317,27.712,1 week to 50 days
-"Anderson, Clayton Conrad",US,USA,Male,1959,2007,2010,3,2,14418624,166.882,50 days to 1 year
-"Caldwell Dyson, Tracy Ellen",US,USA,Female,1969,2007,2024,17,3,32207845,372.776,more than 1 year
-"Morgan, Barbara Radding",US,USA,Female,1951,2007,2007,0,1,1101335,12.747,1 week to 50 days
-"Drew, B. *Alvin, Jr",US,USA,Male,1962,2007,2011,4,2,2206766,25.541,1 week to 50 days
-"Shukor al Masrie, Muszaphar",MY,Other,Male,1972,2007,2007,0,1,940390,10.884,1 week to 50 days
-"Zamka, George David",US,USA,Male,1962,2007,2010,3,2,2492960,28.854,1 week to 50 days
-"Wheelock, Douglas Harry",US,USA,Male,1960,2007,2010,3,2,15413673,178.399,50 days to 1 year
-"Nespoli, Paolo Angelo",I,Other,Male,1957,2007,2017,10,3,27052612,313.109,50 days to 1 year
-"Poindexter, Alan Goodwin",US,USA,Male,1961,2008,2010,2,2,2408929,27.881,1 week to 50 days
-"Melvin, Leland Devon 'Lee'",US,USA,Male,1964,2008,2009,1,2,2036270,23.568,1 week to 50 days
-"Love, Stanley Glen",US,USA,Male,1965,2008,2008,0,1,1102899,12.765,1 week to 50 days
-"Johnson, Gregory Harold",US,USA,Male,1962,2008,2011,3,2,2720956,31.493,1 week to 50 days
-"Behnken, Robert Louis",US,USA,Male,1970,2008,2020,12,3,8077338,93.488,50 days to 1 year
-"Foreman, Michael James",US,USA,Male,1957,2008,2009,1,2,2294825,26.56,1 week to 50 days
-"Reisman, Garrett Erin",US,USA,Male,1968,2008,2010,2,2,9256503,107.135,50 days to 1 year
-"Volkov, Sergey Aleksandrovich",RU,Russia,Male,1973,2008,2015,7,3,47341244,547.931,more than 1 year
-"Kononenko, Oleg Dmitrievich",RU,Russia,Male,1964,2008,2023,15,5,95958011,1110.625,more than 1 year
-Yi So-yeon,KR,Other,Female,1978,2008,2008,0,1,940385,10.884,1 week to 50 days
-"Ham, Kenneth Todd",US,USA,Male,1964,2008,2010,2,2,2205665,25.529,1 week to 50 days
-"Nyberg, Karen Lujean",US,USA,Female,1969,2008,2013,5,2,15553842,180.021,50 days to 1 year
-"Garan, Ronald John, Jr.",US,USA,Male,1961,2008,2011,3,2,15378870,177.996,50 days to 1 year
-Hoshide Akihiko,J,Other,Male,1968,2008,2021,13,3,29416206,340.465,50 days to 1 year
-"Chamitoff, Gregory Errol",US,USA,Male,1962,2008,2011,3,2,17172077,198.751,50 days to 1 year
-Zhai Zhigang,CN,China,Male,1966,2008,2021,13,2,16005628,185.25,50 days to 1 year
-Liu Boming,CN,China,Male,1966,2008,2021,13,2,8210353,95.027,50 days to 1 year
-Jing Haipeng,CN,China,Male,1966,2008,2023,15,4,17427658,201.709,50 days to 1 year
-"Garriott, Richard Allen",US,USA,Male,1961,2008,2008,0,1,1024517,11.858,1 week to 50 days
-"Boe, Eric A.",US,USA,Male,1964,2008,2011,3,2,2475199,28.648,1 week to 50 days
-"Bowen, Stephen G.",US,USA,Male,1964,2008,2023,15,4,19557867,226.364,50 days to 1 year
-"Kimbrough, Robert Shane",US,USA,Male,1967,2008,2021,13,3,33586099,388.728,more than 1 year
-"Antonelli, Dominic Anthony 'Tony'",US,USA,Male,1967,2009,2010,1,2,2123861,24.582,1 week to 50 days
-"Acaba, Joseph M.",US,USA,Male,1967,2009,2017,8,3,26440530,306.025,50 days to 1 year
-"Arnold, Richard R., II",US,USA,Male,1963,2009,2018,9,2,18106197,209.562,50 days to 1 year
-"Barratt, Michael Reed",US,USA,Male,1959,2009,2024,15,3,38589700,446.64,more than 1 year
-"Johnson, Gregory Carl",US,USA,Male,1954,2009,2009,0,1,1114629,12.901,1 week to 50 days
-"Good, Michael T.",US,USA,Male,1962,2009,2010,1,2,2131508,24.67,1 week to 50 days
-"McArthur, Katherine *Megan",US,USA,Female,1971,2009,2021,12,2,18372052,212.639,50 days to 1 year
-"Feustel, Andrew Jay 'Drew'",US,USA,Male,1965,2009,2018,9,3,19473346,225.386,50 days to 1 year
-"Romanenko, Roman Yurievich",RU,Russia,Male,1971,2009,2012,3,2,28810733,333.458,50 days to 1 year
-"Hurley, Douglas G.",US,USA,Male,1966,2009,2020,11,3,7987074,92.443,50 days to 1 year
-"Cassidy, Christopher J.",US,USA,Male,1970,2009,2020,11,3,32636954,377.743,more than 1 year
-"Marshburn, Thomas H.",US,USA,Male,1960,2009,2021,12,3,29151761,337.405,50 days to 1 year
-"Kopra, Timothy Lennart",US,USA,Male,1963,2009,2015,6,2,21085326,244.043,50 days to 1 year
-"Ford, Kevin Anthony",US,USA,Male,1960,2009,2012,3,2,13612125,157.548,50 days to 1 year
-"Hernandez, Jose Moreno",US,USA,Male,1962,2009,2009,0,1,1198423,13.871,1 week to 50 days
-"Stott, Nicole Passonno",US,USA,Female,1962,2009,2011,2,2,8920115,103.242,50 days to 1 year
-"Suraev, Maksim Viktorovich",RU,Russia,Male,1972,2009,2014,5,2,28815028,333.507,50 days to 1 year
-"Laliberte, Guy",CA,Other,Male,1959,2009,2009,0,1,940618,10.887,1 week to 50 days
-"Wilmore, Barry E. 'Butch'",US,USA,Male,1962,2009,2024,15,3,40118623,464.336,more than 1 year
-"Satcher, Robert L., Jr.",US,USA,Male,1965,2009,2009,0,1,933371,10.803,1 week to 50 days
-"Bresnik, Randolph J.",US,USA,Male,1967,2009,2017,8,2,12917568,149.509,50 days to 1 year
-"Creamer, Timothy John",US,USA,Male,1959,2009,2009,0,1,14103152,163.231,50 days to 1 year
-"Virts, Terry W., Jr.",US,USA,Male,1967,2010,2014,4,2,18442145,213.451,50 days to 1 year
-"Skvortsov, Aleksandr Aleksandrovich ml.",RU,Russia,Male,1966,2010,2019,9,3,47171303,545.964,more than 1 year
-"Kornienko, Mikhail Borisovich",RU,Russia,Male,1960,2010,2015,5,2,44618492,516.418,more than 1 year
-"Dutton, James P., Jr.",US,USA,Male,1968,2010,2010,0,1,1306030,15.116,1 week to 50 days
-"Metcalf-Lindenburger, Dorothy M.",US,USA,Female,1975,2010,2010,0,1,1306030,15.116,1 week to 50 days
-"Yamazaki (Sumino), Naoko",J,Other,Female,1970,2010,2010,0,1,1306030,15.116,1 week to 50 days
-"Walker, Shannon Baker",US,USA,Female,1965,2010,2020,10,2,28561260,330.57,50 days to 1 year
-"Skripochka, Oleg Ivanovich",RU,Russia,Male,1969,2010,2019,9,3,46324118,536.159,more than 1 year
-"Kondrat'ev, Dmitriy Yur'evich",RU,Russia,Male,1969,2010,2010,0,1,13763836,159.304,50 days to 1 year
-"Samokutyaev, Aleksandr Mikhaiovich",RU,Russia,Male,1970,2011,2014,3,2,28639444,331.475,50 days to 1 year
-"Borisenko, Andrey Ivanovich",RU,Russia,Male,1964,2011,2016,5,2,29148992,337.373,50 days to 1 year
-Furukawa Satoshi,J,Other,Male,1964,2011,2023,12,2,31653162,366.356,more than 1 year
-"Shkaplerov, Anton Nikolaevich",RU,Russia,Male,1972,2011,2021,10,4,61286764,709.338,more than 1 year
-"Ivanishin, Anatoliy Alekseevich",RU,Russia,Male,1969,2011,2020,9,3,41143341,476.196,more than 1 year
-"Revin, Sergei Nikolaevich",RU,Russia,Male,1966,2012,2012,0,1,10799490,124.994,50 days to 1 year
-Liu Wang,CN,China,Male,1969,2012,2012,0,1,1092275,12.642,1 week to 50 days
-Liu Yang,CN,China,Female,1978,2012,2022,10,2,16850965,195.034,50 days to 1 year
-"Novitskiy, Oleg Viktorovich",BY,Other,Male,1971,2012,2024,12,4,47093999,545.069,more than 1 year
-"Tarelkin, Yevgeniy Igorevich",RU,Russia,Male,1974,2012,2012,0,1,12413702,143.677,50 days to 1 year
-"Misurkin, Aleksandr Aleksandrovich",RU,Russia,Male,1977,2013,2021,8,3,29919891,346.295,50 days to 1 year
-"Parmitano, Luca Salvo",I,Other,Male,1976,2013,2019,6,2,31705297,366.959,more than 1 year
-Zhang Xiaoguan,CN,China,Male,1966,2013,2013,0,1,1261737,14.603,1 week to 50 days
-Wang Yaping,CN,China,Female,1980,2013,2021,8,2,17020910,197.001,50 days to 1 year
-"Ryazanskiy, Sergey Nikolaevich",RU,Russia,Male,1974,2013,2017,4,2,26349695,304.973,50 days to 1 year
-"Hopkins, Michael Scott",US,USA,Male,1968,2013,2020,7,2,28817664,333.538,50 days to 1 year
-"Artem'ev, Oleg Germanovich",RU,Russia,Male,1970,2014,2022,8,3,48449261,560.755,more than 1 year
-"Wiseman, Gregory *Reid",US,USA,Male,1975,2014,2026,12,2,15068004,174.398,50 days to 1 year
-"Gerst, Alexander",D,Other,Male,1977,2014,2018,4,2,31283430,362.077,50 days to 1 year
-"Serova, Elena Olegovna (Kuznetsova)",RU,Russia,Female,1976,2014,2014,0,1,14449360,167.238,50 days to 1 year
-"Cristoforetti, Samantha",I,Other,Female,1977,2014,2022,8,2,31988692,370.239,more than 1 year
-Yui Kimiya,J,Other,Male,1970,2015,2025,10,2,26644059,308.38,50 days to 1 year
-"Lindgren, Kjell Norwood",US,USA,Male,1973,2015,2022,7,2,26975513,312.217,50 days to 1 year
-"Mogensen, Andreas Enevold",DK,Other,Male,1976,2015,2023,8,2,18052450,208.94,50 days to 1 year
-"Aimbetov, Aydin Akanovich",KZ,Other,Male,1972,2015,2015,0,1,850433,9.843,1 week to 50 days
-"Peake, Timothy Nigel, Maj. Br.Army",UK,Other,Male,1972,2015,2015,0,1,16063916,185.925,50 days to 1 year
-"Ovchinin, Aleksey Nikolaevich",RU,Russia,Male,1971,2016,2024,8,4,51425351,595.201,more than 1 year
-Onishi Takuya,J,Other,Male,1975,2016,2025,9,2,22704695,262.786,50 days to 1 year
-"Rubins, Kathleen Hallisey (Kate)",US,USA,Female,1978,2016,2020,4,2,25925511,300.064,50 days to 1 year
-Chen Dong,CN,China,Male,1978,2016,2025,9,3,36170179,418.636,more than 1 year
-"Ryzhikov, Sergey Nikolaevich",RU,Russia,Male,1974,2016,2025,9,3,52105294,603.071,more than 1 year
-"Pesquet, Thomas Gautier",F,Other,Male,1978,2016,2021,5,2,34256040,396.482,more than 1 year
-"Fischer, Jack David",US,USA,Male,1974,2017,2017,0,1,11729278,135.756,50 days to 1 year
-"Vande Hei, Mark Thomas",US,USA,Male,1966,2017,2021,4,2,45219613,523.375,more than 1 year
-"Tingle, Scott David",US,USA,Male,1965,2017,2017,0,1,14534294,168.221,50 days to 1 year
-Kanai Norishige,J,Other,Male,1976,2017,2017,0,1,14534294,168.221,50 days to 1 year
-"Prokop'ev, Sergey Valer'evich",RU,Russia,Male,1975,2018,2022,4,2,49043492,567.633,more than 1 year
-"Aunon-Chancellor, Serena Maria",US,USA,Female,1976,2018,2018,0,1,16998561,196.743,50 days to 1 year
-"Hague, Tyler Nicklaus 'Nick'",US,USA,Male,1975,2018,2024,6,3,32301879,373.864,more than 1 year
-"Saint-Jacques, David",CA,Other,Male,1970,2018,2018,0,1,17594222,203.637,50 days to 1 year
-"McClain, Anne Charlotte",US,USA,Female,1979,2018,2025,7,2,30354414,351.324,50 days to 1 year
-"Stucky, Mark P",US,USA,Male,1958,2018,2018,0,1,848,0.01,less than 1 hour
-"Mackay, David William Donald",UK,Other,Male,1957,2019,2021,2,4,3378,0.039,less than 1 hour
-"Masucci, Michael J. 'Sooch'",US,USA,Male,1963,2019,2023,4,6,5058,0.059,1 hour to 1 week
-"Moses, Nathalie *Beth (Stubbings)",US,USA,Female,,2019,2023,4,6,5186,0.06,1 hour to 1 week
-"Koch (Hammock), Christina M.",US,USA,Female,1979,2019,2026,7,2,29172627,337.646,50 days to 1 year
-"Morgan, Andrew Richard",US,USA,Male,1976,2019,2019,0,1,23460503,271.534,50 days to 1 year
-"Meir, Jessica Ulrika",US,USA,Female,1977,2019,2026,7,2,,,
-"Al Mansouri, Hazza Ali Abdan Khalfan",UAE,Other,Male,1983,2019,2019,0,1,680497,7.876,1 week to 50 days
-"Vagner, Ivan Viktorovich",RU,Russia,Male,1985,2020,2024,4,2,35955989,416.157,more than 1 year
-"Kud'-Sverchkov, Sergei Vladimirovich",RU,Russia,Male,1983,2020,2025,5,2,,,
-"Glover, Victor Jerome",US,USA,Male,1976,2020,2026,6,2,15235301,176.335,50 days to 1 year
-"Dubrov, Petr Valer'evich",RU,Russia,Male,1978,2021,2021,0,1,30685555,355.157,50 days to 1 year
-Tang Hongbo,CN,China,Male,1975,2021,2023,2,2,24144224,279.447,50 days to 1 year
-"Branson, Richard Charles Nicholas",UK,Other,Male,1950,2021,2021,0,1,859,0.01,less than 1 hour
-"Bennett, Colin",UK,Other,Male,,2021,2023,2,3,2529,0.029,less than 1 hour
-"Bandla, Sirisha",US,USA,Female,1988,2021,2021,0,1,859,0.01,less than 1 hour
-"Bezos (Jorgenson), Jeffrey Preston",US,USA,Male,1964,2021,2021,0,1,611,0.007,less than 1 hour
-"Bezos, Mark Salvador",US,USA,Male,1968,2021,2021,0,1,611,0.007,less than 1 hour
-"Funk, Mary Wallace 'Wally'",US,USA,Female,1939,2021,2021,0,1,611,0.007,less than 1 hour
-"Daemen, Oliver",NL,Other,Male,2002,2021,2021,0,1,611,0.007,less than 1 hour
-"Isaacman, Jared",US,USA,Male,1983,2021,2024,3,2,681418,7.887,1 week to 50 days
-"Proctor, Sian Hayley",US,USA,Female,1970,2021,2021,0,1,255833,2.961,1 hour to 1 week
-"Sembroski, Christopher",US,USA,Male,1979,2021,2021,0,1,255833,2.961,1 hour to 1 week
-"Arceneaux, Hayley",US,USA,Female,1991,2021,2021,0,1,255833,2.961,1 hour to 1 week
-"Shipenko, Aleksey 'Klim' Pavlovich",RU,Russia,Male,1983,2021,2021,0,1,1021242,11.82,1 week to 50 days
-"Peresil'd, Yuliya Sergeevna",RU,Russia,Female,1984,2021,2021,0,1,1021242,11.82,1 week to 50 days
-"Boshuizen, Christopher R.",AU,Other,Male,1977,2021,2021,0,1,609,0.007,less than 1 hour
-"de Vries, Glen",US,USA,Male,1972,2021,2021,0,1,609,0.007,less than 1 hour
-"Powers, Audrey K.",US,USA,Female,1976,2021,2021,0,1,609,0.007,less than 1 hour
-"Shatner, William",CA,Other,Male,1931,2021,2021,0,1,609,0.007,less than 1 hour
-Ye Guangfu,CN,China,Male,1980,2021,2024,3,2,32363900,374.582,more than 1 year
-"Chari, Raja Jon Vurputoor",US,USA,Male,1977,2021,2021,0,1,15215969,176.111,50 days to 1 year
-"Maurer, Matthias",D,Other,Male,1970,2021,2021,0,1,15215969,176.111,50 days to 1 year
-"Barron (Sax), Kayla Jane",US,USA,Female,1987,2021,2021,0,1,15215969,176.111,50 days to 1 year
-Maezawa Yusaku,J,Other,Male,1975,2021,2021,0,1,1020925,11.816,1 week to 50 days
-Hirano Yozo,J,Other,Male,1985,2021,2021,0,1,1020925,11.816,1 week to 50 days
-"Strahan, Michael T.",US,USA,Male,1971,2021,2021,0,1,606,0.007,less than 1 hour
-"Shepard-Churchley, Laura",US,USA,Female,1947,2021,2021,0,1,606,0.007,less than 1 hour
-"Taylor, Dylan",US,USA,Male,1970,2021,2021,0,1,606,0.007,less than 1 hour
-"Bess, Lane",US,USA,Male,1961,2021,2025,4,2,1207,0.014,less than 1 hour
-"Bess, Cameron",US,USA,Unknown,1998,2021,2021,0,1,606,0.007,less than 1 hour
-"Dick, Evan Lewis",US,USA,Male,1971,2021,2022,1,2,1204,0.014,less than 1 hour
-"Matveev, Denis Vladimirovich",RU,Russia,Male,1983,2022,2022,0,1,16830102,194.793,50 days to 1 year
-"Korsakov, Sergey Vladimirovich",RU,Russia,Male,1984,2022,2022,0,1,16830102,194.793,50 days to 1 year
-"Allen, Martin 'Marty' Gordon",US,USA,Male,1952,2022,2022,0,1,597,0.007,less than 1 hour
-"Hagle, Sharon (Langford)",US,USA,Female,1949,2022,2024,2,2,1202,0.014,less than 1 hour
-"Hagle, Marc Lee",US,USA,Male,1948,2022,2024,2,2,1202,0.014,less than 1 hour
-"Lai, Gary",US,USA,Male,1973,2022,2022,0,1,597,0.007,less than 1 hour
-"Kitchen, James 'Jim'",US,USA,Male,1964,2022,2022,0,1,597,0.007,less than 1 hour
-"Nield, George Cooke",US,USA,Male,1950,2022,2022,0,1,597,0.007,less than 1 hour
-"Connor, Larry",US,USA,Male,1950,2022,2022,0,1,1475329,17.076,1 week to 50 days
-"Stibbe, Eytan Meir",IL,Other,Male,1958,2022,2022,0,1,1475329,17.076,1 week to 50 days
-"Pathy, Mark L.",CA,Other,Male,1969,2022,2022,0,1,1475329,17.076,1 week to 50 days
-"Hines, Robert Thomas, Jr",US,USA,Male,1975,2022,2022,0,1,14734928,170.543,50 days to 1 year
-"Watkins, Jessica Andrea",US,USA,Female,1988,2022,2022,0,1,14734928,170.543,50 days to 1 year
-"Correa Hespanha, Victor",BR,Other,Male,,2022,2022,0,1,598,0.007,less than 1 hour
-"Harding, George *Hamish Livingston",UK,Other,Male,1964,2022,2022,0,1,598,0.007,less than 1 hour
-"Vescovo, Victor",US,USA,Male,1966,2022,2022,0,1,598,0.007,less than 1 hour
-"Echazarreta, Katya",MX,Other,Female,,2022,2022,0,1,598,0.007,less than 1 hour
-"Robinson, Jaison",US,USA,Male,1980,2022,2022,0,1,598,0.007,less than 1 hour
-Cai Xuzhe,CN,China,Male,1976,2022,2024,2,2,31514729,364.754,50 days to 1 year
-"Sabry, Sara",EG,Other,Female,1993,2022,2022,0,1,613,0.007,less than 1 hour
-"Ferreira, Mario Nuno dos Santos",PT,Other,Male,1968,2022,2022,0,1,613,0.007,less than 1 hour
-"Kelly, Clinton Wayne, III",US,USA,Male,1938,2022,2025,3,2,1225,0.014,less than 1 hour
-"Cotton, John *Coby",US,USA,Male,1987,2022,2022,0,1,613,0.007,less than 1 hour
-"Young, Steve Alan",US,USA,Male,,2022,2022,0,1,613,0.007,less than 1 hour
-"O'Brien, Vanessa Audi Rhys",US,USA,Female,1964,2022,2022,0,1,613,0.007,less than 1 hour
-Petelin Dmitriy Aleksandrovich,RU,Russia,Male,1983,2022,2022,0,1,32044931,370.89,more than 1 year
-"Rubio, Francisco Carlos 'Frank'",US,USA,Male,1975,2022,2022,0,1,32044931,370.89,more than 1 year
-"Mann, Nicole Victoria Aunapu",US,USA,Female,1977,2022,2022,0,1,13600863,157.417,50 days to 1 year
-"Cassada, Josh Aaron",US,USA,Male,1973,2022,2022,0,1,13600863,157.417,50 days to 1 year
-"Kikina, Anna Yurevna",RU,Russia,Female,1984,2022,2022,0,1,13600863,157.417,50 days to 1 year
-Deng Qingming,CN,China,Male,1966,2022,2022,0,1,16097083,186.309,50 days to 1 year
-Zhang Lu,CN,China,Male,1976,2022,2025,3,2,34228257,396.16,more than 1 year
-"Hoburg, Warren Woodrow 'Woody'",US,USA,Male,1985,2023,2023,0,1,16065789,185.947,50 days to 1 year
-"Al Neyadi, Sultan",UAE,Other,Male,1981,2023,2023,0,1,16065789,185.947,50 days to 1 year
-"Fedyaev, Andrey Valer'evich",RU,Russia,Male,1981,2023,2026,3,2,,,
-"Shoffner, John P.",US,USA,Male,1955,2023,2023,0,1,797235,9.227,1 week to 50 days
-"Al-Qarni, Ali",SA,Other,Male,1992,2023,2023,0,1,797235,9.227,1 week to 50 days
-"Barnawi, Rayyanah",SA,Other,Female,,2023,2023,0,1,797235,9.227,1 week to 50 days
-"Mays, Luke",US,USA,Male,,2023,2023,0,1,840,0.01,less than 1 hour
-"Huie, Christopher",US,USA,Male,,2023,2023,0,1,840,0.01,less than 1 hour
-"Gilbert, Jamila",US,USA,Female,1989,2023,2023,0,1,840,0.01,less than 1 hour
-Zhu Yangzhu,CN,China,Male,1986,2023,2026,3,2,,,
-Gui Haichao,CN,China,Male,1986,2023,2023,0,1,13300819,153.945,50 days to 1 year
-"Pecile, Nicola",US,USA,Male,1973,2023,2024,1,4,3286,0.038,less than 1 hour
-"Villadei, Walter",I,Other,Male,1974,2023,2024,1,2,1871679,21.663,1 week to 50 days
-"Landolfi, Angelo",I,Other,Male,1974,2023,2023,0,1,830,0.01,less than 1 hour
-"Carlucci, Pantaleone",I,Other,Male,,2023,2023,0,1,830,0.01,less than 1 hour
-"Latimer, Kelly",US,USA,Female,,2023,2023,0,3,2638,0.031,less than 1 hour
-"Goodwin, Jon Stuart",UK,Other,Male,1943,2023,2023,0,1,938,0.011,less than 1 hour
-"Schahaff, Keisha (Ali)",AG,Other,Female,1977,2023,2023,0,1,938,0.011,less than 1 hour
-"Mayers, Anastatia",AG,Other,Female,,2023,2023,0,1,938,0.011,less than 1 hour
-"Moghbeli, Jasmin",US,USA,Female,1983,2023,2023,0,1,17202017,199.097,50 days to 1 year
-"Borisov, Konstantin Sergeevich",RU,Russia,Male,1984,2023,2023,0,1,17202017,199.097,50 days to 1 year
-"Baxter, Kenneth",US,USA,Male,1949,2023,2023,0,1,780,0.009,less than 1 hour
-"Nash, Timothy",UK,Other,Male,1959,2023,2023,0,1,780,0.009,less than 1 hour
-"Reynard, Adrian John",UK,Other,Male,1951,2023,2023,0,1,780,0.009,less than 1 hour
-"Chub, Nikolai Aleksandrovich",RU,Russia,Male,1984,2023,2023,0,1,32300087,373.844,more than 1 year
-"O'Hara, Loral Ashley",US,USA,Female,1983,2023,2023,0,1,17595192,203.648,50 days to 1 year
-"Rosano, Ronald",US,USA,Male,1960,2023,2023,0,1,860,0.01,less than 1 hour
-"Beattie, Trevor",UK,Other,Male,1959,2023,2023,0,1,860,0.01,less than 1 hour
-"Salim, Namira",PK,Other,Female,1975,2023,2023,0,1,860,0.01,less than 1 hour
-Tang Shengjie,CN,China,Male,1989,2023,2023,0,1,16180326,187.272,50 days to 1 year
-Jiang Xinlin,CN,China,Male,1988,2023,2023,0,1,16180326,187.272,50 days to 1 year
-"Stern, Sol *Alan",US,USA,Male,1957,2023,2023,0,1,840,0.01,less than 1 hour
-"Gerardi, Kellie",US,USA,Female,1989,2023,2023,0,1,840,0.01,less than 1 hour
-"Maisonrouge, Ketty Pucci-Sisti",US,USA,Female,1956,2023,2023,0,1,840,0.01,less than 1 hour
-"Gezeravci, Alper",TR,Other,Male,1979,2024,2024,0,1,1870849,21.653,1 week to 50 days
-"Wandt, Hans *Marcus",S,Other,Male,1980,2024,2024,0,1,1870849,21.653,1 week to 50 days
-"Borozdina, Lina Yur'evna",US,USA,Female,1969,2024,2024,0,1,835,0.01,less than 1 hour
-"Vaughn, Robert C. 'Robie'",US,USA,Male,,2024,2024,0,1,835,0.01,less than 1 hour
-"Haider, Franz",AT,Other,Male,1961,2024,2024,0,1,835,0.01,less than 1 hour
-"Kornswiet, Neil Bruce",US,USA,Male,1957,2024,2024,0,1,835,0.01,less than 1 hour
-"Dominick, Matthew Stuart",US,USA,Male,1981,2024,2024,0,1,20316924,235.15,50 days to 1 year
-"Epps, Jeanette Jo",US,USA,Female,1971,2024,2024,0,1,20316924,235.15,50 days to 1 year
-"Grebyonkin, Aleksandr Sergeevich",RU,Russia,Male,1982,2024,2024,0,1,20316924,235.15,50 days to 1 year
-"Vasilevskaya, Marina Vital'evna",BY,Other,Female,1990,2024,2024,0,1,1190497,13.779,1 week to 50 days
-Li Guangsu,CN,China,Male,1987,2024,2024,0,1,16604727,192.184,50 days to 1 year
-Li Cong,CN,China,Male,1989,2024,2024,0,1,16604727,192.184,50 days to 1 year
-"Hess, Kenneth Lafferty",US,USA,Male,1953,2024,2024,0,1,584,0.007,less than 1 hour
-"Schaller, Carol Ann",US,USA,Female,1950,2024,2024,0,1,584,0.007,less than 1 hour
-"Chiron, Sylvain Philibert Eugene",F,Other,Male,1970,2024,2024,0,1,584,0.007,less than 1 hour
-"Dwight, Edward Joseph, Jr.",US,USA,Male,1933,2024,2024,0,1,584,0.007,less than 1 hour
-"Thotakura, Gopichand 'Gopi'",IN,Other,Male,1993,2024,2024,0,1,584,0.007,less than 1 hour
-"Angel, Mason",US,USA,Male,,2024,2024,0,1,584,0.007,less than 1 hour
-"Janjua, Jameel Jawaid",CA,Other,Male,1978,2024,2024,0,1,841,0.01,less than 1 hour
-"Atasever, Tuva Cihangir",TR,Other,Male,1992,2024,2024,0,1,841,0.01,less than 1 hour
-"Sadhwani, Anand 'Andy' Harish",US,USA,Male,,2024,2024,0,1,841,0.01,less than 1 hour
-"Pergament, Irving Izchak",US,USA,Male,1947,2024,2024,0,1,841,0.01,less than 1 hour
-"Manenti, Giorgio",I,Other,Male,1975,2024,2024,0,1,841,0.01,less than 1 hour
-"Rabin, Ephraim",US?,USA,Male,1970,2024,2024,0,1,601,0.007,less than 1 hour
-"Elrick, Nicolina",UK,Other,Female,,2024,2024,0,1,601,0.007,less than 1 hour
-"Grin, Eugene",US,USA,Male,1958,2024,2024,0,1,601,0.007,less than 1 hour
-"Ferl, Robert Joseph",US,USA,Male,1954,2024,2024,0,1,601,0.007,less than 1 hour
-"Kitchen, Karsen",US,USA,Female,2003,2024,2024,0,1,601,0.007,less than 1 hour
-"Jahangir, Eiman",US,USA,Male,1980,2024,2024,0,1,601,0.007,less than 1 hour
-"Poteet, Scott",US,USA,Male,1973,2024,2024,0,1,425585,4.926,1 hour to 1 week
-"Menon (Wilhelm), Anna",US,USA,Female,1985,2024,2024,0,1,425585,4.926,1 hour to 1 week
-"Gillis (Levine), Sarah",US,USA,Female,,2024,2024,0,1,425585,4.926,1 hour to 1 week
-"Gorbunov, Aleksandr Vladimirovich",RU,Russia,Male,1990,2024,2024,0,1,14791187,171.194,50 days to 1 year
-Song Lingdong,CN,China,Male,1990,2024,2024,0,1,15756039,182.362,50 days to 1 year
-Wang Haoze,CN,China,Female,1990,2024,2024,0,1,15756039,182.362,50 days to 1 year
-"Litteral, Austin Gerald",US,USA,Male,1986,2024,2024,0,1,605,0.007,less than 1 hour
-"Wolfond, Henry 'Hank'",CA,Other,Male,1958,2024,2024,0,1,605,0.007,less than 1 hour
-"Russell, James D. 'J.D.'",US,USA,Male,,2024,2025,1,2,1210,0.014,less than 1 hour
-"Calandrelli, Emily Dawn",US,USA,Female,1987,2024,2024,0,1,605,0.007,less than 1 hour
-"Calleja, Jesus",E,Other,Male,1965,2025,2025,0,1,601,0.007,less than 1 hour
-"Shah, Tushar",US,USA,Male,,2025,2025,0,1,601,0.007,less than 1 hour
-"Scott, Richard T.",US,USA,Male,,2025,2025,0,1,601,0.007,less than 1 hour
-"Hyde, Elaine Chia",AU,Other,Female,,2025,2025,0,1,601,0.007,less than 1 hour
-"Wilson, Russell Ty",AU,Other,Male,,2025,2025,0,1,601,0.007,less than 1 hour
-"Ayers (Stilwell), Nicole",US,USA,Female,1988,2025,2025,0,1,12760192,147.687,50 days to 1 year
-"Peskov, Kirill Aleksandrovich",RU,Russia,Male,1990,2025,2025,0,1,12760192,147.687,50 days to 1 year
-Wang Chun,MT,Other,Male,1982,2025,2025,0,1,311608,3.607,1 hour to 1 week
-"Mikkelsen, Jannicke",N,Other,Female,1986,2025,2025,0,1,311608,3.607,1 hour to 1 week
-"Rogge, Rabea Patricia",D,Other,Female,,2025,2025,0,1,311608,3.607,1 hour to 1 week
-"Philips, Eric Louis",AU,Other,Male,1962,2025,2025,0,1,311608,3.607,1 hour to 1 week
-"Zubritskiy, Aleksey Vital'evich",RU,Russia,Male,1992,2025,2025,0,1,21165378,244.97,50 days to 1 year
-"Kim, Jonathan Yong 'Jonny'",US,USA,Male,1984,2025,2025,0,1,21165378,244.97,50 days to 1 year
-"Sanchez, Lauren Wendy",US,USA,Female,1969,2025,2025,0,1,614,0.007,less than 1 hour
-"Hudson, Katheryn Elizabeth 'Katy Perry'",US,USA,Female,1984,2025,2025,0,1,614,0.007,less than 1 hour
-"Nguyen, Amanda Ngoc",US,USA,Female,1991,2025,2025,0,1,614,0.007,less than 1 hour
-"Bowe, Aisha",US,USA,Female,1987,2025,2025,0,1,614,0.007,less than 1 hour
-"King, Gayle",US,USA,Female,1954,2025,2025,0,1,614,0.007,less than 1 hour
-"Flynn, Kerianne",US,USA,Female,1967,2025,2025,0,1,614,0.007,less than 1 hour
-Chen Zhongrui,CN,China,Male,1984,2025,2025,0,1,17623380,203.974,50 days to 1 year
-Wang Jie,CN,China,Male,1989,2025,2025,0,1,17623380,203.974,50 days to 1 year
-"Green, Gretchen Elizabeth",US,USA,Male,,2025,2025,0,1,600,0.007,less than 1 hour
-"Jeris, Paul M.",US,USA,Male,1959,2025,2025,0,1,600,0.007,less than 1 hour
-"Williams, Jesse",CA,Other,Male,1987,2025,2025,0,1,600,0.007,less than 1 hour
-"Aleman Healy, Jaime Eduardo",PAR,Other,Male,1953,2025,2025,0,1,600,0.007,less than 1 hour
-"Medina Jorge, Aymette",US,USA,Male,,2025,2025,0,1,600,0.007,less than 1 hour
-"Rocket (Stephens), Mark",NZ,Other,Male,,2025,2025,0,1,600,0.007,less than 1 hour
-"Shukla, Shubanshu",IN,Other,Male,1985,2025,2025,0,1,1738783,20.125,1 week to 50 days
-"Uznanski-Wisniewski, Slawosz",PL,Other,Male,1984,2025,2025,0,1,1738783,20.125,1 week to 50 days
-Kapu Tibor,HU,Other,Male,1991,2025,2025,0,1,1738783,20.125,1 week to 50 days
-"Sitkin, James Mitchel",US,USA,Male,,2025,2025,0,1,607,0.007,less than 1 hour
-"Larson, Leland",US,USA,Male,1941,2025,2025,0,1,607,0.007,less than 1 hour
-"Salis, Owolabi Mekunnu",NG,Other,Male,1963,2025,2025,0,1,607,0.007,less than 1 hour
-"Rescigno, Frederick Xavier, Jr.",US,USA,Male,,2025,2025,0,1,607,0.007,less than 1 hour
-"Kuehner, Alexandra 'Allie'",US,USA,Female,,2025,2025,0,1,607,0.007,less than 1 hour
-"Kuehner, Carl R., III",US,USA,Male,1963,2025,2025,0,1,607,0.007,less than 1 hour
-"Cardman, Zena Maria",US,USA,Female,1988,2025,2025,0,1,14403474,166.707,50 days to 1 year
-"Platonov, Oleg Vladimirovich",RU,Russia,Male,1986,2025,2025,0,1,14403474,166.707,50 days to 1 year
-"Pitchford, Lionel",UK,Other,Male,,2025,2025,0,1,605,0.007,less than 1 hour
-"Erdem, Gokhan",TR,Other,Male,,2025,2025,0,1,605,0.007,less than 1 hour
-Sun Yuchen (Justin),KN,Other,Male,1990,2025,2025,0,1,605,0.007,less than 1 hour
-"Bahal, Arvinder Singh",US,USA,Male,1945,2025,2025,0,1,605,0.007,less than 1 hour
-"Martorell, Deborah",US,USA,Male,1972,2025,2025,0,1,605,0.007,less than 1 hour
-"Newman, Aaron Charles",US,USA,Male,1971,2025,2025,0,1,612,0.007,less than 1 hour
-"Lewis, William H.",US,USA,Male,1969,2025,2025,0,1,612,0.007,less than 1 hour
-"Ostrovsky, Vitalii",UA,Other,Male,,2025,2025,0,1,612,0.007,less than 1 hour
-"Karagussova, Danna Sergeevna",KZ,Other,Female,1984,2025,2025,0,1,612,0.007,less than 1 hour
-"Elgin, Jeffrey Cornell",US,USA,Male,1952,2025,2025,0,1,612,0.007,less than 1 hour
-Wu Fei,CN,China,Male,1993,2025,2025,0,1,18131174,209.852,50 days to 1 year
-Zhang Hongzhang,CN,China,Male,1986,2025,2025,0,1,18131174,209.852,50 days to 1 year
-"Mikaev, Sergey Nikolaevich",RU,Russia,Male,1986,2025,2025,0,1,,,
-"Williams, Christopher Leigh",US,USA,Male,1983,2025,2025,0,1,,,
-"Milch, Neal Bruce",US,USA,Male,1958,2025,2025,0,1,619,0.007,less than 1 hour
-"Benthaus, Michael 'Michi'",D,Other,Female,,2025,2025,0,1,619,0.007,less than 1 hour
-"Koenigsmann, Hans-Jorg",D,Other,Male,1963,2025,2025,0,1,619,0.007,less than 1 hour
-"Pourolis, Adonis",CY,Other,Male,1970,2025,2025,0,1,619,0.007,less than 1 hour
-"Stansell, Jason Curtis",US,USA,Male,1970,2025,2025,0,1,619,0.007,less than 1 hour
-"Hyde, Joseph Bernard",US,USA,Male,1982,2025,2025,0,1,619,0.007,less than 1 hour
-"Hendren, James Paul",US,USA,Male,1963,2026,2026,0,1,602,0.007,less than 1 hour
-"Drexler, Timothy",US,USA,Male,1960,2026,2026,0,1,602,0.007,less than 1 hour
-"Edwards, Linda Jean",US,USA,Female,,2026,2026,0,1,602,0.007,less than 1 hour
-"Gutierrez Pascual, Alberto",E,Other,Male,,2026,2026,0,1,602,0.007,less than 1 hour
-"Fernandez, Alain",CH,Other,Male,,2026,2026,0,1,602,0.007,less than 1 hour
-"Stiles, Laura A.",US,USA,Male,1986,2026,2026,0,1,602,0.007,less than 1 hour
-"Hathaway, Jack Stewart",US,USA,Male,1982,2026,2026,0,1,,,
-"Adenot, Sophie",F,Other,Female,1982,2026,2026,0,1,,,
-"Hansen, Jeremy Roger",CA,Other,Male,1976,2026,2026,0,1,783135,9.064,1 week to 50 days
-Zhang Zhiyuan,CN,China,Male,1986,2026,2026,0,1,,,
-Lai Ka-ying,CN,China,Female,1982,2026,2026,0,1,,,
+Name,Citizen,CitizenGroup,Gender,FlightClass,BornYear,FirstMissionYear,LastMissionYear,CareerSpanYears,NumMissions,DurationSeconds,DurationDays,DurationBin
+"Gagarin, Yuriy Alekseevich",RU,Russia,Male,Orbital,1934,1961,1961,0,1,6000,0.069,1 hour to 1 week
+"Shepard, Alan Bartlett, Jr",US,USA,Male,Orbital,1923,1961,1971,10,2,778639,9.012,1 week to 50 days
+"Grissom, Virgil Ivan 'Gus'",US,USA,Male,Orbital,1926,1961,1965,4,2,18488,0.214,1 hour to 1 week
+"Titov, German Stepanovich",RU,Russia,Male,Orbital,1935,1961,1961,0,1,90900,1.052,1 hour to 1 week
+"Glenn, John Herschel, Jr",US,USA,Male,Orbital,1921,1962,1998,36,2,787159,9.111,1 week to 50 days
+"Carpenter, Malcolm *Scott",US,USA,Male,Orbital,1925,1962,1962,0,1,17765,0.206,1 hour to 1 week
+"White, Robert Michael",US,USA,Male,Suborbital,1924,1962,1962,0,4,621,0.007,less than 1 hour
+"Nikolaev, Andriyan Grigorevich",RU,Russia,Male,Orbital,1929,1962,1970,8,2,1869175,21.634,1 week to 50 days
+"Popovich, Pavel Romanovich",RU,Russia,Male,Orbital,1930,1962,1974,12,2,1613951,18.68,1 week to 50 days
+"Schirra, Walter Marty, Jr",US,USA,Male,Orbital,1923,1962,1968,6,4,1062816,12.301,1 week to 50 days
+"Walker, Joseph Albert",US,USA,Male,Suborbital,1921,1963,1963,0,6,1937,0.022,less than 1 hour
+"Cooper, Leroy *Gordon, Jr",US,USA,Male,Orbital,1927,1963,1965,2,2,810903,9.385,1 week to 50 days
+"Bykovskiy, Valeriy Fyodorovich",RU,Russia,Male,Orbital,1934,1963,1978,15,3,1791683,20.737,1 week to 50 days
+"Tereshkova, Valentina Vladimirovna",RU,Russia,Female,Orbital,1937,1963,1963,0,1,254708,2.948,1 hour to 1 week
+"Rushworth, Robert Aitken",US,USA,Male,Suborbital,1924,1963,1963,0,1,628,0.007,less than 1 hour
+"Komarov, Vladimir Mikhailovich",RU,Russia,Male,Orbital,1927,1964,1967,3,2,183895,2.128,1 hour to 1 week
+"Feoktistov, Konstantin Petrovich",RU,Russia,Male,Orbital,1926,1964,1964,0,1,87423,1.012,1 hour to 1 week
+"Yegorov, Boris Borisovich",RU,Russia,Male,Orbital,1937,1964,1964,0,1,87423,1.012,1 hour to 1 week
+"Belyaev, Pavel Ivanovich",RU,Russia,Male,Orbital,1925,1965,1965,0,1,93737,1.085,1 hour to 1 week
+"Leonov, Aleksei Arkhipovich",RU,Russia,Male,Orbital,1934,1965,1975,10,2,606788,7.023,1 week to 50 days
+"Young, John Watts",US,USA,Male,Orbital,1930,1965,1983,18,6,3008508,34.821,1 week to 50 days
+"McDivitt, James Alton",US,USA,Male,Orbital,1929,1965,1969,4,2,1220225,14.123,1 week to 50 days
+"White, Edward Higgins, II",US,USA,Male,Orbital,1930,1965,1965,0,1,352571,4.081,1 hour to 1 week
+"Engle, Joe Henry",US,USA,Male,Orbital,1932,1965,1985,20,5,811127,9.388,1 week to 50 days
+"Conrad, Charles 'Pete' Jr",US,USA,Male,Orbital,1930,1965,1973,8,4,4246722,49.152,1 week to 50 days
+"McKay, John Barron",US,USA,Male,Suborbital,1922,1965,1965,0,1,716,0.008,less than 1 hour
+"Borman, Frederick 'Frank', II",US,USA,Male,Orbital,1928,1965,1968,3,2,1719342,19.9,1 week to 50 days
+"Lovell, James Arthur, Jr",US,USA,Male,Orbital,1928,1965,1970,5,4,2574291,29.795,1 week to 50 days
+"Stafford, Thomas Patten",US,USA,Male,Orbital,1930,1965,1975,10,5,1827838,21.156,1 week to 50 days
+"Armstrong, Neil Alden",US,USA,Male,Orbital,1930,1966,1969,3,2,741601,8.583,1 week to 50 days
+"Scott, David Randolph",US,USA,Male,Orbital,1932,1966,1971,5,3,1968853,22.788,1 week to 50 days
+"Cernan, Eugene Andrew 'Gene'",US,USA,Male,Orbital,1934,1966,1972,6,3,2038572,23.595,1 week to 50 days
+"Collins, Michael",US,USA,Male,Orbital,1930,1966,1969,3,2,957913,11.087,1 week to 50 days
+"Gordon, Richard Francis, Jr",US,USA,Male,Orbital,1929,1966,1969,3,2,1137220,13.162,1 week to 50 days
+"Dana, William Harvey",US,USA,Male,Suborbital,1930,1966,1968,2,2,1206,0.014,less than 1 hour
+"Aldrin, Edwin 'Buzz' Eugene, Jr",US,USA,Male,Orbital,1930,1966,1969,3,2,1043586,12.079,1 week to 50 days
+"Knight, William Joseph 'Pete'",US,USA,Male,Suborbital,1929,1967,1967,0,1,606,0.007,less than 1 hour
+"Adams, Michael James",US,USA,Male,Suborbital,1930,1967,1967,0,1,291,0.003,less than 1 hour
+"Eisele, Donn Fulton",US,USA,Male,Orbital,1930,1968,1968,0,1,936543,10.84,1 week to 50 days
+"Cunningham, Ronald *Walter",US,USA,Male,Orbital,1932,1968,1968,0,1,936543,10.84,1 week to 50 days
+"Beregovoy, Georgiy Timofeevich",RU,Russia,Male,Orbital,1921,1968,1968,0,1,341445,3.952,1 hour to 1 week
+"Anders, William Alison",US,USA,Male,Orbital,1933,1968,1968,0,1,529242,6.125,1 hour to 1 week
+"Shatalov, Vladimir Aleksandrovich",RU,Russia,Male,Orbital,1927,1969,1971,2,3,856650,9.915,1 week to 50 days
+"Volynov, Boris Valentinovich",RU,Russia,Male,Orbital,1934,1969,1976,7,2,4519067,52.304,50 days to 1 year
+"Yeliseev, Aleksei Stanislavovich",RU,Russia,Male,Orbital,1934,1969,1971,2,3,771753,8.932,1 week to 50 days
+"Khrunov, Yevgeniy Vasil'evich",RU,Russia,Male,Orbital,1933,1969,1969,0,1,171950,1.99,1 hour to 1 week
+"Schweickart, Russell Louis 'Rusty'",US,USA,Male,Orbital,1935,1969,1969,0,1,867654,10.042,1 week to 50 days
+"Shonin, Georgiy Stepanovich",RU,Russia,Male,Orbital,1935,1969,1969,0,1,427367,4.946,1 hour to 1 week
+"Kubasov, Valeriy Nikolaevich",RU,Russia,Male,Orbital,1935,1969,1980,11,3,1619962,18.75,1 week to 50 days
+"Filipchenko, Anatoli Vasilevich",RU,Russia,Male,Orbital,1928,1969,1974,5,2,939838,10.878,1 week to 50 days
+"Volkov, Vladislav Nikolaevich 'Vadim'",RU,Russia,Male,Orbital,1935,1969,1971,2,2,2480526,28.71,1 week to 50 days
+"Gorbatko, Viktor Vasilevich",RU,Russia,Male,Orbital,1934,1969,1980,11,3,2638100,30.534,1 week to 50 days
+"Bean, Alan Lavern",US,USA,Male,Orbital,1932,1969,1973,4,2,6018337,69.657,50 days to 1 year
+"Swigert, John Leonard 'Jack', Jr",US,USA,Male,Orbital,1931,1970,1970,0,1,514478,5.955,1 hour to 1 week
+"Haise, Fred Wallace, Jr",US,USA,Male,Orbital,1933,1970,1970,0,1,514478,5.955,1 hour to 1 week
+"Sevastyanov, Vitaliy Ivanovich",RU,Russia,Male,Orbital,1935,1970,1975,5,2,6970743,80.68,50 days to 1 year
+"Roosa, Stuart Allen",US,USA,Male,Orbital,1933,1971,1971,0,1,777717,9.001,1 week to 50 days
+"Mitchell, Edgar Dean",US,USA,Male,Orbital,1930,1971,1971,0,1,777717,9.001,1 week to 50 days
+"Rukavishnikov, Nikolai Nikolaevich",RU,Russia,Male,Orbital,1932,1971,1979,8,3,853835,9.882,1 week to 50 days
+"Dobrovol'skiy, Georgiy Timofeevich",UA,Other,Male,Orbital,1928,1971,1971,0,1,2053303,23.765,1 week to 50 days
+"Patsaev, Viktor Ivanovich",RU,Russia,Male,Orbital,1933,1971,1971,0,1,2053303,23.765,1 week to 50 days
+"Worden, Alfred Merrill",US,USA,Male,Orbital,1932,1971,1971,0,1,1062713,12.3,1 week to 50 days
+"Irwin, James Benson",US,USA,Male,Orbital,1930,1971,1971,0,1,1062713,12.3,1 week to 50 days
+"Mattingly, Thomas *Kenneth 'T.K.', II",US,USA,Male,Orbital,1936,1972,1985,13,3,1830848,21.19,1 week to 50 days
+"Duke, Charles Moss, Jr",US,USA,Male,Orbital,1935,1972,1972,0,1,957065,11.077,1 week to 50 days
+"Evans, Ronald Ellwin",US,USA,Male,Orbital,1933,1972,1972,0,1,1086719,12.578,1 week to 50 days
+"Schmitt, Harrison Hagan 'Jack'",US,USA,Male,Orbital,1935,1972,1972,0,1,1086719,12.578,1 week to 50 days
+"Kerwin, Joseph Peter",US,USA,Male,Orbital,1932,1973,1973,0,1,2422188,28.035,1 week to 50 days
+"Weitz, Paul Joseph",US,USA,Male,Orbital,1932,1973,1983,10,2,2855610,33.051,1 week to 50 days
+"Garriott, Owen Kay, Jr",US,USA,Male,Orbital,1930,1973,1983,10,2,6029788,69.789,50 days to 1 year
+"Lousma, Jack Robert",US,USA,Male,Orbital,1936,1973,1982,9,2,5829229,67.468,50 days to 1 year
+"Lazarev, Vasiliy Grigor'evich",RU,Russia,Male,Orbital,1928,1973,1975,2,2,171419,1.984,1 hour to 1 week
+"Makarov, Oleg Grigor'evich",RU,Russia,Male,Orbital,1933,1973,1980,7,4,1791819,20.739,1 week to 50 days
+"Carr, Gerald Paul",US,USA,Male,Orbital,1932,1973,1973,0,1,7262132,84.052,50 days to 1 year
+"Gibson, Edward George",US,USA,Male,Orbital,1936,1973,1973,0,1,7262132,84.052,50 days to 1 year
+"Pogue, William Reid",US,USA,Male,Orbital,1930,1973,1973,0,1,7262132,84.052,50 days to 1 year
+"Klimuk, Pyotr Ilich",RU,Russia,Male,Orbital,1942,1973,1978,5,3,6805122,78.763,50 days to 1 year
+"Lebedev, Valentin Vitalevich",RU,Russia,Male,Orbital,1942,1973,1982,9,2,18943206,219.25,50 days to 1 year
+"Artyukhin, Yuri Petrovich",RU,Russia,Male,Orbital,1930,1974,1974,0,1,1359028,15.729,1 week to 50 days
+"Sarafanov, Gennadiy Vasilevich",RU,Russia,Male,Orbital,1942,1974,1974,0,1,173531,2.008,1 hour to 1 week
+"Dyomin, Lev Stepanovich",RU,Russia,Male,Orbital,1926,1974,1974,0,1,173531,2.008,1 hour to 1 week
+"Gubarev, Aleksey Aleksandrovich",RU,Russia,Male,Orbital,1932,1975,1978,3,2,3238545,37.483,1 week to 50 days
+"Grechko, Georgiy Mikhailovich",RU,Russia,Male,Orbital,1931,1975,1985,10,3,11651578,134.856,50 days to 1 year
+"Brand, Vance DeVoe",US,USA,Male,Orbital,1931,1975,1990,15,4,2685832,31.086,1 week to 50 days
+"Slayton, Donald Kent 'Deke'",US,USA,Male,Orbital,1924,1975,1975,0,1,782903,9.061,1 week to 50 days
+"Zholobov, Vitaliy Mikhailovich",UA,Other,Male,Orbital,1937,1976,1976,0,1,4256612,49.266,1 week to 50 days
+"Aksyonov, Vladimir Viktorovich",RU,Russia,Male,Orbital,1935,1976,1980,4,2,1023107,11.842,1 week to 50 days
+"Zudov, Vyacheslav Dmitrievich",RU,Russia,Male,Orbital,1942,1976,1976,0,1,173195,2.005,1 hour to 1 week
+"Rozhdestvenskiy, Valeriy Ilich",RU,Russia,Male,Orbital,1939,1976,1976,0,1,173195,2.005,1 hour to 1 week
+"Glazkov, Yuriy Nikolaevich",RU,Russia,Male,Orbital,1939,1977,1977,0,1,1531558,17.726,1 week to 50 days
+"Kovalyonok, Vladimir Vasilevich",RU,Russia,Male,Orbital,1942,1977,1981,4,3,18695380,216.382,50 days to 1 year
+"Ryumin, Valeriy Viktorovich",RU,Russia,Male,Orbital,1939,1977,1998,21,4,32117157,371.726,more than 1 year
+"Romanenko, Yuriy Viktorovich",RU,Russia,Male,Orbital,1944,1977,1987,10,3,37218089,430.765,more than 1 year
+"Dzhanibekov, Vladimir Aleksandrovich",RU,Russia,Male,Orbital,1942,1978,1985,7,5,12585515,145.666,50 days to 1 year
+"Remek, Vladimir",CSSR,Other,Male,Orbital,1948,1978,1978,0,1,684960,7.928,1 week to 50 days
+"Ivanchenkov, Aleksandr Sergeevich",RU,Russia,Male,Orbital,1940,1978,1982,4,2,12746304,147.527,50 days to 1 year
+"Hermaszewski, Miroslaw",PL,Other,Male,Orbital,1941,1978,1978,0,1,684179,7.919,1 week to 50 days
+"Jahn, Sigmund Werner Paul",DD,Other,Male,Orbital,1937,1978,1978,0,1,679744,7.867,1 week to 50 days
+"Lyakhov, Vladimir Afanas'evich",RU,Russia,Male,Orbital,1941,1979,1988,9,3,28799285,333.325,50 days to 1 year
+"Ivanov, Georgi Ivanov",BG,Other,Male,Orbital,1940,1979,1979,0,1,169266,1.959,1 hour to 1 week
+"Popov, Leonid Ivanovich",RU,Russia,Male,Orbital,1945,1980,1982,2,3,17333151,200.615,50 days to 1 year
+Farkas Bertalan,HU,Other,Male,Orbital,1949,1980,1980,0,1,679544,7.865,1 week to 50 days
+"Malyshev, Yuriy Vasilevich",RU,Russia,Male,Orbital,1941,1980,1984,4,2,1022376,11.833,1 week to 50 days
+Pham Tuan,VN,Other,Male,Orbital,1947,1980,1980,0,1,679319,7.862,1 week to 50 days
+"Tamayo Mendez, Arnaldo",CU,Other,Male,Orbital,1942,1980,1980,0,1,679403,7.863,1 week to 50 days
+"Kizim, Leonid Denisovich",RU,Russia,Male,Orbital,1941,1980,1986,6,3,32378262,374.748,more than 1 year
+"Strekalov, Gennadiy Mikhailovich",RU,Russia,Male,Orbital,1940,1980,1995,15,6,23236199,268.937,50 days to 1 year
+"Savinykh, Viktor Petrovich",RU,Russia,Male,Orbital,1940,1981,1988,7,3,21836270,252.735,50 days to 1 year
+"Gurragcha, Jugderdemidiyn",MN,Other,Male,Orbital,1947,1981,1981,0,1,679323,7.863,1 week to 50 days
+"Crippen, Robert 'Crip' Laurel",US,USA,Male,Orbital,1937,1981,1984,3,4,2036906,23.575,1 week to 50 days
+"Prunariu, Dumitru Dorin",RO,Other,Male,Orbital,1952,1981,1981,0,1,679312,7.862,1 week to 50 days
+"Truly, Richard Harrison",US,USA,Male,Orbital,1937,1981,1983,2,2,717716,8.307,1 week to 50 days
+"Fullerton, Charles *Gordon",US,USA,Male,Orbital,1936,1982,1985,3,3,1378211,15.952,1 week to 50 days
+"Berezovoy, Anatoliy Nikolaevich",RU,Russia,Male,Orbital,1942,1982,1982,0,1,18263071,211.378,50 days to 1 year
+"Chretien, Jean-Loup Jacques Marie",F,Other,Male,Orbital,1938,1982,1997,15,3,3755951,43.472,1 week to 50 days
+"Hartsfield, Henry Warren 'Hank'",US,USA,Male,Orbital,1933,1982,1985,3,4,1738235,20.118,1 week to 50 days
+"Serebrov, Aleksandr Aleksandrovich",RU,Russia,Male,Orbital,1944,1982,1993,11,4,32223229,372.954,more than 1 year
+"Savitskaya, Svetlana Evgen'evna",RU,Russia,Female,Orbital,1948,1982,1984,2,2,1703220,19.713,1 week to 50 days
+"Overmyer,  Robert Franklyn",US,USA,Male,Orbital,1936,1982,1985,3,2,1045392,12.099,1 week to 50 days
+"Allen, Joseph Percival, IV",US,USA,Male,Orbital,1937,1982,1984,2,2,1130362,13.083,1 week to 50 days
+"Lenoir, William Benjamin",US,USA,Male,Orbital,1939,1982,1982,0,1,440066,5.093,1 hour to 1 week
+"Bobko, Karol Joseph 'Bo'",US,USA,Male,Orbital,1937,1983,1985,2,3,1389823,16.086,1 week to 50 days
+"Musgrave, Franklin *Story",US,USA,Male,Orbital,1935,1983,1996,13,7,4615107,53.416,50 days to 1 year
+"Peterson, Donald Herod",US,USA,Male,Orbital,1933,1983,1983,0,1,433422,5.016,1 hour to 1 week
+"Titov, Vladimir Georgevich",RU,Russia,Male,Orbital,1947,1983,1997,14,5,33439883,387.036,more than 1 year
+"Hauck, Frederick Hamilton 'Rick'",US,USA,Male,Orbital,1941,1983,1988,5,3,1566546,18.131,1 week to 50 days
+"Fabian, John McCreary",US,USA,Male,Orbital,1939,1983,1985,2,2,1137771,13.169,1 week to 50 days
+"Ride, Sally Kristen",US,USA,Female,Orbital,1951,1983,1984,1,2,1237652,14.325,1 week to 50 days
+"Thagard, Norman Earl",US,USA,Male,Orbital,1943,1983,1995,12,5,12144418,140.56,50 days to 1 year
+"Aleksandrov, Aleksandr Pavlovich",RU,Russia,Male,Orbital,1943,1983,1987,4,2,26762579,309.752,50 days to 1 year
+"Brandenstein, Daniel Charles",US,USA,Male,Orbital,1943,1983,1992,9,4,2840749,32.879,1 week to 50 days
+"Bluford, Guion 'Guy' Stewart, Jr",US,USA,Male,Orbital,1942,1983,1992,9,4,2478942,28.691,1 week to 50 days
+"Gardner, Dale Allen",US,USA,Male,Orbital,1948,1983,1984,1,2,1212819,14.037,1 week to 50 days
+"Thornton, William Edgar",US,USA,Male,Orbital,1929,1983,1985,2,2,1127849,13.054,1 week to 50 days
+"Shaw, Brewster Hopkinson, Jr",US,USA,Male,Orbital,1945,1983,1989,6,3,1921942,22.245,1 week to 50 days
+"Parker, Robert Allan Ridley",US,USA,Male,Orbital,1936,1983,1990,7,2,1666352,19.286,1 week to 50 days
+"Merbold, Ulf Dietrich",D,Other,Male,Orbital,1941,1983,1994,11,3,4311484,49.901,1 week to 50 days
+"Lichtenberg, Byron Kurt",US,USA,Male,Orbital,1948,1983,1992,9,2,1663011,19.248,1 week to 50 days
+"Gibson, Robert Lee 'Hoot'",US,USA,Male,Orbital,1946,1984,1995,11,5,3125883,36.179,1 week to 50 days
+"McNair, Ronald Erwin",US,USA,Male,Orbital,1950,1984,1986,2,2,688841,7.973,1 week to 50 days
+"Stewart, Robert Lee",US,USA,Male,Orbital,1942,1984,1985,1,2,1040433,12.042,1 week to 50 days
+"McCandless, Bruce, II",US,USA,Male,Orbital,1937,1984,1990,6,2,1125119,13.022,1 week to 50 days
+"Solov'yov, Vladimir Alekseevich",RU,Russia,Male,Orbital,1946,1984,1986,2,2,31272600,361.951,50 days to 1 year
+"At'kov, Oleg Yur'evich",RU,Russia,Male,Orbital,1949,1984,1984,0,1,20472544,236.951,50 days to 1 year
+"Sharma, Rakesh",IN,Other,Male,Orbital,1949,1984,1984,0,1,682806,7.903,1 week to 50 days
+"Scobee, Francis *Richard 'Dick'",US,USA,Male,Orbital,1939,1984,1986,2,2,603893,6.99,1 hour to 1 week
+"Hart, Terry Jonathan",US,USA,Male,Orbital,1946,1984,1984,0,1,603607,6.986,1 hour to 1 week
+"Van Hoften, James Douglas Adrianus 'Ox'",US,USA,Male,Orbital,1944,1984,1985,1,2,1216669,14.082,1 week to 50 days
+"Nelson, George Driver 'Pinky'",US,USA,Male,Orbital,1950,1984,1988,4,3,1478649,17.114,1 week to 50 days
+"Volk, Igor Petrovich",RU,Russia,Male,Orbital,1937,1984,1984,0,1,1019676,11.802,1 week to 50 days
+"Coats, Michael Loyd",US,USA,Male,Orbital,1946,1984,1991,7,4,1670233,19.331,1 week to 50 days
+"Mullane, Richard *Michael",US,USA,Male,Orbital,1945,1984,1990,6,4,1282803,14.847,1 week to 50 days
+"Hawley, Steven Alan",US,USA,Male,Orbital,1951,1984,1999,15,6,2774564,32.113,1 week to 50 days
+"Resnik, Judith Arlene",US,USA,Female,Orbital,1949,1984,1986,2,3,522050,6.042,1 hour to 1 week
+"Walker, Charles David",US,USA,Male,Orbital,1948,1984,1985,1,4,1720576,19.914,1 week to 50 days
+"McBride, Jon Andrew",US,USA,Male,Orbital,1943,1984,1984,0,1,710613,8.225,1 week to 50 days
+"Sullivan, Kathryn Dwyer",US,USA,Female,Orbital,1951,1984,1992,8,3,1918144,22.201,1 week to 50 days
+"Leestma, David Cornell",US,USA,Male,Orbital,1949,1984,1992,8,3,1917189,22.19,1 week to 50 days
+"Garneau, Joseph Jean-Pierre *Marc",CA,Other,Male,Orbital,1949,1984,2000,16,3,2512819,29.084,1 week to 50 days
+"Scully-Power, Paul Desmond",US,USA,Male,Orbital,1944,1984,1984,0,1,710613,8.225,1 week to 50 days
+"Walker, David Mathieson",US,USA,Male,Orbital,1944,1984,1995,11,4,2608206,30.188,1 week to 50 days
+"Fisher (Tingle), Anna Lee",US,USA,Female,Orbital,1949,1984,1984,0,1,690296,7.99,1 week to 50 days
+"Shriver, Loren James",US,USA,Male,Orbital,1944,1985,1992,7,3,1389869,16.086,1 week to 50 days
+"Onizuka, Ellison Shoji",US,USA,Male,Orbital,1946,1985,1986,1,2,265089,3.068,1 hour to 1 week
+"Buchli, James Frederick",US,USA,Male,Orbital,1945,1985,1991,6,4,1765480,20.434,1 week to 50 days
+"Payton, Gary Eugene",US,USA,Male,Orbital,1948,1985,1985,0,1,264803,3.065,1 hour to 1 week
+"Williams, Donald Edward",US,USA,Male,Orbital,1942,1985,1989,4,2,1035284,11.982,1 week to 50 days
+"Seddon, Margaret *Rhea",US,USA,Female,Orbital,1947,1985,1993,8,3,2600536,30.099,1 week to 50 days
+"Griggs, Stanley *David",US,USA,Male,Orbital,1939,1985,1985,0,1,604523,6.997,1 hour to 1 week
+"Hoffman, Jeffrey Alan",US,USA,Male,Orbital,1944,1985,1996,11,5,4362868,50.496,50 days to 1 year
+"Garn, Edwin *Jacob 'Jake'",US,USA,Male,Orbital,1932,1985,1985,0,1,604523,6.997,1 hour to 1 week
+"Gregory, Frederick Drew",US,USA,Male,Orbital,1941,1985,1991,6,3,1638373,18.963,1 week to 50 days
+"Lind, Don Leslie",US,USA,Male,Orbital,1930,1985,1985,0,1,605326,7.006,1 week to 50 days
+"Wang, Taylor Gun-Jin",US,USA,Male,Orbital,1940,1985,1985,0,1,605326,7.006,1 week to 50 days
+"Van den Berg, Lodewijk",US,USA,Male,Orbital,1932,1985,1985,0,1,605326,7.006,1 week to 50 days
+"Creighton, John Oliver",US,USA,Male,Orbital,1943,1985,1991,6,3,1455892,16.851,1 week to 50 days
+"Nagel, Steven Ray",US,USA,Male,Orbital,1946,1985,1993,8,5,2597787,30.067,1 week to 50 days
+"Lucid (Wells), Matilda *Shannon",US,USA,Female,Orbital,1943,1985,1996,11,5,19277542,223.12,50 days to 1 year
+"Al-Saud,Sultan ibn Salman ibn Abdulaziz",SA,Other,Male,Orbital,1956,1985,1985,0,1,610732,7.069,1 week to 50 days
+"Baudry, Patrick Pierre Roger",F,Other,Male,Orbital,1946,1985,1985,0,1,610732,7.069,1 week to 50 days
+"Bridges, Roy Dunbard, Jr",US,USA,Male,Orbital,1943,1985,1985,0,2,686726,7.948,1 week to 50 days
+"Henize, Karl Gordon",US,USA,Male,Orbital,1926,1985,1985,0,2,686726,7.948,1 week to 50 days
+"England, Anthony Wayne",US,USA,Male,Orbital,1942,1985,1985,0,2,686726,7.948,1 week to 50 days
+"Acton, Loren Wilbur",US,USA,Male,Orbital,1936,1985,1985,0,2,686726,7.948,1 week to 50 days
+"Bartoe, John-David Francis",US,USA,Male,Orbital,1944,1985,1985,0,2,686726,7.948,1 week to 50 days
+"Covey, Richard Oswalt",US,USA,Male,Orbital,1946,1985,1993,8,4,2322654,26.883,1 week to 50 days
+"Lounge, John Michael",US,USA,Male,Orbital,1946,1985,1990,5,3,1736581,20.099,1 week to 50 days
+"Fisher, William Frederick",US,USA,Male,Orbital,1946,1985,1985,0,1,613062,7.096,1 week to 50 days
+"Vasyutin, Vladimir Vladimirovich",RU,Russia,Male,Orbital,1952,1985,1985,0,1,5608328,64.911,50 days to 1 year
+"Volkov, Aleksandr Aleksandrovich",RU,Russia,Male,Orbital,1948,1985,1991,6,3,33825116,391.494,more than 1 year
+"Grabe, Ronald John",US,USA,Male,Orbital,1945,1985,1993,8,4,2259643,26.153,1 week to 50 days
+"Hilmers, David Carl",US,USA,Male,Orbital,1950,1985,1992,7,4,1779475,20.596,1 week to 50 days
+"Pailes, William Arthur",US,USA,Male,Orbital,1952,1985,1985,0,1,351878,4.073,1 hour to 1 week
+"Dunbar, Bonnie Jeanne",US,USA,Female,Orbital,1949,1985,1998,13,5,4350285,50.351,50 days to 1 year
+"Furrer, Reinhard Alfred",D,Other,Male,Orbital,1940,1985,1985,0,1,607491,7.031,1 week to 50 days
+"Messerschmid, Ernst Willi",D,Other,Male,Orbital,1945,1985,1985,0,1,607491,7.031,1 week to 50 days
+"Ockels, Wubbo Johannes",NL,Other,Male,Orbital,1946,1985,1985,0,1,607491,7.031,1 week to 50 days
+"O'Connor, Bryan Daniel",US,USA,Male,Orbital,1946,1985,1991,6,2,1379949,15.972,1 week to 50 days
+"Ross, Jerry Lynn",US,USA,Male,Orbital,1948,1985,2002,17,8,5014468,58.038,50 days to 1 year
+"Cleave, Mary Louise",US,USA,Female,Orbital,1947,1985,1989,4,2,943276,10.918,1 week to 50 days
+"Spring, Sherwood Clark",US,USA,Male,Orbital,1944,1985,1985,0,1,594289,6.878,1 hour to 1 week
+"Neri Vela, Rodolfo",MX,Other,Male,Orbital,1952,1985,1985,0,1,594289,6.878,1 hour to 1 week
+"Bolden, Charles Frank, Jr",US,USA,Male,Orbital,1946,1986,1994,8,4,2450324,28.36,1 week to 50 days
+"Chang-Diaz, Franklin Ramon",US,USA,Male,Orbital,1950,1986,2002,16,7,5768211,66.762,50 days to 1 year
+"Cenker, Robert Jospeh",US,USA,Male,Orbital,1948,1986,1986,0,1,525831,6.086,1 hour to 1 week
+"Nelson, Clarence *William 'Bill', Jr",US,USA,Male,Orbital,1942,1986,1986,0,1,525831,6.086,1 hour to 1 week
+"Laveykin, Aleksandr Ivanovich",RU,Russia,Male,Orbital,1951,1987,1987,0,1,15045956,174.143,50 days to 1 year
+"Viktorenko, Aleksandr Stepanovich",RU,Russia,Male,Orbital,1947,1987,1994,7,4,42255317,489.066,more than 1 year
+"Faris, Muhammed Ahmed",SY,Other,Male,Orbital,1951,1987,1987,0,1,687895,7.962,1 week to 50 days
+"Manarov, Musa Khiramanovich",RU,Russia,Male,Orbital,1951,1987,1990,3,2,46744178,541.021,more than 1 year
+"Levchenko, Anatoliy Semenovich",RU,Russia,Male,Orbital,1941,1987,1987,0,1,683892,7.915,1 week to 50 days
+"Solov'yov, Anatoliy Yakovlevich",RU,Russia,Male,Orbital,1948,1988,1997,9,5,56246506,651.001,more than 1 year
+"Alexandrov, Alexander Panayotov",BG,Other,Male,Orbital,1951,1988,1988,0,1,850159,9.84,1 week to 50 days
+"Polyakov, Valeriy Vladimirovich",RU,Russia,Male,Orbital,1942,1988,1994,6,2,58638798,678.69,more than 1 year
+"Momand (Mohmand), Abdol Ahad",AF,Other,Male,Orbital,1959,1988,1988,0,1,764787,8.852,1 week to 50 days
+"Krikalyov, Sergey Konstantinovich",RU,Russia,Male,Orbital,1958,1988,2005,17,6,69413913,803.402,more than 1 year
+"Gardner, Guy Spence",US,USA,Male,Orbital,1948,1988,1990,2,2,1152645,13.341,1 week to 50 days
+"Shepherd, William McMichael",US,USA,Male,Orbital,1949,1988,2000,12,4,13765846,159.327,50 days to 1 year
+"Blaha, John Elmer",US,USA,Male,Orbital,1942,1989,1996,7,5,13920446,161.116,50 days to 1 year
+"Springer, Robert Clyde",US,USA,Male,Orbital,1942,1989,1990,1,2,855195,9.898,1 week to 50 days
+"Bagian, James Philip",US,USA,Male,Orbital,1952,1989,1991,2,2,1216388,14.079,1 week to 50 days
+"Lee, Mark Charles",US,USA,Male,Orbital,1952,1989,1997,8,4,2843638,32.912,1 week to 50 days
+"Richards, Richard Noel",US,USA,Male,Orbital,1946,1989,1994,5,4,2928616,33.896,1 week to 50 days
+"Adamson, James Craig",US,USA,Male,Orbital,1946,1989,1991,2,2,1203694,13.932,1 week to 50 days
+"Brown, Mark Neil",US,USA,Male,Orbital,1951,1989,1991,2,2,898067,10.394,1 week to 50 days
+"McCulley, Michael James",US,USA,Male,Orbital,1943,1989,1989,0,1,430761,4.986,1 hour to 1 week
+"Baker (Shulman), Ellen Louise",US,USA,Female,Orbital,1953,1989,1995,6,3,2471504,28.605,1 week to 50 days
+"Carter, Manley Lanier 'Sonny', Jr",US,USA,Male,Orbital,1947,1989,1989,0,1,432405,5.005,1 hour to 1 week
+"Thornton (Cordell), Kathryn",US,USA,Female,Orbital,1952,1989,1995,6,4,3510918,40.636,1 week to 50 days
+"Wetherbee, James Donald",US,USA,Male,Orbital,1952,1990,2002,12,6,5739775,66.433,50 days to 1 year
+"Ivins, Marsha Sue",US,USA,Female,Orbital,1951,1990,2001,11,5,4830464,55.908,50 days to 1 year
+"Low, George *David",US,USA,Male,Orbital,1956,1990,1993,3,3,2570815,29.755,1 week to 50 days
+"Balandin, Aleksandr Nikolaevich",RU,Russia,Male,Orbital,1953,1990,1990,0,1,15470277,179.054,50 days to 1 year
+"Casper, John Howard",US,USA,Male,Orbital,1943,1990,1996,6,4,2973164,34.412,1 week to 50 days
+"Thuot, Pierre Joseph",US,USA,Male,Orbital,1955,1990,1994,4,3,2357561,27.287,1 week to 50 days
+"Manakov, Gennadiy Mikhailovich",RU,Russia,Male,Orbital,1951,1990,1993,3,2,26774376,309.889,50 days to 1 year
+"Cabana, Robert Donald",US,USA,Male,Orbital,1949,1990,1998,8,4,3278565,37.946,1 week to 50 days
+"Melnick, Bruce Edward",US,USA,Male,Orbital,1949,1990,1992,2,2,1121260,12.978,1 week to 50 days
+"Akers, Thomas Dale",US,USA,Male,Orbital,1951,1990,1996,6,4,2933080,33.948,1 week to 50 days
+"Culbertson, Frank Lee, Jr",US,USA,Male,Orbital,1949,1990,2001,11,4,12408631,143.618,50 days to 1 year
+"Meade, Carl Joseph",US,USA,Male,Orbital,1950,1990,1994,4,3,2564072,29.677,1 week to 50 days
+"Gemar, Charles Donald 'Sam'",US,USA,Male,Orbital,1955,1990,1994,4,3,2093926,24.235,1 week to 50 days
+"Durrance, Samuel Thornton",US,USA,Male,Orbital,1943,1990,1995,5,2,2211235,25.593,1 week to 50 days
+"Parise, Ronald Anthony",US,USA,Male,Orbital,1951,1990,1995,5,2,2211235,25.593,1 week to 50 days
+"Afanas'ev, Viktor Mikhailovich",RU,Russia,Male,Orbital,1948,1990,2001,11,4,48018832,555.774,more than 1 year
+Akiyama Toyohiro,J,Other,Male,Orbital,1942,1990,1990,0,1,683680,7.913,1 week to 50 days
+"Cameron, Kenneth Donald",US,USA,Male,Orbital,1949,1991,1995,4,3,2023907,23.425,1 week to 50 days
+"Godwin, Linda Maxine",US,USA,Female,Orbital,1952,1991,2001,10,4,3305630,38.26,1 week to 50 days
+"Apt, Jerome 'Jay', III",US,USA,Male,Orbital,1949,1991,1996,5,4,3049861,35.299,1 week to 50 days
+"Hammond, Lloyd *Blaine, Jr",US,USA,Male,Orbital,1952,1991,1994,3,2,1663941,19.259,1 week to 50 days
+"Harbaugh, Gregory Jordan",US,USA,Male,Orbital,1956,1991,1997,6,4,2944805,34.083,1 week to 50 days
+"McMonagle, Donald Ray",US,USA,Male,Orbital,1952,1991,1994,3,3,2180080,25.232,1 week to 50 days
+"Veach, Charles *Lacy",US,USA,Male,Orbital,1944,1991,1992,1,2,1570713,18.18,1 week to 50 days
+"Hieb, Richard James",US,USA,Male,Orbital,1955,1991,1994,3,3,2759700,31.941,1 week to 50 days
+"Artsebarskiy, Anatoliy Pavlovich",UA,Other,Male,Orbital,1956,1991,1991,0,1,12496910,144.64,50 days to 1 year
+"Sharman, Helen Patricia",UK,Other,Female,Orbital,1963,1991,1991,0,1,681225,7.885,1 week to 50 days
+"Gutierrez, Sidney McNeill",US,USA,Male,Orbital,1951,1991,1994,3,2,1757029,20.336,1 week to 50 days
+"Jernigan, Tamara Elizabeth",US,USA,Female,Orbital,1959,1991,1999,8,5,5448340,63.059,50 days to 1 year
+"Gaffney, Francis Andrew 'Drew'",US,USA,Male,Orbital,1946,1991,1991,0,1,785660,9.093,1 week to 50 days
+"Hughes-Fulford, Millie Elizabeth Wiley",US,USA,Female,Orbital,1945,1991,1991,0,1,785660,9.093,1 week to 50 days
+"Baker, Michael Allen",US,USA,Male,Orbital,1953,1991,1997,6,5,3473947,40.208,1 week to 50 days
+"Reightler, Kenneth Stanley, Jr",US,USA,Male,Orbital,1951,1991,1994,3,2,1179420,13.651,1 week to 50 days
+"Aubakirov, Tokhtar Ongarb'evich",KZ,Other,Male,Orbital,1946,1991,1991,0,1,684760,7.925,1 week to 50 days
+"Viehbock, Franz Artur",AT,Other,Male,Orbital,1960,1991,1991,0,1,684760,7.925,1 week to 50 days
+"Henricks, Terence *Thomas 'Tom'",US,USA,Male,Orbital,1952,1991,1996,5,5,3695905,42.777,1 week to 50 days
+"Voss, James Shelton",US,USA,Male,Orbital,1949,1991,2001,10,5,17472564,202.229,50 days to 1 year
+"Runco, Mario, Jr",US,USA,Male,Orbital,1952,1991,1996,5,3,1984103,22.964,1 week to 50 days
+"Hennen, Thomas John",US,USA,Male,Orbital,1952,1991,1991,0,1,600642,6.952,1 hour to 1 week
+"Oswald, Stephen Scot",US,USA,Male,Orbital,1951,1992,1995,3,3,2932310,33.939,1 week to 50 days
+"Readdy, William Francis",US,USA,Male,Orbital,1952,1992,1996,4,4,2421856,28.031,1 week to 50 days
+"Bondar, Roberta Lynn",CA,Other,Female,Orbital,1945,1992,1992,0,1,695684,8.052,1 week to 50 days
+"Kaleri, Aleksandr Yurievich",RU,Russia,Male,Orbital,1956,1992,2010,18,5,66465292,769.274,more than 1 year
+"Flade, Klaus-Dietrich",D,Other,Male,Orbital,1952,1992,1992,0,1,683792,7.914,1 week to 50 days
+"Duffy, Brian",US,USA,Male,Orbital,1953,1992,2000,8,4,3519463,40.735,1 week to 50 days
+"Foale, Colin *Michael",US,USA,Male,Orbital,1957,1992,2003,11,6,32293044,373.762,more than 1 year
+"Frimout, Dirk Dries David Damiaan",B,Other,Male,Orbital,1941,1992,1992,0,1,770967,8.923,1 week to 50 days
+"Chilton, Kevin Patrick",US,USA,Male,Orbital,1954,1992,1996,4,3,2535780,29.349,1 week to 50 days
+"Bowersox, Kenneth Dwane",US,USA,Male,Orbital,1956,1992,2002,10,5,18281567,211.592,50 days to 1 year
+"DeLucas, Lawrence James",US,USA,Male,Orbital,1950,1992,1992,0,1,1193405,13.813,1 week to 50 days
+"Trinh, Eugene Huu-Chau",US,USA,Male,Orbital,1950,1992,1992,0,1,1193405,13.813,1 week to 50 days
+"Avdeev, Sergei Vasil'evich",RU,Russia,Male,Orbital,1956,1992,1998,6,3,64591945,747.592,more than 1 year
+"Tognini, Michel Ange-Charles",F,Other,Male,Orbital,1949,1992,1999,7,2,1619156,18.74,1 week to 50 days
+"Allen, Andrew Michael",US,USA,Male,Orbital,1955,1992,1996,4,3,3255124,37.675,1 week to 50 days
+"Nicollier, Claude",CH,Other,Male,Orbital,1944,1992,1999,7,4,3672284,42.503,1 week to 50 days
+"Malerba, Franco",I,Other,Male,Orbital,1946,1992,1992,0,1,688502,7.969,1 week to 50 days
+"Brown, Curtis Lee, Jr",US,USA,Male,Orbital,1956,1992,1999,7,6,4979130,57.629,50 days to 1 year
+"Davis, Nancy *Jan (Smotherman)",US,USA,Female,Orbital,1953,1992,1997,5,3,2426803,28.088,1 week to 50 days
+"Jemison, Mae Carol",US,USA,Female,Orbital,1956,1992,1992,0,1,685822,7.938,1 week to 50 days
+"Mohri, Mamoru 'Mark'",J,Other,Male,Orbital,1948,1992,2000,8,2,1656546,19.173,1 week to 50 days
+"MacLean, Steven Glenwood",CA,Other,Male,Orbital,1954,1992,2006,14,2,1872162,21.669,1 week to 50 days
+"Clifford, Michael *Richard Uram",US,USA,Male,Orbital,1952,1992,1996,4,3,2399109,27.767,1 week to 50 days
+"Helms, Susan Jane",US,USA,Female,Orbital,1958,1993,2001,8,5,18227152,210.962,50 days to 1 year
+"Poleshchuk, Aleksandr Fyodorovich",RU,Russia,Male,Orbital,1953,1993,1993,0,1,15468225,179.03,50 days to 1 year
+"Cockrell, Kenneth Dale 'Taco'",US,USA,Male,Orbital,1950,1993,2002,9,5,5574331,64.518,50 days to 1 year
+"Ochoa, Ellen Lauri",US,USA,Female,Orbital,1958,1993,2002,9,4,3526683,40.818,1 week to 50 days
+"Precourt, Charles Joseph",US,USA,Male,Orbital,1955,1993,1998,5,5,3356174,38.845,1 week to 50 days
+"Harris, Bernard Anthony, Jr",US,USA,Male,Orbital,1956,1993,1995,2,3,1577295,18.256,1 week to 50 days
+"Walter, Ulrich Hans",D,Other,Male,Orbital,1954,1993,1993,0,2,862800,9.986,1 week to 50 days
+"Schlegel, Hans-Wilhelm",D,Other,Male,Orbital,1951,1993,2008,15,3,1965699,22.751,1 week to 50 days
+"Currie, Nancy Jane (Decker Sherlock)",US,USA,Female,Orbital,1958,1993,2002,9,4,3598366,41.648,1 week to 50 days
+"Wisoff, Peter *Jeffrey Kelsay 'Jeff'",US,USA,Male,Orbital,1958,1993,2000,7,5,3830945,44.34,1 week to 50 days
+"Voss, Janice Elaine",US,USA,Female,Orbital,1956,1993,2000,7,5,4247346,49.159,1 week to 50 days
+"Tsibliev, Vasiliy Vasilevich",RU,Russia,Male,Orbital,1954,1993,1997,4,2,32975582,381.662,more than 1 year
+"Haignere, Jean-Pierre",F,Other,Male,Orbital,1948,1993,1999,6,2,18102311,209.517,50 days to 1 year
+"Newman, James Hansen",US,USA,Male,Orbital,1956,1993,2002,9,5,3751667,43.422,1 week to 50 days
+"Bursch, Daniel Wheeler",US,USA,Male,Orbital,1957,1993,2001,8,6,19606494,226.927,50 days to 1 year
+"Walz, Carl Erwin",US,USA,Male,Orbital,1955,1993,2001,8,5,19918968,230.544,50 days to 1 year
+"Searfoss, Richard Alan",US,USA,Male,Orbital,1956,1993,1998,5,3,3381505,39.138,1 week to 50 days
+"McArthur, William Surles 'Bill', Jr",US,USA,Male,Orbital,1951,1993,2005,12,4,19433909,224.93,50 days to 1 year
+"Wolf, David Alexander",US,USA,Male,Orbital,1956,1993,2009,16,4,14547373,168.372,50 days to 1 year
+"Fettman, Martin Joseph",US,USA,Male,Orbital,1956,1993,1993,0,1,1210353,14.009,1 week to 50 days
+"Usachyov, Yuriy Vladimirovich",RU,Russia,Male,Orbital,1957,1994,2001,7,4,47773475,552.934,more than 1 year
+"Sega, Ronald Michael",US,USA,Male,Orbital,1952,1994,1996,2,2,1513515,17.518,1 week to 50 days
+"Jones, Thomas David",US,USA,Male,Orbital,1955,1994,2001,7,5,4582140,53.034,50 days to 1 year
+"Malenchenko, Yuriy Ivanovich",RU,Russia,Male,Orbital,1961,1994,2015,21,6,71486599,827.391,more than 1 year
+"Musabaev, Talgat Amangel'dievich",KZ,Other,Male,Orbital,1951,1994,2001,7,3,29497726,341.409,50 days to 1 year
+"Halsell, James Donald, Jr",US,USA,Male,Orbital,1956,1994,2000,6,5,4530727,52.439,50 days to 1 year
+"Chiao, Leroy",US,USA,Male,Orbital,1960,1994,2004,10,4,19816824,229.361,50 days to 1 year
+"Thomas, Donald Alan",US,USA,Male,Orbital,1955,1994,1997,3,4,3744741,43.342,1 week to 50 days
+Mukai (Naito) Chiaki,J,Other,Female,Orbital,1952,1994,1998,4,2,2043537,23.652,1 week to 50 days
+"Linenger, Jerry Michael",US,USA,Male,Orbital,1955,1994,1997,3,2,12365421,143.118,50 days to 1 year
+"Wilcutt, Terrence Wade",US,USA,Male,Orbital,1949,1994,2000,6,5,3628947,42.002,1 week to 50 days
+"Smith, Steven Lee",US,USA,Male,Orbital,1958,1994,2002,8,5,3457004,40.012,1 week to 50 days
+"Kondakova, Yelena Vladimirovna",RU,Russia,Female,Orbital,1957,1994,1997,3,2,15417691,178.445,50 days to 1 year
+"Tanner, Joseph Richard",US,USA,Male,Orbital,1950,1994,2006,12,4,3762903,43.552,1 week to 50 days
+"Clervoy, Jean-Francois Andre",F,Other,Male,Orbital,1958,1994,1999,5,3,2430285,28.128,1 week to 50 days
+"Parazynski, Scott Edward",US,USA,Male,Orbital,1961,1994,2007,13,5,4980711,57.647,50 days to 1 year
+"Collins, Eileen Marie",US,USA,Female,Orbital,1956,1995,2005,10,4,3139810,36.34,1 week to 50 days
+"Gregory, William George",US,USA,Male,Orbital,1957,1995,1995,0,1,1436927,16.631,1 week to 50 days
+"Grunsfeld, John Mace",US,USA,Male,Orbital,1958,1995,2009,14,5,5065314,58.626,50 days to 1 year
+"Lawrence, Wendy Barrien",US,USA,Female,Orbital,1959,1995,2005,10,4,4420563,51.164,50 days to 1 year
+"Dezhurov, Vladimir Nikolaevich",RU,Russia,Male,Orbital,1962,1995,2001,6,2,21101280,244.228,50 days to 1 year
+"Budarin, Nikolai Nikolaevich",RU,Russia,Male,Orbital,1953,1995,2002,7,3,38366762,444.06,more than 1 year
+"Kregel, Kevin Richard",US,USA,Male,Orbital,1956,1995,2000,5,4,4558829,52.764,50 days to 1 year
+"Weber, Mary Ellen",US,USA,Female,Orbital,1962,1995,2000,5,2,1621756,18.77,1 week to 50 days
+"Gidzenko, Yuriy Pavlovich",RU,Russia,Male,Orbital,1962,1995,2002,7,3,28507558,329.949,50 days to 1 year
+"Reiter, Thomas Arthur",D,Other,Male,Orbital,1958,1995,2006,11,2,30260149,350.233,50 days to 1 year
+"Gernhardt, Michael Landon",US,USA,Male,Orbital,1956,1995,2001,6,4,3740465,43.292,1 week to 50 days
+"Rominger, Kent Vernon",US,USA,Male,Orbital,1956,1995,2001,6,5,5799342,67.122,50 days to 1 year
+"Coleman, Catherine Grace 'Cady'",US,USA,Female,Orbital,1960,1995,2010,15,3,15566353,180.166,50 days to 1 year
+"Lopez-Alegria, Michael Eladio",US,USA,Male,Orbital,1958,1995,2024,29,6,25632868,296.677,50 days to 1 year
+"Leslie, Fred Weldon",US,USA,Male,Orbital,1951,1995,1995,0,1,1374741,15.911,1 week to 50 days
+"Sacco, Albert, Jr",US,USA,Male,Orbital,1949,1995,1995,0,1,1374741,15.911,1 week to 50 days
+"Hadfield, Chris Austin",CA,Other,Male,Orbital,1959,1995,2012,17,3,14314737,165.68,50 days to 1 year
+"Jett, Brent Ward, Jr",US,USA,Male,Orbital,1958,1996,2006,10,4,3607194,41.75,1 week to 50 days
+"Scott, Winston Elliott",US,USA,Male,Orbital,1950,1996,1997,1,2,2126083,24.607,1 week to 50 days
+Wakata Koichi,J,Other,Male,Orbital,1963,1996,2022,26,5,43612362,504.773,more than 1 year
+"Barry, Daniel Thomas",US,USA,Male,Orbital,1953,1996,2001,5,3,2643989,30.602,1 week to 50 days
+"Onufrienko, Yuriy Ivanovich",RU,Russia,Male,Orbital,1961,1996,2001,5,2,33662750,389.615,more than 1 year
+"Horowitz, Scott Jay",US,USA,Male,Orbital,1957,1996,2001,5,4,4099164,47.444,1 week to 50 days
+"Cheli, Maurizio",I,Other,Male,Orbital,1959,1996,1996,0,1,1359621,15.736,1 week to 50 days
+"Guidoni, Umberto",I,Other,Male,Orbital,1954,1996,2001,5,2,2387422,27.632,1 week to 50 days
+"Thomas, Andrew Sydney Withiel",US,USA,Male,Orbital,1951,1996,2005,9,4,15326009,177.384,50 days to 1 year
+"Linnehan, Richard Michael",US,USA,Male,Orbital,1957,1996,2008,12,4,5140699,59.499,50 days to 1 year
+"Brady, Charles Eldon, Jr",US,USA,Male,Orbital,1951,1996,1996,0,1,1460856,16.908,1 week to 50 days
+"Favier, Jean-Jacques",F,Other,Male,Orbital,1949,1996,1996,0,1,1460856,16.908,1 week to 50 days
+"Thirsk, Robert Brent",CA,Other,Male,Orbital,1953,1996,2009,13,2,17692097,204.77,50 days to 1 year
+"Korzun, Valeriy Grigor'evich",RU,Russia,Male,Orbital,1953,1996,2002,6,2,32974834,381.653,more than 1 year
+"Haignere (Andre-Deshays), Claudie",F,Other,Female,Orbital,1957,1996,2001,5,2,2211808,25.6,1 week to 50 days
+"Lazutkin, Aleksandr Ivanovich",RU,Russia,Male,Orbital,1957,1997,1997,0,1,15977260,184.922,50 days to 1 year
+"Ewald, Reinhold",D,Other,Male,Orbital,1956,1997,1997,0,1,1701283,19.691,1 week to 50 days
+"Kilrain (Still), Susan Leigh",US,USA,Female,Orbital,1961,1997,1997,0,2,1699033,19.665,1 week to 50 days
+"Crouch, Roger Keith",US,USA,Male,Orbital,1940,1997,1997,0,2,1699033,19.665,1 week to 50 days
+"Linteris, Gregory Thomas",US,USA,Male,Orbital,1957,1997,1997,0,2,1699033,19.665,1 week to 50 days
+"Noriega, Carlos Ismael",US,USA,Male,Orbital,1959,1997,2000,3,2,1732638,20.054,1 week to 50 days
+"Lu, Edward Tsang",US,USA,Male,Orbital,1963,1997,2003,6,3,17795841,205.97,50 days to 1 year
+"Vinogradov, Pavel Vladimirovich",RU,Russia,Male,Orbital,1953,1997,2013,16,3,47255582,546.94,more than 1 year
+"Curbeam, Robert Lee",US,USA,Male,Orbital,1962,1997,2006,9,3,3249087,37.605,1 week to 50 days
+"Robinson, Stephen Kern",US,USA,Male,Orbital,1955,1997,2010,13,4,4182579,48.409,1 week to 50 days
+"Tryggvason, Bjarni Valdimar",CA,Other,Male,Orbital,1945,1997,1997,0,1,1024019,11.852,1 week to 50 days
+"Bloomfield, Michael John",US,USA,Male,Orbital,1959,1997,2002,5,3,2804454,32.459,1 week to 50 days
+"Lindsey, Steven Wayne",US,USA,Male,Orbital,1960,1997,2011,14,5,5438013,62.94,50 days to 1 year
+"Chawla, Kalpana",US,USA,Female,Orbital,1961,1997,2003,6,2,2732172,31.622,1 week to 50 days
+Doi Takao,J,Other,Male,Orbital,1954,1997,2008,11,2,2717096,31.448,1 week to 50 days
+"Kadenyuk, Leonid Konstantinovich",UA,Other,Male,Orbital,1950,1997,1997,0,1,1355642,15.69,1 week to 50 days
+"Edwards, Joe Frank, Jr.",US,USA,Male,Orbital,1958,1998,1998,0,1,762415,8.824,1 week to 50 days
+"Reilly, James Francis, II",US,USA,Male,Orbital,1954,1998,2007,9,3,3062005,35.44,1 week to 50 days
+"Anderson, Michael Phillip",US,USA,Male,Orbital,1959,1998,2003,5,2,2138945,24.756,1 week to 50 days
+"Sharipov, Salizhan Shakirovich",RU,Russia,Male,Orbital,1964,1998,2004,6,2,17419736,201.617,50 days to 1 year
+"Eyharts, Leopold",F,Other,Male,Orbital,1957,1998,2008,10,2,5952626,68.896,50 days to 1 year
+"Altman, Scott Douglas",US,USA,Male,Orbital,1959,1998,2009,11,4,4452475,51.533,50 days to 1 year
+"Hire, Kathryn Patricia 'Kay'",US,USA,Female,Orbital,1959,1998,2010,12,2,2562980,29.664,1 week to 50 days
+"Williams, Dafydd Rhys",CA,Other,Male,Orbital,1954,1998,2007,9,2,2475934,28.657,1 week to 50 days
+"Buckey, Jay Clark, Jr",US,USA,Male,Orbital,1956,1998,1998,0,1,1374599,15.91,1 week to 50 days
+"Pawelczyk, James Anthony",US,USA,Male,Orbital,1960,1998,1998,0,1,1374599,15.91,1 week to 50 days
+"Gorie, Dominic Lee Pudwill",US,USA,Male,Orbital,1957,1998,2008,10,4,4202362,48.638,1 week to 50 days
+"Kavandi (Sellers), Janet Lynn",US,USA,Female,Orbital,1959,1998,2001,3,3,2923660,33.839,1 week to 50 days
+"Padalka, Gennadiy Ivanovich",RU,Russia,Male,Orbital,1958,1998,2015,17,5,75900602,878.479,more than 1 year
+"Baturin, Yuriy Mikhailovich",RU,Russia,Male,Orbital,1949,1998,2001,3,2,1705541,19.74,1 week to 50 days
+"Duque Duque, Pedro Francisco",E,Other,Male,Orbital,1963,1998,2003,5,2,1622773,18.782,1 week to 50 days
+"Sturckow, Frederick Wilford 'C.J.'",US,USA,Male,Orbital,1961,1998,2023,25,9,4446888,51.469,50 days to 1 year
+"Bella, Ivan",SK,Other,Male,Orbital,1964,1999,1999,0,1,683789,7.914,1 week to 50 days
+"Husband, Rick Douglas",US,USA,Male,Orbital,1957,1999,2003,4,2,2223313,25.733,1 week to 50 days
+"Payette, Julie",CA,Other,Female,Orbital,1963,1999,2009,10,2,2203083,25.499,1 week to 50 days
+"Tokarev, Valeriy Ivanovich",RU,Russia,Male,Orbital,1952,1999,2005,6,2,17247934,199.629,50 days to 1 year
+"Ashby, Jeffrey Shears",US,USA,Male,Orbital,1954,1999,2002,3,3,2391446,27.679,1 week to 50 days
+"Kelly, Scott Joseph",US,USA,Male,Orbital,1964,1999,2015,16,4,44965918,520.439,more than 1 year
+"Thiele, Gerhard Paul Julius",D,Other,Male,Orbital,1953,2000,2000,0,1,970724,11.235,1 week to 50 days
+"Zalyotin, Sergey Viktorovich",RU,Russia,Male,Orbital,1962,2000,2002,2,2,7230925,83.691,50 days to 1 year
+"Williams, Jeffrey Nels",US,USA,Male,Orbital,1958,2000,2016,16,4,46061321,533.117,more than 1 year
+"Mastracchio, Richard Alan",US,USA,Male,Orbital,1960,2000,2013,13,4,19661853,227.568,50 days to 1 year
+"Burbank, Daniel Christopher",US,USA,Male,Orbital,1961,2000,2011,11,3,16321739,188.909,50 days to 1 year
+"Morukov, Boris Vladimirovich",RU,Russia,Male,Orbital,1950,2000,2000,0,1,1019457,11.799,1 week to 50 days
+"Melroy, Pamela Ann",US,USA,Female,Orbital,1961,2000,2007,7,3,3355409,38.836,1 week to 50 days
+"Polansky, Mark Lewis",US,USA,Male,Orbital,1956,2001,2009,8,3,3581368,41.451,1 week to 50 days
+"Kelly, James McNeal 'Vegas'",US,USA,Male,Orbital,1964,2001,2005,4,2,2308916,26.724,1 week to 50 days
+"Richards, Paul William",US,USA,Male,Orbital,1964,2001,2001,0,1,1108173,12.826,1 week to 50 days
+"Phillips, John Lynch",US,USA,Male,Orbital,1951,2001,2009,8,3,17601786,203.724,50 days to 1 year
+"Lonchakov, Yuriy Valentinovich",RU,Russia,Male,Orbital,1965,2001,2008,7,3,17347007,200.776,50 days to 1 year
+"Tito, Dennis",US,USA,Male,Orbital,1940,2001,2001,0,1,684248,7.92,1 week to 50 days
+"Hobaugh, Charles Owen",US,USA,Male,Orbital,1961,2001,2009,8,3,3138402,36.324,1 week to 50 days
+"Forrester, Patrick Graham",US,USA,Male,Orbital,1957,2001,2009,8,3,3421082,39.596,1 week to 50 days
+"Tyurin, Mikhail Vladislavovich",RU,Russia,Male,Orbital,1960,2001,2013,12,3,45975071,532.119,more than 1 year
+"Kozeev, Konstantin Mironovich",RU,Russia,Male,Orbital,1967,2001,2001,0,1,849591,9.833,1 week to 50 days
+"Kelly, Mark Edward",US,USA,Male,Orbital,1964,2001,2011,10,4,4673040,54.086,50 days to 1 year
+"Tani, Daniel Michio",US,USA,Male,Orbital,1961,2001,2007,6,2,11383474,131.753,50 days to 1 year
+"Carey, Duane Gene",US,USA,Male,Orbital,1957,2002,2002,0,1,943790,10.923,1 week to 50 days
+"Massimino, Michael James",US,USA,Male,Orbital,1962,2002,2009,7,2,2058419,23.824,1 week to 50 days
+"Frick, Stephen Nathaniel",US,USA,Male,Orbital,1964,2002,2008,6,2,2037858,23.586,1 week to 50 days
+"Walheim, Rex Joseph",US,USA,Male,Orbital,1962,2002,2011,9,3,3141129,36.356,1 week to 50 days
+"Morin, Lee Miller Emile",US,USA,Male,Orbital,1952,2002,2002,0,1,934959,10.821,1 week to 50 days
+"Vittori, Roberto",I,Other,Male,Orbital,1964,2002,2011,9,3,3068742,35.518,1 week to 50 days
+"Shuttleworth, Mark Richard",ZA,Other,Male,Orbital,1973,2002,2002,0,1,854718,9.893,1 week to 50 days
+"Lockhart, Paul Scott",US,USA,Male,Orbital,1956,2002,2002,0,2,2388140,27.641,1 week to 50 days
+"Perrin, Phillipe",F,Other,Male,Orbital,1963,2002,2002,0,1,1197294,13.858,1 week to 50 days
+"Whitson, Peggy Annette",US,USA,Female,Orbital,1960,2002,2025,23,5,60072595,695.285,more than 1 year
+"Treshchyov, Sergey Yevgenievich",RU,Russia,Male,Orbital,1958,2002,2002,0,1,15977664,184.927,50 days to 1 year
+"Magnus (Hall), Sandra Hall",US,USA,Female,Orbital,1964,2002,2011,9,3,13596207,157.364,50 days to 1 year
+"Sellers, Piers John",US,USA,Male,Orbital,1955,2002,2010,8,3,3056556,35.377,1 week to 50 days
+"Yurchikhin, Fyodor Nikolaevich",RU,Russia,Male,Orbital,1959,2002,2017,15,5,58135172,672.861,more than 1 year
+"De Winne, Frank",B,Other,Male,Orbital,1961,2002,2009,7,2,17170430,198.732,50 days to 1 year
+"Herrington, John Bennett",US,USA,Male,Orbital,1958,2002,2002,0,1,1190846,13.783,1 week to 50 days
+"Pettit, Donald Roy",US,USA,Male,Orbital,1955,2002,2024,22,4,50981995,590.069,more than 1 year
+"McCool, William Cameron",US,USA,Male,Orbital,1961,2003,2003,0,1,1376530,15.932,1 week to 50 days
+"Brown, David McDowell",US,USA,Male,Orbital,1956,2003,2003,0,1,1376530,15.932,1 week to 50 days
+"Clark (Salton), Laurel Blair",US,USA,Female,Orbital,1961,2003,2003,0,1,1376530,15.932,1 week to 50 days
+"Ramon (Wolferman), Ilan",IL,Other,Male,Orbital,1954,2003,2003,0,1,1376530,15.932,1 week to 50 days
+Yang Liwei,CN,China,Male,Orbital,1965,2003,2003,0,1,76977,0.891,1 hour to 1 week
+"Fincke, Edward *Michael",US,USA,Male,Orbital,1967,2004,2025,21,4,47376362,548.338,more than 1 year
+"Kuipers, Andre",NL,Other,Male,Orbital,1958,2004,2011,7,2,17596241,203.66,50 days to 1 year
+"Melvill, Michael Winston",US,USA,Male,Suborbital,1940,2004,2004,0,2,2891,0.033,less than 1 hour
+"Binnie, William *Brian",US,USA,Male,Suborbital,1953,2004,2004,0,1,1436,0.017,less than 1 hour
+"Shargin, Yuriy Georgievich",RU,Russia,Male,Orbital,1960,2004,2004,0,1,854923,9.895,1 week to 50 days
+Noguchi Soichi,J,Other,Male,Orbital,1965,2005,2020,15,3,29756061,344.399,50 days to 1 year
+"Camarda, Charles Joseph",US,USA,Male,Orbital,1952,2005,2005,0,1,1200743,13.897,1 week to 50 days
+"Olsen, Gregory Hammond",US,USA,Male,Orbital,1945,2005,2005,0,1,854095,9.885,1 week to 50 days
+Fei Junlong,CN,China,Male,Orbital,1965,2005,2022,17,2,16513053,191.123,50 days to 1 year
+Nie Haisheng,CN,China,Male,Orbital,1964,2005,2021,16,3,9641605,111.593,50 days to 1 year
+"Pontes, Marcos Cesar",BR,Other,Male,Orbital,1963,2006,2006,0,1,854224,9.887,1 week to 50 days
+"Fossum, Michael Edward",US,USA,Male,Orbital,1957,2006,2011,5,3,16743739,193.793,50 days to 1 year
+"Nowak (Caputo), Lisa Marie",US,USA,Female,Orbital,1963,2006,2006,0,1,1103808,12.776,1 week to 50 days
+"Wilson, Stephanie Diana",US,USA,Female,Orbital,1966,2006,2010,4,3,3714417,42.991,1 week to 50 days
+"Ferguson, Christopher John",US,USA,Male,Orbital,1961,2006,2011,5,3,3492229,40.419,1 week to 50 days
+"Stefanyshyn-Piper, Heidemarie Martha",US,USA,Female,Orbital,1963,2006,2008,2,2,2388958,27.65,1 week to 50 days
+"Ansari (Raishiyan), Anousheh",US,USA,Female,Orbital,1966,2006,2006,0,1,939895,10.878,1 week to 50 days
+"Oefelein, William Anthony",US,USA,Male,Orbital,1965,2006,2006,0,1,1111464,12.864,1 week to 50 days
+"Patrick, Nicholas James MacDonald",US,USA,Male,Orbital,1964,2006,2010,4,2,2299845,26.619,1 week to 50 days
+"Fuglesang, Arne *Christer",S,Other,Male,Orbital,1957,2006,2009,3,2,2309887,26.735,1 week to 50 days
+"Higginbotham, Joan Elizabeth Miller",US,USA,Female,Orbital,1964,2006,2006,0,1,1111464,12.864,1 week to 50 days
+"Williams, Sunita Lyn (Pandya Krishna)",US,USA,Female,Orbital,1965,2006,2024,18,3,52532412,608.014,more than 1 year
+"Kotov, Oleg Val'erevich",RU,Russia,Male,Orbital,1965,2007,2013,6,3,45464525,526.21,more than 1 year
+Simonyi Karoly (Charles),US,USA,Male,Orbital,1948,2007,2009,2,2,2298342,26.601,1 week to 50 days
+"Archambault, Lee Joseph",US,USA,Male,Orbital,1960,2007,2009,2,2,2302876,26.654,1 week to 50 days
+"Swanson, Steven Ray",US,USA,Male,Orbital,1960,2007,2014,7,3,16922820,195.866,50 days to 1 year
+"Olivas, John Daniel",US,USA,Male,Orbital,1966,2007,2009,2,2,2394317,27.712,1 week to 50 days
+"Anderson, Clayton Conrad",US,USA,Male,Orbital,1959,2007,2010,3,2,14418624,166.882,50 days to 1 year
+"Caldwell Dyson, Tracy Ellen",US,USA,Female,Orbital,1969,2007,2024,17,3,32207845,372.776,more than 1 year
+"Morgan, Barbara Radding",US,USA,Female,Orbital,1951,2007,2007,0,1,1101335,12.747,1 week to 50 days
+"Drew, B. *Alvin, Jr",US,USA,Male,Orbital,1962,2007,2011,4,2,2206766,25.541,1 week to 50 days
+"Shukor al Masrie, Muszaphar",MY,Other,Male,Orbital,1972,2007,2007,0,1,940390,10.884,1 week to 50 days
+"Zamka, George David",US,USA,Male,Orbital,1962,2007,2010,3,2,2492960,28.854,1 week to 50 days
+"Wheelock, Douglas Harry",US,USA,Male,Orbital,1960,2007,2010,3,2,15413673,178.399,50 days to 1 year
+"Nespoli, Paolo Angelo",I,Other,Male,Orbital,1957,2007,2017,10,3,27052612,313.109,50 days to 1 year
+"Poindexter, Alan Goodwin",US,USA,Male,Orbital,1961,2008,2010,2,2,2408929,27.881,1 week to 50 days
+"Melvin, Leland Devon 'Lee'",US,USA,Male,Orbital,1964,2008,2009,1,2,2036270,23.568,1 week to 50 days
+"Love, Stanley Glen",US,USA,Male,Orbital,1965,2008,2008,0,1,1102899,12.765,1 week to 50 days
+"Johnson, Gregory Harold",US,USA,Male,Orbital,1962,2008,2011,3,2,2720956,31.493,1 week to 50 days
+"Behnken, Robert Louis",US,USA,Male,Orbital,1970,2008,2020,12,3,8077338,93.488,50 days to 1 year
+"Foreman, Michael James",US,USA,Male,Orbital,1957,2008,2009,1,2,2294825,26.56,1 week to 50 days
+"Reisman, Garrett Erin",US,USA,Male,Orbital,1968,2008,2010,2,2,9256503,107.135,50 days to 1 year
+"Volkov, Sergey Aleksandrovich",RU,Russia,Male,Orbital,1973,2008,2015,7,3,47341244,547.931,more than 1 year
+"Kononenko, Oleg Dmitrievich",RU,Russia,Male,Orbital,1964,2008,2023,15,5,95958011,1110.625,more than 1 year
+Yi So-yeon,KR,Other,Female,Orbital,1978,2008,2008,0,1,940385,10.884,1 week to 50 days
+"Ham, Kenneth Todd",US,USA,Male,Orbital,1964,2008,2010,2,2,2205665,25.529,1 week to 50 days
+"Nyberg, Karen Lujean",US,USA,Female,Orbital,1969,2008,2013,5,2,15553842,180.021,50 days to 1 year
+"Garan, Ronald John, Jr.",US,USA,Male,Orbital,1961,2008,2011,3,2,15378870,177.996,50 days to 1 year
+Hoshide Akihiko,J,Other,Male,Orbital,1968,2008,2021,13,3,29416206,340.465,50 days to 1 year
+"Chamitoff, Gregory Errol",US,USA,Male,Orbital,1962,2008,2011,3,2,17172077,198.751,50 days to 1 year
+Zhai Zhigang,CN,China,Male,Orbital,1966,2008,2021,13,2,16005628,185.25,50 days to 1 year
+Liu Boming,CN,China,Male,Orbital,1966,2008,2021,13,2,8210353,95.027,50 days to 1 year
+Jing Haipeng,CN,China,Male,Orbital,1966,2008,2023,15,4,17427658,201.709,50 days to 1 year
+"Garriott, Richard Allen",US,USA,Male,Orbital,1961,2008,2008,0,1,1024517,11.858,1 week to 50 days
+"Boe, Eric A.",US,USA,Male,Orbital,1964,2008,2011,3,2,2475199,28.648,1 week to 50 days
+"Bowen, Stephen G.",US,USA,Male,Orbital,1964,2008,2023,15,4,19557867,226.364,50 days to 1 year
+"Kimbrough, Robert Shane",US,USA,Male,Orbital,1967,2008,2021,13,3,33586099,388.728,more than 1 year
+"Antonelli, Dominic Anthony 'Tony'",US,USA,Male,Orbital,1967,2009,2010,1,2,2123861,24.582,1 week to 50 days
+"Acaba, Joseph M.",US,USA,Male,Orbital,1967,2009,2017,8,3,26440530,306.025,50 days to 1 year
+"Arnold, Richard R., II",US,USA,Male,Orbital,1963,2009,2018,9,2,18106197,209.562,50 days to 1 year
+"Barratt, Michael Reed",US,USA,Male,Orbital,1959,2009,2024,15,3,38589700,446.64,more than 1 year
+"Johnson, Gregory Carl",US,USA,Male,Orbital,1954,2009,2009,0,1,1114629,12.901,1 week to 50 days
+"Good, Michael T.",US,USA,Male,Orbital,1962,2009,2010,1,2,2131508,24.67,1 week to 50 days
+"McArthur, Katherine *Megan",US,USA,Female,Orbital,1971,2009,2021,12,2,18372052,212.639,50 days to 1 year
+"Feustel, Andrew Jay 'Drew'",US,USA,Male,Orbital,1965,2009,2018,9,3,19473346,225.386,50 days to 1 year
+"Romanenko, Roman Yurievich",RU,Russia,Male,Orbital,1971,2009,2012,3,2,28810733,333.458,50 days to 1 year
+"Hurley, Douglas G.",US,USA,Male,Orbital,1966,2009,2020,11,3,7987074,92.443,50 days to 1 year
+"Cassidy, Christopher J.",US,USA,Male,Orbital,1970,2009,2020,11,3,32636954,377.743,more than 1 year
+"Marshburn, Thomas H.",US,USA,Male,Orbital,1960,2009,2021,12,3,29151761,337.405,50 days to 1 year
+"Kopra, Timothy Lennart",US,USA,Male,Orbital,1963,2009,2015,6,2,21085326,244.043,50 days to 1 year
+"Ford, Kevin Anthony",US,USA,Male,Orbital,1960,2009,2012,3,2,13612125,157.548,50 days to 1 year
+"Hernandez, Jose Moreno",US,USA,Male,Orbital,1962,2009,2009,0,1,1198423,13.871,1 week to 50 days
+"Stott, Nicole Passonno",US,USA,Female,Orbital,1962,2009,2011,2,2,8920115,103.242,50 days to 1 year
+"Suraev, Maksim Viktorovich",RU,Russia,Male,Orbital,1972,2009,2014,5,2,28815028,333.507,50 days to 1 year
+"Laliberte, Guy",CA,Other,Male,Orbital,1959,2009,2009,0,1,940618,10.887,1 week to 50 days
+"Wilmore, Barry E. 'Butch'",US,USA,Male,Orbital,1962,2009,2024,15,3,40118623,464.336,more than 1 year
+"Satcher, Robert L., Jr.",US,USA,Male,Orbital,1965,2009,2009,0,1,933371,10.803,1 week to 50 days
+"Bresnik, Randolph J.",US,USA,Male,Orbital,1967,2009,2017,8,2,12917568,149.509,50 days to 1 year
+"Creamer, Timothy John",US,USA,Male,Orbital,1959,2009,2009,0,1,14103152,163.231,50 days to 1 year
+"Virts, Terry W., Jr.",US,USA,Male,Orbital,1967,2010,2014,4,2,18442145,213.451,50 days to 1 year
+"Skvortsov, Aleksandr Aleksandrovich ml.",RU,Russia,Male,Orbital,1966,2010,2019,9,3,47171303,545.964,more than 1 year
+"Kornienko, Mikhail Borisovich",RU,Russia,Male,Orbital,1960,2010,2015,5,2,44618492,516.418,more than 1 year
+"Dutton, James P., Jr.",US,USA,Male,Orbital,1968,2010,2010,0,1,1306030,15.116,1 week to 50 days
+"Metcalf-Lindenburger, Dorothy M.",US,USA,Female,Orbital,1975,2010,2010,0,1,1306030,15.116,1 week to 50 days
+"Yamazaki (Sumino), Naoko",J,Other,Female,Orbital,1970,2010,2010,0,1,1306030,15.116,1 week to 50 days
+"Walker, Shannon Baker",US,USA,Female,Orbital,1965,2010,2020,10,2,28561260,330.57,50 days to 1 year
+"Skripochka, Oleg Ivanovich",RU,Russia,Male,Orbital,1969,2010,2019,9,3,46324118,536.159,more than 1 year
+"Kondrat'ev, Dmitriy Yur'evich",RU,Russia,Male,Orbital,1969,2010,2010,0,1,13763836,159.304,50 days to 1 year
+"Samokutyaev, Aleksandr Mikhaiovich",RU,Russia,Male,Orbital,1970,2011,2014,3,2,28639444,331.475,50 days to 1 year
+"Borisenko, Andrey Ivanovich",RU,Russia,Male,Orbital,1964,2011,2016,5,2,29148992,337.373,50 days to 1 year
+Furukawa Satoshi,J,Other,Male,Orbital,1964,2011,2023,12,2,31653162,366.356,more than 1 year
+"Shkaplerov, Anton Nikolaevich",RU,Russia,Male,Orbital,1972,2011,2021,10,4,61286764,709.338,more than 1 year
+"Ivanishin, Anatoliy Alekseevich",RU,Russia,Male,Orbital,1969,2011,2020,9,3,41143341,476.196,more than 1 year
+"Revin, Sergei Nikolaevich",RU,Russia,Male,Orbital,1966,2012,2012,0,1,10799490,124.994,50 days to 1 year
+Liu Wang,CN,China,Male,Orbital,1969,2012,2012,0,1,1092275,12.642,1 week to 50 days
+Liu Yang,CN,China,Female,Orbital,1978,2012,2022,10,2,16850965,195.034,50 days to 1 year
+"Novitskiy, Oleg Viktorovich",BY,Other,Male,Orbital,1971,2012,2024,12,4,47093999,545.069,more than 1 year
+"Tarelkin, Yevgeniy Igorevich",RU,Russia,Male,Orbital,1974,2012,2012,0,1,12413702,143.677,50 days to 1 year
+"Misurkin, Aleksandr Aleksandrovich",RU,Russia,Male,Orbital,1977,2013,2021,8,3,29919891,346.295,50 days to 1 year
+"Parmitano, Luca Salvo",I,Other,Male,Orbital,1976,2013,2019,6,2,31705297,366.959,more than 1 year
+Zhang Xiaoguan,CN,China,Male,Orbital,1966,2013,2013,0,1,1261737,14.603,1 week to 50 days
+Wang Yaping,CN,China,Female,Orbital,1980,2013,2021,8,2,17020910,197.001,50 days to 1 year
+"Ryazanskiy, Sergey Nikolaevich",RU,Russia,Male,Orbital,1974,2013,2017,4,2,26349695,304.973,50 days to 1 year
+"Hopkins, Michael Scott",US,USA,Male,Orbital,1968,2013,2020,7,2,28817664,333.538,50 days to 1 year
+"Artem'ev, Oleg Germanovich",RU,Russia,Male,Orbital,1970,2014,2022,8,3,48449261,560.755,more than 1 year
+"Wiseman, Gregory *Reid",US,USA,Male,Orbital,1975,2014,2026,12,2,15068004,174.398,50 days to 1 year
+"Gerst, Alexander",D,Other,Male,Orbital,1977,2014,2018,4,2,31283430,362.077,50 days to 1 year
+"Serova, Elena Olegovna (Kuznetsova)",RU,Russia,Female,Orbital,1976,2014,2014,0,1,14449360,167.238,50 days to 1 year
+"Cristoforetti, Samantha",I,Other,Female,Orbital,1977,2014,2022,8,2,31988692,370.239,more than 1 year
+Yui Kimiya,J,Other,Male,Orbital,1970,2015,2025,10,2,26644059,308.38,50 days to 1 year
+"Lindgren, Kjell Norwood",US,USA,Male,Orbital,1973,2015,2022,7,2,26975513,312.217,50 days to 1 year
+"Mogensen, Andreas Enevold",DK,Other,Male,Orbital,1976,2015,2023,8,2,18052450,208.94,50 days to 1 year
+"Aimbetov, Aydin Akanovich",KZ,Other,Male,Orbital,1972,2015,2015,0,1,850433,9.843,1 week to 50 days
+"Peake, Timothy Nigel, Maj. Br.Army",UK,Other,Male,Orbital,1972,2015,2015,0,1,16063916,185.925,50 days to 1 year
+"Ovchinin, Aleksey Nikolaevich",RU,Russia,Male,Orbital,1971,2016,2024,8,4,51425351,595.201,more than 1 year
+Onishi Takuya,J,Other,Male,Orbital,1975,2016,2025,9,2,22704695,262.786,50 days to 1 year
+"Rubins, Kathleen Hallisey (Kate)",US,USA,Female,Orbital,1978,2016,2020,4,2,25925511,300.064,50 days to 1 year
+Chen Dong,CN,China,Male,Orbital,1978,2016,2025,9,3,36170179,418.636,more than 1 year
+"Ryzhikov, Sergey Nikolaevich",RU,Russia,Male,Orbital,1974,2016,2025,9,3,52105294,603.071,more than 1 year
+"Pesquet, Thomas Gautier",F,Other,Male,Orbital,1978,2016,2021,5,2,34256040,396.482,more than 1 year
+"Fischer, Jack David",US,USA,Male,Orbital,1974,2017,2017,0,1,11729278,135.756,50 days to 1 year
+"Vande Hei, Mark Thomas",US,USA,Male,Orbital,1966,2017,2021,4,2,45219613,523.375,more than 1 year
+"Tingle, Scott David",US,USA,Male,Orbital,1965,2017,2017,0,1,14534294,168.221,50 days to 1 year
+Kanai Norishige,J,Other,Male,Orbital,1976,2017,2017,0,1,14534294,168.221,50 days to 1 year
+"Prokop'ev, Sergey Valer'evich",RU,Russia,Male,Orbital,1975,2018,2022,4,2,49043492,567.633,more than 1 year
+"Aunon-Chancellor, Serena Maria",US,USA,Female,Orbital,1976,2018,2018,0,1,16998561,196.743,50 days to 1 year
+"Hague, Tyler Nicklaus 'Nick'",US,USA,Male,Orbital,1975,2018,2024,6,3,32301879,373.864,more than 1 year
+"Saint-Jacques, David",CA,Other,Male,Orbital,1970,2018,2018,0,1,17594222,203.637,50 days to 1 year
+"McClain, Anne Charlotte",US,USA,Female,Orbital,1979,2018,2025,7,2,30354414,351.324,50 days to 1 year
+"Stucky, Mark P",US,USA,Male,Suborbital,1958,2018,2018,0,1,848,0.01,less than 1 hour
+"Mackay, David William Donald",UK,Other,Male,Suborbital,1957,2019,2021,2,4,3378,0.039,less than 1 hour
+"Masucci, Michael J. 'Sooch'",US,USA,Male,Suborbital,1963,2019,2023,4,6,5058,0.059,1 hour to 1 week
+"Moses, Nathalie *Beth (Stubbings)",US,USA,Female,Suborbital,,2019,2023,4,6,5186,0.06,1 hour to 1 week
+"Koch (Hammock), Christina M.",US,USA,Female,Orbital,1979,2019,2026,7,2,29172627,337.646,50 days to 1 year
+"Morgan, Andrew Richard",US,USA,Male,Orbital,1976,2019,2019,0,1,23460503,271.534,50 days to 1 year
+"Meir, Jessica Ulrika",US,USA,Female,Orbital,1977,2019,2026,7,2,,,
+"Al Mansouri, Hazza Ali Abdan Khalfan",UAE,Other,Male,Orbital,1983,2019,2019,0,1,680497,7.876,1 week to 50 days
+"Vagner, Ivan Viktorovich",RU,Russia,Male,Orbital,1985,2020,2024,4,2,35955989,416.157,more than 1 year
+"Kud'-Sverchkov, Sergei Vladimirovich",RU,Russia,Male,Orbital,1983,2020,2025,5,2,,,
+"Glover, Victor Jerome",US,USA,Male,Orbital,1976,2020,2026,6,2,15235301,176.335,50 days to 1 year
+"Dubrov, Petr Valer'evich",RU,Russia,Male,Orbital,1978,2021,2021,0,1,30685555,355.157,50 days to 1 year
+Tang Hongbo,CN,China,Male,Orbital,1975,2021,2023,2,2,24144224,279.447,50 days to 1 year
+"Branson, Richard Charles Nicholas",UK,Other,Male,Suborbital,1950,2021,2021,0,1,859,0.01,less than 1 hour
+"Bennett, Colin",UK,Other,Male,Suborbital,,2021,2023,2,3,2529,0.029,less than 1 hour
+"Bandla, Sirisha",US,USA,Female,Suborbital,1988,2021,2021,0,1,859,0.01,less than 1 hour
+"Bezos (Jorgenson), Jeffrey Preston",US,USA,Male,Suborbital,1964,2021,2021,0,1,611,0.007,less than 1 hour
+"Bezos, Mark Salvador",US,USA,Male,Suborbital,1968,2021,2021,0,1,611,0.007,less than 1 hour
+"Funk, Mary Wallace 'Wally'",US,USA,Female,Suborbital,1939,2021,2021,0,1,611,0.007,less than 1 hour
+"Daemen, Oliver",NL,Other,Male,Suborbital,2002,2021,2021,0,1,611,0.007,less than 1 hour
+"Isaacman, Jared",US,USA,Male,Orbital,1983,2021,2024,3,2,681418,7.887,1 week to 50 days
+"Proctor, Sian Hayley",US,USA,Female,Orbital,1970,2021,2021,0,1,255833,2.961,1 hour to 1 week
+"Sembroski, Christopher",US,USA,Male,Orbital,1979,2021,2021,0,1,255833,2.961,1 hour to 1 week
+"Arceneaux, Hayley",US,USA,Female,Orbital,1991,2021,2021,0,1,255833,2.961,1 hour to 1 week
+"Shipenko, Aleksey 'Klim' Pavlovich",RU,Russia,Male,Orbital,1983,2021,2021,0,1,1021242,11.82,1 week to 50 days
+"Peresil'd, Yuliya Sergeevna",RU,Russia,Female,Orbital,1984,2021,2021,0,1,1021242,11.82,1 week to 50 days
+"Boshuizen, Christopher R.",AU,Other,Male,Suborbital,1977,2021,2021,0,1,609,0.007,less than 1 hour
+"de Vries, Glen",US,USA,Male,Suborbital,1972,2021,2021,0,1,609,0.007,less than 1 hour
+"Powers, Audrey K.",US,USA,Female,Suborbital,1976,2021,2021,0,1,609,0.007,less than 1 hour
+"Shatner, William",CA,Other,Male,Suborbital,1931,2021,2021,0,1,609,0.007,less than 1 hour
+Ye Guangfu,CN,China,Male,Orbital,1980,2021,2024,3,2,32363900,374.582,more than 1 year
+"Chari, Raja Jon Vurputoor",US,USA,Male,Orbital,1977,2021,2021,0,1,15215969,176.111,50 days to 1 year
+"Maurer, Matthias",D,Other,Male,Orbital,1970,2021,2021,0,1,15215969,176.111,50 days to 1 year
+"Barron (Sax), Kayla Jane",US,USA,Female,Orbital,1987,2021,2021,0,1,15215969,176.111,50 days to 1 year
+Maezawa Yusaku,J,Other,Male,Orbital,1975,2021,2021,0,1,1020925,11.816,1 week to 50 days
+Hirano Yozo,J,Other,Male,Orbital,1985,2021,2021,0,1,1020925,11.816,1 week to 50 days
+"Strahan, Michael T.",US,USA,Male,Suborbital,1971,2021,2021,0,1,606,0.007,less than 1 hour
+"Shepard-Churchley, Laura",US,USA,Female,Suborbital,1947,2021,2021,0,1,606,0.007,less than 1 hour
+"Taylor, Dylan",US,USA,Male,Suborbital,1970,2021,2021,0,1,606,0.007,less than 1 hour
+"Bess, Lane",US,USA,Male,Suborbital,1961,2021,2025,4,2,1207,0.014,less than 1 hour
+"Bess, Cameron",US,USA,Unknown,Suborbital,1998,2021,2021,0,1,606,0.007,less than 1 hour
+"Dick, Evan Lewis",US,USA,Male,Suborbital,1971,2021,2022,1,2,1204,0.014,less than 1 hour
+"Matveev, Denis Vladimirovich",RU,Russia,Male,Orbital,1983,2022,2022,0,1,16830102,194.793,50 days to 1 year
+"Korsakov, Sergey Vladimirovich",RU,Russia,Male,Orbital,1984,2022,2022,0,1,16830102,194.793,50 days to 1 year
+"Allen, Martin 'Marty' Gordon",US,USA,Male,Suborbital,1952,2022,2022,0,1,597,0.007,less than 1 hour
+"Hagle, Sharon (Langford)",US,USA,Female,Suborbital,1949,2022,2024,2,2,1202,0.014,less than 1 hour
+"Hagle, Marc Lee",US,USA,Male,Suborbital,1948,2022,2024,2,2,1202,0.014,less than 1 hour
+"Lai, Gary",US,USA,Male,Suborbital,1973,2022,2022,0,1,597,0.007,less than 1 hour
+"Kitchen, James 'Jim'",US,USA,Male,Suborbital,1964,2022,2022,0,1,597,0.007,less than 1 hour
+"Nield, George Cooke",US,USA,Male,Suborbital,1950,2022,2022,0,1,597,0.007,less than 1 hour
+"Connor, Larry",US,USA,Male,Orbital,1950,2022,2022,0,1,1475329,17.076,1 week to 50 days
+"Stibbe, Eytan Meir",IL,Other,Male,Orbital,1958,2022,2022,0,1,1475329,17.076,1 week to 50 days
+"Pathy, Mark L.",CA,Other,Male,Orbital,1969,2022,2022,0,1,1475329,17.076,1 week to 50 days
+"Hines, Robert Thomas, Jr",US,USA,Male,Orbital,1975,2022,2022,0,1,14734928,170.543,50 days to 1 year
+"Watkins, Jessica Andrea",US,USA,Female,Orbital,1988,2022,2022,0,1,14734928,170.543,50 days to 1 year
+"Correa Hespanha, Victor",BR,Other,Male,Suborbital,,2022,2022,0,1,598,0.007,less than 1 hour
+"Harding, George *Hamish Livingston",UK,Other,Male,Suborbital,1964,2022,2022,0,1,598,0.007,less than 1 hour
+"Vescovo, Victor",US,USA,Male,Suborbital,1966,2022,2022,0,1,598,0.007,less than 1 hour
+"Echazarreta, Katya",MX,Other,Female,Suborbital,,2022,2022,0,1,598,0.007,less than 1 hour
+"Robinson, Jaison",US,USA,Male,Suborbital,1980,2022,2022,0,1,598,0.007,less than 1 hour
+Cai Xuzhe,CN,China,Male,Orbital,1976,2022,2024,2,2,31514729,364.754,50 days to 1 year
+"Sabry, Sara",EG,Other,Female,Suborbital,1993,2022,2022,0,1,613,0.007,less than 1 hour
+"Ferreira, Mario Nuno dos Santos",PT,Other,Male,Suborbital,1968,2022,2022,0,1,613,0.007,less than 1 hour
+"Kelly, Clinton Wayne, III",US,USA,Male,Suborbital,1938,2022,2025,3,2,1225,0.014,less than 1 hour
+"Cotton, John *Coby",US,USA,Male,Suborbital,1987,2022,2022,0,1,613,0.007,less than 1 hour
+"Young, Steve Alan",US,USA,Male,Suborbital,,2022,2022,0,1,613,0.007,less than 1 hour
+"O'Brien, Vanessa Audi Rhys",US,USA,Female,Suborbital,1964,2022,2022,0,1,613,0.007,less than 1 hour
+Petelin Dmitriy Aleksandrovich,RU,Russia,Male,Orbital,1983,2022,2022,0,1,32044931,370.89,more than 1 year
+"Rubio, Francisco Carlos 'Frank'",US,USA,Male,Orbital,1975,2022,2022,0,1,32044931,370.89,more than 1 year
+"Mann, Nicole Victoria Aunapu",US,USA,Female,Orbital,1977,2022,2022,0,1,13600863,157.417,50 days to 1 year
+"Cassada, Josh Aaron",US,USA,Male,Orbital,1973,2022,2022,0,1,13600863,157.417,50 days to 1 year
+"Kikina, Anna Yurevna",RU,Russia,Female,Orbital,1984,2022,2022,0,1,13600863,157.417,50 days to 1 year
+Deng Qingming,CN,China,Male,Orbital,1966,2022,2022,0,1,16097083,186.309,50 days to 1 year
+Zhang Lu,CN,China,Male,Orbital,1976,2022,2025,3,2,34228257,396.16,more than 1 year
+"Hoburg, Warren Woodrow 'Woody'",US,USA,Male,Orbital,1985,2023,2023,0,1,16065789,185.947,50 days to 1 year
+"Al Neyadi, Sultan",UAE,Other,Male,Orbital,1981,2023,2023,0,1,16065789,185.947,50 days to 1 year
+"Fedyaev, Andrey Valer'evich",RU,Russia,Male,Orbital,1981,2023,2026,3,2,,,
+"Shoffner, John P.",US,USA,Male,Orbital,1955,2023,2023,0,1,797235,9.227,1 week to 50 days
+"Al-Qarni, Ali",SA,Other,Male,Orbital,1992,2023,2023,0,1,797235,9.227,1 week to 50 days
+"Barnawi, Rayyanah",SA,Other,Female,Orbital,,2023,2023,0,1,797235,9.227,1 week to 50 days
+"Mays, Luke",US,USA,Male,Suborbital,,2023,2023,0,1,840,0.01,less than 1 hour
+"Huie, Christopher",US,USA,Male,Suborbital,,2023,2023,0,1,840,0.01,less than 1 hour
+"Gilbert, Jamila",US,USA,Female,Suborbital,1989,2023,2023,0,1,840,0.01,less than 1 hour
+Zhu Yangzhu,CN,China,Male,Orbital,1986,2023,2026,3,2,,,
+Gui Haichao,CN,China,Male,Orbital,1986,2023,2023,0,1,13300819,153.945,50 days to 1 year
+"Pecile, Nicola",US,USA,Male,Suborbital,1973,2023,2024,1,4,3286,0.038,less than 1 hour
+"Villadei, Walter",I,Other,Male,Orbital,1974,2023,2024,1,2,1871679,21.663,1 week to 50 days
+"Landolfi, Angelo",I,Other,Male,Suborbital,1974,2023,2023,0,1,830,0.01,less than 1 hour
+"Carlucci, Pantaleone",I,Other,Male,Suborbital,,2023,2023,0,1,830,0.01,less than 1 hour
+"Latimer, Kelly",US,USA,Female,Suborbital,,2023,2023,0,3,2638,0.031,less than 1 hour
+"Goodwin, Jon Stuart",UK,Other,Male,Suborbital,1943,2023,2023,0,1,938,0.011,less than 1 hour
+"Schahaff, Keisha (Ali)",AG,Other,Female,Suborbital,1977,2023,2023,0,1,938,0.011,less than 1 hour
+"Mayers, Anastatia",AG,Other,Female,Suborbital,,2023,2023,0,1,938,0.011,less than 1 hour
+"Moghbeli, Jasmin",US,USA,Female,Orbital,1983,2023,2023,0,1,17202017,199.097,50 days to 1 year
+"Borisov, Konstantin Sergeevich",RU,Russia,Male,Orbital,1984,2023,2023,0,1,17202017,199.097,50 days to 1 year
+"Baxter, Kenneth",US,USA,Male,Suborbital,1949,2023,2023,0,1,780,0.009,less than 1 hour
+"Nash, Timothy",UK,Other,Male,Suborbital,1959,2023,2023,0,1,780,0.009,less than 1 hour
+"Reynard, Adrian John",UK,Other,Male,Suborbital,1951,2023,2023,0,1,780,0.009,less than 1 hour
+"Chub, Nikolai Aleksandrovich",RU,Russia,Male,Orbital,1984,2023,2023,0,1,32300087,373.844,more than 1 year
+"O'Hara, Loral Ashley",US,USA,Female,Orbital,1983,2023,2023,0,1,17595192,203.648,50 days to 1 year
+"Rosano, Ronald",US,USA,Male,Suborbital,1960,2023,2023,0,1,860,0.01,less than 1 hour
+"Beattie, Trevor",UK,Other,Male,Suborbital,1959,2023,2023,0,1,860,0.01,less than 1 hour
+"Salim, Namira",PK,Other,Female,Suborbital,1975,2023,2023,0,1,860,0.01,less than 1 hour
+Tang Shengjie,CN,China,Male,Orbital,1989,2023,2023,0,1,16180326,187.272,50 days to 1 year
+Jiang Xinlin,CN,China,Male,Orbital,1988,2023,2023,0,1,16180326,187.272,50 days to 1 year
+"Stern, Sol *Alan",US,USA,Male,Suborbital,1957,2023,2023,0,1,840,0.01,less than 1 hour
+"Gerardi, Kellie",US,USA,Female,Suborbital,1989,2023,2023,0,1,840,0.01,less than 1 hour
+"Maisonrouge, Ketty Pucci-Sisti",US,USA,Female,Suborbital,1956,2023,2023,0,1,840,0.01,less than 1 hour
+"Gezeravci, Alper",TR,Other,Male,Orbital,1979,2024,2024,0,1,1870849,21.653,1 week to 50 days
+"Wandt, Hans *Marcus",S,Other,Male,Orbital,1980,2024,2024,0,1,1870849,21.653,1 week to 50 days
+"Borozdina, Lina Yur'evna",US,USA,Female,Suborbital,1969,2024,2024,0,1,835,0.01,less than 1 hour
+"Vaughn, Robert C. 'Robie'",US,USA,Male,Suborbital,,2024,2024,0,1,835,0.01,less than 1 hour
+"Haider, Franz",AT,Other,Male,Suborbital,1961,2024,2024,0,1,835,0.01,less than 1 hour
+"Kornswiet, Neil Bruce",US,USA,Male,Suborbital,1957,2024,2024,0,1,835,0.01,less than 1 hour
+"Dominick, Matthew Stuart",US,USA,Male,Orbital,1981,2024,2024,0,1,20316924,235.15,50 days to 1 year
+"Epps, Jeanette Jo",US,USA,Female,Orbital,1971,2024,2024,0,1,20316924,235.15,50 days to 1 year
+"Grebyonkin, Aleksandr Sergeevich",RU,Russia,Male,Orbital,1982,2024,2024,0,1,20316924,235.15,50 days to 1 year
+"Vasilevskaya, Marina Vital'evna",BY,Other,Female,Orbital,1990,2024,2024,0,1,1190497,13.779,1 week to 50 days
+Li Guangsu,CN,China,Male,Orbital,1987,2024,2024,0,1,16604727,192.184,50 days to 1 year
+Li Cong,CN,China,Male,Orbital,1989,2024,2024,0,1,16604727,192.184,50 days to 1 year
+"Hess, Kenneth Lafferty",US,USA,Male,Suborbital,1953,2024,2024,0,1,584,0.007,less than 1 hour
+"Schaller, Carol Ann",US,USA,Female,Suborbital,1950,2024,2024,0,1,584,0.007,less than 1 hour
+"Chiron, Sylvain Philibert Eugene",F,Other,Male,Suborbital,1970,2024,2024,0,1,584,0.007,less than 1 hour
+"Dwight, Edward Joseph, Jr.",US,USA,Male,Suborbital,1933,2024,2024,0,1,584,0.007,less than 1 hour
+"Thotakura, Gopichand 'Gopi'",IN,Other,Male,Suborbital,1993,2024,2024,0,1,584,0.007,less than 1 hour
+"Angel, Mason",US,USA,Male,Suborbital,,2024,2024,0,1,584,0.007,less than 1 hour
+"Janjua, Jameel Jawaid",CA,Other,Male,Suborbital,1978,2024,2024,0,1,841,0.01,less than 1 hour
+"Atasever, Tuva Cihangir",TR,Other,Male,Suborbital,1992,2024,2024,0,1,841,0.01,less than 1 hour
+"Sadhwani, Anand 'Andy' Harish",US,USA,Male,Suborbital,,2024,2024,0,1,841,0.01,less than 1 hour
+"Pergament, Irving Izchak",US,USA,Male,Suborbital,1947,2024,2024,0,1,841,0.01,less than 1 hour
+"Manenti, Giorgio",I,Other,Male,Suborbital,1975,2024,2024,0,1,841,0.01,less than 1 hour
+"Rabin, Ephraim",US?,USA,Male,Suborbital,1970,2024,2024,0,1,601,0.007,less than 1 hour
+"Elrick, Nicolina",UK,Other,Female,Suborbital,,2024,2024,0,1,601,0.007,less than 1 hour
+"Grin, Eugene",US,USA,Male,Suborbital,1958,2024,2024,0,1,601,0.007,less than 1 hour
+"Ferl, Robert Joseph",US,USA,Male,Suborbital,1954,2024,2024,0,1,601,0.007,less than 1 hour
+"Kitchen, Karsen",US,USA,Female,Suborbital,2003,2024,2024,0,1,601,0.007,less than 1 hour
+"Jahangir, Eiman",US,USA,Male,Suborbital,1980,2024,2024,0,1,601,0.007,less than 1 hour
+"Poteet, Scott",US,USA,Male,Orbital,1973,2024,2024,0,1,425585,4.926,1 hour to 1 week
+"Menon (Wilhelm), Anna",US,USA,Female,Orbital,1985,2024,2024,0,1,425585,4.926,1 hour to 1 week
+"Gillis (Levine), Sarah",US,USA,Female,Orbital,,2024,2024,0,1,425585,4.926,1 hour to 1 week
+"Gorbunov, Aleksandr Vladimirovich",RU,Russia,Male,Orbital,1990,2024,2024,0,1,14791187,171.194,50 days to 1 year
+Song Lingdong,CN,China,Male,Orbital,1990,2024,2024,0,1,15756039,182.362,50 days to 1 year
+Wang Haoze,CN,China,Female,Orbital,1990,2024,2024,0,1,15756039,182.362,50 days to 1 year
+"Litteral, Austin Gerald",US,USA,Male,Suborbital,1986,2024,2024,0,1,605,0.007,less than 1 hour
+"Wolfond, Henry 'Hank'",CA,Other,Male,Suborbital,1958,2024,2024,0,1,605,0.007,less than 1 hour
+"Russell, James D. 'J.D.'",US,USA,Male,Suborbital,,2024,2025,1,2,1210,0.014,less than 1 hour
+"Calandrelli, Emily Dawn",US,USA,Female,Suborbital,1987,2024,2024,0,1,605,0.007,less than 1 hour
+"Calleja, Jesus",E,Other,Male,Suborbital,1965,2025,2025,0,1,601,0.007,less than 1 hour
+"Shah, Tushar",US,USA,Male,Suborbital,,2025,2025,0,1,601,0.007,less than 1 hour
+"Scott, Richard T.",US,USA,Male,Suborbital,,2025,2025,0,1,601,0.007,less than 1 hour
+"Hyde, Elaine Chia",AU,Other,Female,Suborbital,,2025,2025,0,1,601,0.007,less than 1 hour
+"Wilson, Russell Ty",AU,Other,Male,Suborbital,,2025,2025,0,1,601,0.007,less than 1 hour
+"Ayers (Stilwell), Nicole",US,USA,Female,Orbital,1988,2025,2025,0,1,12760192,147.687,50 days to 1 year
+"Peskov, Kirill Aleksandrovich",RU,Russia,Male,Orbital,1990,2025,2025,0,1,12760192,147.687,50 days to 1 year
+Wang Chun,MT,Other,Male,Orbital,1982,2025,2025,0,1,311608,3.607,1 hour to 1 week
+"Mikkelsen, Jannicke",N,Other,Female,Orbital,1986,2025,2025,0,1,311608,3.607,1 hour to 1 week
+"Rogge, Rabea Patricia",D,Other,Female,Orbital,,2025,2025,0,1,311608,3.607,1 hour to 1 week
+"Philips, Eric Louis",AU,Other,Male,Orbital,1962,2025,2025,0,1,311608,3.607,1 hour to 1 week
+"Zubritskiy, Aleksey Vital'evich",RU,Russia,Male,Orbital,1992,2025,2025,0,1,21165378,244.97,50 days to 1 year
+"Kim, Jonathan Yong 'Jonny'",US,USA,Male,Orbital,1984,2025,2025,0,1,21165378,244.97,50 days to 1 year
+"Sanchez, Lauren Wendy",US,USA,Female,Suborbital,1969,2025,2025,0,1,614,0.007,less than 1 hour
+"Hudson, Katheryn Elizabeth 'Katy Perry'",US,USA,Female,Suborbital,1984,2025,2025,0,1,614,0.007,less than 1 hour
+"Nguyen, Amanda Ngoc",US,USA,Female,Suborbital,1991,2025,2025,0,1,614,0.007,less than 1 hour
+"Bowe, Aisha",US,USA,Female,Suborbital,1987,2025,2025,0,1,614,0.007,less than 1 hour
+"King, Gayle",US,USA,Female,Suborbital,1954,2025,2025,0,1,614,0.007,less than 1 hour
+"Flynn, Kerianne",US,USA,Female,Suborbital,1967,2025,2025,0,1,614,0.007,less than 1 hour
+Chen Zhongrui,CN,China,Male,Orbital,1984,2025,2025,0,1,17623380,203.974,50 days to 1 year
+Wang Jie,CN,China,Male,Orbital,1989,2025,2025,0,1,17623380,203.974,50 days to 1 year
+"Green, Gretchen Elizabeth",US,USA,Male,Suborbital,,2025,2025,0,1,600,0.007,less than 1 hour
+"Jeris, Paul M.",US,USA,Male,Suborbital,1959,2025,2025,0,1,600,0.007,less than 1 hour
+"Williams, Jesse",CA,Other,Male,Suborbital,1987,2025,2025,0,1,600,0.007,less than 1 hour
+"Aleman Healy, Jaime Eduardo",PAR,Other,Male,Suborbital,1953,2025,2025,0,1,600,0.007,less than 1 hour
+"Medina Jorge, Aymette",US,USA,Male,Suborbital,,2025,2025,0,1,600,0.007,less than 1 hour
+"Rocket (Stephens), Mark",NZ,Other,Male,Suborbital,,2025,2025,0,1,600,0.007,less than 1 hour
+"Shukla, Shubanshu",IN,Other,Male,Orbital,1985,2025,2025,0,1,1738783,20.125,1 week to 50 days
+"Uznanski-Wisniewski, Slawosz",PL,Other,Male,Orbital,1984,2025,2025,0,1,1738783,20.125,1 week to 50 days
+Kapu Tibor,HU,Other,Male,Orbital,1991,2025,2025,0,1,1738783,20.125,1 week to 50 days
+"Sitkin, James Mitchel",US,USA,Male,Suborbital,,2025,2025,0,1,607,0.007,less than 1 hour
+"Larson, Leland",US,USA,Male,Suborbital,1941,2025,2025,0,1,607,0.007,less than 1 hour
+"Salis, Owolabi Mekunnu",NG,Other,Male,Suborbital,1963,2025,2025,0,1,607,0.007,less than 1 hour
+"Rescigno, Frederick Xavier, Jr.",US,USA,Male,Suborbital,,2025,2025,0,1,607,0.007,less than 1 hour
+"Kuehner, Alexandra 'Allie'",US,USA,Female,Suborbital,,2025,2025,0,1,607,0.007,less than 1 hour
+"Kuehner, Carl R., III",US,USA,Male,Suborbital,1963,2025,2025,0,1,607,0.007,less than 1 hour
+"Cardman, Zena Maria",US,USA,Female,Orbital,1988,2025,2025,0,1,14403474,166.707,50 days to 1 year
+"Platonov, Oleg Vladimirovich",RU,Russia,Male,Orbital,1986,2025,2025,0,1,14403474,166.707,50 days to 1 year
+"Pitchford, Lionel",UK,Other,Male,Suborbital,,2025,2025,0,1,605,0.007,less than 1 hour
+"Erdem, Gokhan",TR,Other,Male,Suborbital,,2025,2025,0,1,605,0.007,less than 1 hour
+Sun Yuchen (Justin),KN,Other,Male,Suborbital,1990,2025,2025,0,1,605,0.007,less than 1 hour
+"Bahal, Arvinder Singh",US,USA,Male,Suborbital,1945,2025,2025,0,1,605,0.007,less than 1 hour
+"Martorell, Deborah",US,USA,Male,Suborbital,1972,2025,2025,0,1,605,0.007,less than 1 hour
+"Newman, Aaron Charles",US,USA,Male,Suborbital,1971,2025,2025,0,1,612,0.007,less than 1 hour
+"Lewis, William H.",US,USA,Male,Suborbital,1969,2025,2025,0,1,612,0.007,less than 1 hour
+"Ostrovsky, Vitalii",UA,Other,Male,Suborbital,,2025,2025,0,1,612,0.007,less than 1 hour
+"Karagussova, Danna Sergeevna",KZ,Other,Female,Suborbital,1984,2025,2025,0,1,612,0.007,less than 1 hour
+"Elgin, Jeffrey Cornell",US,USA,Male,Suborbital,1952,2025,2025,0,1,612,0.007,less than 1 hour
+Wu Fei,CN,China,Male,Orbital,1993,2025,2025,0,1,18131174,209.852,50 days to 1 year
+Zhang Hongzhang,CN,China,Male,Orbital,1986,2025,2025,0,1,18131174,209.852,50 days to 1 year
+"Mikaev, Sergey Nikolaevich",RU,Russia,Male,Orbital,1986,2025,2025,0,1,,,
+"Williams, Christopher Leigh",US,USA,Male,Orbital,1983,2025,2025,0,1,,,
+"Milch, Neal Bruce",US,USA,Male,Suborbital,1958,2025,2025,0,1,619,0.007,less than 1 hour
+"Benthaus, Michael 'Michi'",D,Other,Female,Suborbital,,2025,2025,0,1,619,0.007,less than 1 hour
+"Koenigsmann, Hans-Jorg",D,Other,Male,Suborbital,1963,2025,2025,0,1,619,0.007,less than 1 hour
+"Pourolis, Adonis",CY,Other,Male,Suborbital,1970,2025,2025,0,1,619,0.007,less than 1 hour
+"Stansell, Jason Curtis",US,USA,Male,Suborbital,1970,2025,2025,0,1,619,0.007,less than 1 hour
+"Hyde, Joseph Bernard",US,USA,Male,Suborbital,1982,2025,2025,0,1,619,0.007,less than 1 hour
+"Hendren, James Paul",US,USA,Male,Suborbital,1963,2026,2026,0,1,602,0.007,less than 1 hour
+"Drexler, Timothy",US,USA,Male,Suborbital,1960,2026,2026,0,1,602,0.007,less than 1 hour
+"Edwards, Linda Jean",US,USA,Female,Suborbital,,2026,2026,0,1,602,0.007,less than 1 hour
+"Gutierrez Pascual, Alberto",E,Other,Male,Suborbital,,2026,2026,0,1,602,0.007,less than 1 hour
+"Fernandez, Alain",CH,Other,Male,Suborbital,,2026,2026,0,1,602,0.007,less than 1 hour
+"Stiles, Laura A.",US,USA,Male,Suborbital,1986,2026,2026,0,1,602,0.007,less than 1 hour
+"Hathaway, Jack Stewart",US,USA,Male,Orbital,1982,2026,2026,0,1,,,
+"Adenot, Sophie",F,Other,Female,Orbital,1982,2026,2026,0,1,,,
+"Hansen, Jeremy Roger",CA,Other,Male,Orbital,1976,2026,2026,0,1,783135,9.064,1 week to 50 days
+Zhang Zhiyuan,CN,China,Male,Orbital,1986,2026,2026,0,1,,,
+Lai Ka-ying,CN,China,Female,Orbital,1982,2026,2026,0,1,,,

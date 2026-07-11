@@ -115,9 +115,21 @@ def parse_astro(path: str) -> list[dict]:
     return rows
 
 
-def parse_missions(path: str) -> dict:
-    """HSFTAG -> launch year (int) for every crewed mission."""
-    tag_year = {}
+def orbit_class(orbid: str):
+    """Classify a mission by its OrbID prefix: ORB* = orbital, SO* = suborbital.
+    Anything else ('-', aborts) returns None (did not reach space on that flight)."""
+    o = (orbid or "").strip().upper()
+    if o.startswith("ORB"):
+        return "Orbital"
+    if o.startswith("SO"):
+        return "Suborbital"
+    return None
+
+
+def parse_missions(path: str):
+    """Return two dicts keyed by HSFTAG:
+    tag_year  -> launch year (int); tag_class -> 'Orbital'/'Suborbital'/None."""
+    tag_year, tag_class = {}, {}
     with open(path, encoding="utf-8", errors="replace") as f:
         for line in f:
             line = line.rstrip("\n")
@@ -128,12 +140,13 @@ def parse_missions(path: str) -> dict:
             rec = slice_row(line, MISSION_COLS)
             tag = rec["HSFTAG"].strip()
             ldate = rec["LDate"].strip()
-            if not tag or not ldate:
+            if not tag:
                 continue
-            year = ldate.split()[0]
+            tag_class[tag] = orbit_class(rec["OrbID"])
+            year = ldate.split()[0] if ldate else ""
             if year.isdigit():
                 tag_year[tag] = int(year)
-    return tag_year
+    return tag_year, tag_class
 
 
 # --------------------------------------------------------------------------
@@ -201,7 +214,7 @@ def mission_tags(field: str) -> list[str]:
     return [t for t in tags if t]
 
 
-def build_records(astro_rows: list[dict], tag_year: dict) -> list[dict]:
+def build_records(astro_rows: list[dict], tag_year: dict, tag_class: dict) -> list[dict]:
     records = []
     for r in astro_rows:
         tags = mission_tags(r["Missions"])
@@ -210,11 +223,21 @@ def build_records(astro_rows: list[dict], tag_year: dict) -> list[dict]:
         last_year = max(years) if years else None
         secs = duration_to_seconds(r["Duration"])
         born = r["Born"].split()[0] if r["Born"].strip() else ""
+        # Flight class: reached orbit on any mission -> Orbital; else if any
+        # suborbital spaceflight -> Suborbital; else None (aborts only).
+        classes = {tag_class.get(t) for t in tags}
+        if "Orbital" in classes:
+            flight_class = "Orbital"
+        elif "Suborbital" in classes:
+            flight_class = "Suborbital"
+        else:
+            flight_class = None
         records.append({
             "Name": r["Name"],
             "Citizen": r["Citizen"],
             "CitizenGroup": clean_citizen(r["Citizen"]),
             "Gender": clean_gender(r["G"]),
+            "FlightClass": flight_class,
             "BornYear": int(born) if born.isdigit() else None,
             "FirstMissionYear": first_year,
             "LastMissionYear": last_year,
@@ -262,16 +285,16 @@ def main() -> int:
 
     print("2. Parsing")
     astro_rows = parse_astro(ASTRO_RAW)
-    tag_year = parse_missions(MISSIONS_RAW)
+    tag_year, tag_class = parse_missions(MISSIONS_RAW)
     print(f"    {len(astro_rows)} flown astronauts, {len(tag_year)} missions")
 
     print("3. Building per-astronaut records")
-    records = build_records(astro_rows, tag_year)
+    records = build_records(astro_rows, tag_year, tag_class)
     usable = [r for r in records if r["FirstMissionYear"] and r["DurationBin"]]
     print(f"    {len(usable)} astronauts with usable year + duration")
 
     # --- per-astronaut tidy table ---
-    astro_fields = ["Name", "Citizen", "CitizenGroup", "Gender", "BornYear",
+    astro_fields = ["Name", "Citizen", "CitizenGroup", "Gender", "FlightClass", "BornYear",
                     "FirstMissionYear", "LastMissionYear", "CareerSpanYears",
                     "NumMissions", "DurationSeconds", "DurationDays", "DurationBin"]
     write_csv(os.path.join(PROC_DIR, "astronaut_level.csv"), astro_fields, records)
@@ -315,6 +338,15 @@ def main() -> int:
     write_csv(os.path.join(PROC_DIR, "gender_by_year.csv"),
               ["FirstMissionYear", "Gender", "Count"], gy_rows)
 
+    # --- flight class x year (orbital vs suborbital) ---
+    class_year = Counter()
+    for r in usable:
+        class_year[(r["FirstMissionYear"], r["FlightClass"] or "Unknown")] += 1
+    cy_rows = [{"FirstMissionYear": y, "FlightClass": fc, "Count": c}
+               for (y, fc), c in sorted(class_year.items())]
+    write_csv(os.path.join(PROC_DIR, "flightclass_by_year.csv"),
+              ["FirstMissionYear", "FlightClass", "Count"], cy_rows)
+
     print("4. Writing JSON bundle for the dashboard")
     groups = ["USA", "Russia", "China", "Other"]
     years = sorted({r["FirstMissionYear"] for r in usable})
@@ -336,12 +368,15 @@ def main() -> int:
             "year_min": min(years),
             "year_max": max(years),
             "groups": groups,
+            "classes": ["Orbital", "Suborbital"],
+            "n_orbital": sum(1 for r in usable if r["FlightClass"] == "Orbital"),
+            "n_suborbital": sum(1 for r in usable if r["FlightClass"] == "Suborbital"),
             "bins": DURATION_BINS,
         },
         "summary": summary,
         "astronaut_level": [
-            {k: r[k] for k in ("Name", "CitizenGroup", "Gender", "FirstMissionYear",
-                               "NumMissions", "DurationDays", "DurationBin")}
+            {k: r[k] for k in ("Name", "CitizenGroup", "Gender", "FlightClass",
+                               "FirstMissionYear", "NumMissions", "DurationDays", "DurationBin")}
             for r in usable
         ],
         "country_by_bin": cb_rows,
@@ -363,6 +398,13 @@ def main() -> int:
         print(f"    {g:8s}: {by_group[g]}")
     fem = sum(1 for r in usable if r["Gender"] == "Female")
     print(f"  Female astronauts               : {fem} ({100*fem/len(usable):.1f}%)")
+    orb = sum(1 for r in usable if r["FlightClass"] == "Orbital")
+    sub = sum(1 for r in usable if r["FlightClass"] == "Suborbital")
+    unk = len(usable) - orb - sub
+    print(f"  Orbital astronauts              : {orb} ({100*orb/len(usable):.1f}%)")
+    print(f"  Suborbital-only astronauts      : {sub} ({100*sub/len(usable):.1f}%)")
+    if unk:
+        print(f"  Unclassified (aborts only)      : {unk}")
     print(f"  Year range                      : {min(years)}-{max(years)}")
     return 0
 

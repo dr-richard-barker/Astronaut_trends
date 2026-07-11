@@ -3,6 +3,23 @@
 All notable changes to this project are documented here.
 This project follows [Semantic Versioning](https://semver.org/).
 
+## [2.1.0] — 2026-07-11
+
+### Added
+- **Orbital vs suborbital dimension.** Each astronaut is now classified as *Orbital*
+  (reached orbit on any mission) or *Suborbital-only*, derived from the Planet4589
+  mission `OrbID` field (`ORB*` vs `SO*`).
+- A **flight-class filter** (All / Orbital / Suborbital) on the dashboard that
+  re-renders **every** chart for the selected population, plus a featured
+  **orbital-vs-suborbital timeline**, two new KPIs, a static figure
+  (`figures/fig6_orbital_suborbital.png`), and a `flightclass_by_year.csv` output.
+- Result: 637 astronauts (82%) reached orbit; 136 (18%) are suborbital-only, almost
+  all post-2021 commercial passengers.
+
+### Changed
+- Dashboard aggregation refactored to compute all chart data client-side from the
+  per-astronaut table, so the country and flight-class filters apply uniformly.
+
 ## [2.0.0] — 2026-07-11
 
 A complete rebuild: from a single script + static image to a reproducible,
