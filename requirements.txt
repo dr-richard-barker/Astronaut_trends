@@ -1,0 +1,6 @@
+# Python dependencies for the Astronaut Trends pipeline (Python 3.9+)
+# build_dataset.py uses only the standard library — nothing required to refresh data.
+# The following are needed only for scripts/make_figures.py (static figures + tables):
+matplotlib>=3.6
+numpy>=1.23
+pandas>=1.5

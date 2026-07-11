@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Astronaut Trends — Interactive Dashboard</title>
+<meta name="description" content="Interactive dashboard of global human-spaceflight trends 1961–2026, by country, mission duration, and gender. Data: planet4589.org (J. McDowell)." />
+<script src="libs/echarts.min.js"></script>
+<script src="libs/d3.min.js"></script>
+<style>
+  :root {
+    --page: #f9f9f7; --surface: #fcfcfb; --surface-2: #ffffff;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+    --usa: #2a78d6; --russia: #e34948; --china: #eda100; --other: #1baf7a;
+    --b1: #86b6ef; --b2: #5598e7; --b3: #2a78d6; --b4: #1c5cab; --b5: #104281;
+    --accent: #2a78d6;
+    --shadow: 0 1px 2px rgba(11,11,11,0.04), 0 8px 24px rgba(11,11,11,0.05);
+  }
+  :root[data-theme="dark"] {
+    --page: #0d0d0d; --surface: #1a1a19; --surface-2: #212120;
+    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --usa: #3987e5; --russia: #e66767; --china: #c98500; --other: #199e70;
+    --b1: #b7d3f6; --b2: #86b6ef; --b3: #5598e7; --b4: #3987e5; --b5: #256abf;
+    --accent: #3987e5;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.5);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; }
+
+  header.masthead { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 8px; }
+  h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--ink-2); max-width: 640px; margin: 0; font-size: 0.98rem; }
+  .meta-line { color: var(--muted); font-size: 0.82rem; margin-top: 10px; }
+  .theme-btn {
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink-2);
+    border-radius: 999px; padding: 8px 14px; cursor: pointer; font-size: 0.85rem; font-family: inherit;
+    white-space: nowrap;
+  }
+  .theme-btn:hover { color: var(--ink); }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 14px; margin: 26px 0 8px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .kpi .v { font-size: 1.75rem; font-weight: 650; letter-spacing: -0.02em; }
+  .kpi .l { color: var(--ink-2); font-size: 0.82rem; margin-top: 2px; }
+  .kpi .s { color: var(--muted); font-size: 0.74rem; margin-top: 4px; }
+
+  .controls { display: flex; align-items: center; gap: 10px 18px; flex-wrap: wrap;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 12px 16px; margin: 22px 0 8px; box-shadow: var(--shadow); position: sticky; top: 8px; z-index: 5; }
+  .controls .lbl { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--border);
+    border-radius: 999px; padding: 6px 13px; cursor: pointer; user-select: none; font-size: 0.87rem; background: var(--surface-2); }
+  .chip .dot { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+  .chip.off { opacity: 0.38; }
+  .chip:hover { border-color: var(--axis); }
+
+  section.block { margin-top: 34px; }
+  .block h2 { font-size: 1.18rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .block p.cap { color: var(--ink-2); font-size: 0.9rem; margin: 0 0 14px; max-width: 780px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 12px 10px; box-shadow: var(--shadow); }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+  .chart { width: 100%; height: 420px; }
+  .chart.tall { height: 500px; }
+  .chart.short { height: 340px; }
+
+  table.report { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  table.report th, table.report td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--grid); }
+  table.report th { color: var(--muted); font-weight: 600; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; position: sticky; top: 0; background: var(--surface); }
+  table.report td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tablewrap { max-height: 460px; overflow: auto; border: 1px solid var(--border); border-radius: 12px; }
+  .searchbox { border: 1px solid var(--border); background: var(--surface-2); color: var(--ink); border-radius: 9px; padding: 8px 12px; font-size: 0.88rem; font-family: inherit; width: 220px; margin-bottom: 12px; }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+  .note { color: var(--muted); font-size: 0.78rem; margin: 6px 0 0; }
+  .legend-inline { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.8rem; color: var(--ink-2); margin: 2px 0 10px; }
+  .legend-inline span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend-inline i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <h1>Astronaut Trends</h1>
+      <p class="sub">Six decades of human spaceflight — how many people have flown, from where, for how long, and how that mix has shifted from the Space Race to the commercial era.</p>
+      <p class="meta-line" id="metaLine">Loading data…</p>
+    </div>
+    <button class="theme-btn" id="themeBtn" title="Toggle light / dark">◐ Theme</button>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="controls">
+    <span class="lbl">Filter country</span>
+    <span class="chip" data-c="USA"><span class="dot" style="background:var(--usa)"></span>USA</span>
+    <span class="chip" data-c="Russia"><span class="dot" style="background:var(--russia)"></span>Russia</span>
+    <span class="chip" data-c="China"><span class="dot" style="background:var(--china)"></span>China</span>
+    <span class="chip" data-c="Other"><span class="dot" style="background:var(--other)"></span>Other</span>
+    <span style="flex:1"></span>
+    <span class="note">Filters the country-aware charts &amp; table below</span>
+  </div>
+
+  <!-- 1. Timeline -->
+  <section class="block">
+    <h2>1 · New astronauts entering service, by year</h2>
+    <p class="cap">Each person is counted in the year of their <em>first</em> flight. Bars are stacked by citizenship group. Drag the slider under the chart to zoom into an era; the 2021→ spike is suborbital commercial spaceflight.</p>
+    <div class="card"><div id="c_timeline" class="chart tall"></div></div>
+  </section>
+
+  <!-- 2. Small multiples (the original figure, reborn) -->
+  <section class="block">
+    <h2>2 · Mission-duration mix over time, by country</h2>
+    <p class="cap">The original study figure, rebuilt interactively: number of astronauts per first-flight year, split by how long they have <em>cumulatively</em> spent in space. One panel per country; colour runs short→long.</p>
+    <div class="card"><div id="c_facets" class="chart tall"></div></div>
+  </section>
+
+  <div class="grid-2">
+    <!-- 3. Boxplot by country -->
+    <section class="block">
+      <h2>3 · Career time in space — by country</h2>
+      <p class="cap">Box &amp; whisker of total career duration (days, log scale) per astronaut. Russia's median dwarfs everyone — a long-duration station legacy.</p>
+      <div class="card"><div id="c_boxcountry" class="chart"></div></div>
+    </section>
+    <!-- 4. Boxplot by decade -->
+    <section class="block">
+      <h2>4 · Career time in space — by decade</h2>
+      <p class="cap">The same measure, grouped by the decade of first flight. The spread widens as both ultra-short tourist hops and year-long station stays appear.</p>
+      <div class="card"><div id="c_boxdecade" class="chart"></div></div>
+    </section>
+  </div>
+
+  <div class="grid-2">
+    <!-- 5. Bar by country -->
+    <section class="block">
+      <h2>5 · Total astronauts by country</h2>
+      <p class="cap">Headcount of everyone who has flown, all years combined.</p>
+      <div class="card"><div id="c_barcountry" class="chart short"></div></div>
+    </section>
+    <!-- 6. Composition -->
+    <section class="block">
+      <h2>6 · Duration-bin composition</h2>
+      <p class="cap">Share of each country's astronauts falling in each duration band (100% stacked).</p>
+      <div class="card"><div id="c_comp" class="chart short"></div></div>
+    </section>
+  </div>
+
+  <div class="grid-2">
+    <!-- 7. Sankey -->
+    <section class="block">
+      <h2>7 · Country → duration flow (Sankey)</h2>
+      <p class="cap">Width of each ribbon is the number of astronauts flowing from a country into a duration band.</p>
+      <div class="card"><div id="c_sankey" class="chart tall"></div></div>
+    </section>
+    <!-- 8. Chord -->
+    <section class="block">
+      <h2>8 · Decade ↔ country (Chord)</h2>
+      <p class="cap">Chords link decades to the countries that debuted astronauts in them. Arc length is total debuts.</p>
+      <div class="card"><div id="c_chord" class="chart tall"></div></div>
+    </section>
+  </div>
+
+  <div class="grid-2">
+    <!-- 9. Network -->
+    <section class="block">
+      <h2>9 · Country–decade network</h2>
+      <p class="cap">A force-directed bipartite graph: countries (squares) linked to the decades (circles) in which they sent people up. Edge thickness = number of debuts; drag nodes to explore.</p>
+      <div class="card"><div id="c_network" class="chart tall"></div></div>
+    </section>
+    <!-- 10. Radar -->
+    <section class="block">
+      <h2>10 · Duration profile (Radar)</h2>
+      <p class="cap">Each country's normalised fingerprint across the five duration bands — the shape shows a national spaceflight "style".</p>
+      <div class="card"><div id="c_radar" class="chart tall"></div></div>
+    </section>
+  </div>
+
+  <div class="grid-2">
+    <!-- 11. Heatmap -->
+    <section class="block">
+      <h2>11 · Decade × duration heatmap</h2>
+      <p class="cap">Density of astronaut debuts across decade and duration band.</p>
+      <div class="card"><div id="c_heat" class="chart"></div></div>
+    </section>
+    <!-- 12. Gender -->
+    <section class="block">
+      <h2>12 · Women in spaceflight</h2>
+      <p class="cap">New male vs. female astronauts per year. The female share climbs but has never reached parity.</p>
+      <div class="card"><div id="c_gender" class="chart"></div></div>
+    </section>
+  </div>
+
+  <!-- 13. Table -->
+  <section class="block">
+    <h2>13 · Summary report table</h2>
+    <p class="cap">The full aggregated dataset (first-flight year × country × duration band × count). Search, then export from the repo's <code>data/processed/</code> folder.</p>
+    <input class="searchbox" id="tblSearch" placeholder="Filter rows…" />
+    <div class="tablewrap">
+      <table class="report" id="reportTable">
+        <thead><tr><th>Year</th><th>Country</th><th>Duration band</th><th class="num">Astronauts</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Data source:</strong> Jonathan C. McDowell, <a href="https://planet4589.org/space/astro/lists/" target="_blank" rel="noopener">planet4589.org General Catalogue of Astronauts</a> (astronaut &amp; mission lists). Reprocessed by the <em>Astronaut Trends</em> pipeline (<code>scripts/build_dataset.py</code>).</p>
+    <p id="footMeta"></p>
+    <p>Part of the MadWest Rocketry education &amp; outreach project. Code MIT · data CC-BY-4.0. Charts built with ECharts &amp; D3 (vendored locally for archival reproducibility).</p>
+  </footer>
+</div>
+
+<script>
+"use strict";
+
+const COUNTRIES = ["USA","Russia","China","Other"];
+const BINS = ["less than 1 hour","1 hour to 1 week","1 week to 50 days","50 days to 1 year","more than 1 year"];
+const BIN_SHORT = {"less than 1 hour":"< 1 hr","1 hour to 1 week":"1 hr – 1 wk","1 week to 50 days":"1 wk – 50 d","50 days to 1 year":"50 d – 1 yr","more than 1 year":"> 1 yr"};
+
+function cssv(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+function theme(){
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  return {
+    dark,
+    country: { USA: cssv("--usa"), Russia: cssv("--russia"), China: cssv("--china"), Other: cssv("--other") },
+    bins: [cssv("--b1"),cssv("--b2"),cssv("--b3"),cssv("--b4"),cssv("--b5")],
+    ink: cssv("--ink"), ink2: cssv("--ink-2"), muted: cssv("--muted"),
+    grid: cssv("--grid"), axis: cssv("--axis"), surface: cssv("--surface"),
+  };
+}
+const fmt = new Intl.NumberFormat("en-US");
+
+let DATA = null;
+const charts = [];              // {inst, render}
+const state = { countries: new Set(COUNTRIES) };
+
+function register(dom, renderFn){
+  const inst = echarts.init(dom, null, { renderer: "canvas" });
+  const entry = { inst, render: () => inst.setOption(renderFn(theme()), true) };
+  charts.push(entry);
+  entry.render();
+  return entry;
+}
+
+// ---- boot ----
+fetch("data/astronaut_data.json").then(r => r.json())
+  .then(d => { DATA = d; try { boot(); } catch(e){ console.error("boot error", e); } })
+  .catch(e => { document.getElementById("metaLine").textContent = "Could not load data/astronaut_data.json — " + e; });
+
+function boot(){
+  const m = DATA.meta;
+  document.getElementById("metaLine").innerHTML =
+    `<strong>${fmt.format(m.n_astronauts)}</strong> flown astronauts · <strong>${fmt.format(m.n_missions)}</strong> crewed missions · ${m.year_min}–${m.year_max} · data generated ${m.generated}`;
+  document.getElementById("footMeta").textContent = `Snapshot: ${m.n_astronauts} astronauts, ${m.n_missions} missions. Generated ${m.generated}. Source updated by J. McDowell.`;
+  buildKPIs();
+  buildTable();
+  wireControls();
+  buildAll();
+  window.addEventListener("resize", () => { charts.forEach(c => c.inst.resize()); drawChord(); });
+}
+
+// ---- KPIs ----
+function buildKPIs(){
+  const A = DATA.astronaut_level;
+  const total = A.length;
+  const byC = Object.fromEntries(COUNTRIES.map(c => [c, A.filter(a => a.CitizenGroup===c).length]));
+  const female = A.filter(a => a.Gender==="Female").length;
+  const longest = A.reduce((mx,a)=> a.DurationDays>mx.DurationDays?a:mx, A[0]);
+  const overYear = A.filter(a=>a.DurationBin==="more than 1 year").length;
+  const decadeCount = {};
+  A.forEach(a => { const dcd = Math.floor(a.FirstMissionYear/10)*10; decadeCount[dcd]=(decadeCount[dcd]||0)+1; });
+  const peakDecade = Object.entries(decadeCount).sort((a,b)=>b[1]-a[1])[0];
+  const kpis = [
+    { v: fmt.format(total), l: "Flown astronauts", s: `${DATA.meta.year_min}–${DATA.meta.year_max}` },
+    { v: fmt.format(byC.USA), l: "from the USA", s: `${(100*byC.USA/total).toFixed(0)}% of all flyers` },
+    { v: fmt.format(byC.Russia), l: "from Russia / USSR", s: "longest-duration legacy" },
+    { v: fmt.format(byC.China), l: "from China", s: "all since 2003" },
+    { v: `${(100*female/total).toFixed(1)}%`, l: "were women", s: `${female} astronauts` },
+    { v: `${Math.round(longest.DurationDays)} d`, l: "longest career in space", s: longest.Name.split(",")[0] },
+    { v: fmt.format(overYear), l: "logged > 1 year aloft", s: "cumulative career time" },
+    { v: `${peakDecade[0]}s`, l: "busiest debut decade", s: `${peakDecade[1]} new flyers` },
+  ];
+  document.getElementById("kpis").innerHTML = kpis.map(k =>
+    `<div class="kpi"><div class="v">${k.v}</div><div class="l">${k.l}</div><div class="s">${k.s}</div></div>`).join("");
+}
+
+// ---- controls ----
+function wireControls(){
+  document.querySelectorAll(".chip[data-c]").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const c = chip.dataset.c;
+      if (state.countries.has(c)) { state.countries.delete(c); chip.classList.add("off"); }
+      else { state.countries.add(c); chip.classList.remove("off"); }
+      if (state.countries.size === 0) { state.countries.add(c); chip.classList.remove("off"); return; }
+      charts.forEach(c => c.render());
+      drawChord();
+      filterTable();
+    });
+  });
+  document.getElementById("themeBtn").addEventListener("click", () => {
+    const cur = document.documentElement.getAttribute("data-theme");
+    const next = cur === "dark" ? "light" : (cur === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    document.documentElement.setAttribute("data-theme", next);
+    charts.forEach(c => c.render());
+    drawChord();
+  });
+  document.getElementById("tblSearch").addEventListener("input", filterTable);
+}
+const activeCountries = () => COUNTRIES.filter(c => state.countries.has(c));
+
+// ---- shared axis helpers ----
+function baseGrid(t, over){ return Object.assign({ left: 54, right: 20, top: 40, bottom: 54 }, over||{}); }
+function axisText(t){ return { color: t.muted }; }
+
+// ======================================================================
+//  CHART BUILDERS
+// ======================================================================
+function buildAll(){
+  register(document.getElementById("c_timeline"), optTimeline);
+  register(document.getElementById("c_facets"), optFacets);
+  register(document.getElementById("c_boxcountry"), optBoxCountry);
+  register(document.getElementById("c_boxdecade"), optBoxDecade);
+  register(document.getElementById("c_barcountry"), optBarCountry);
+  register(document.getElementById("c_comp"), optComposition);
+  register(document.getElementById("c_sankey"), optSankey);
+  register(document.getElementById("c_network"), optNetwork);
+  register(document.getElementById("c_radar"), optRadar);
+  register(document.getElementById("c_heat"), optHeat);
+  register(document.getElementById("c_gender"), optGender);
+  drawChord();
+}
+
+// 1 · stacked timeline by country
+function optTimeline(t){
+  const years = [...new Set(DATA.summary.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
+  const cs = activeCountries();
+  const series = cs.map(c => ({
+    name: c, type: "bar", stack: "all", emphasis: { focus: "series" },
+    itemStyle: { color: t.country[c] },
+    data: years.map(y => DATA.summary.filter(r=>r.FirstMissionYear===y && r.CitizenCleaned===c).reduce((s,r)=>s+r.Count,0))
+  }));
+  return {
+    color: cs.map(c=>t.country[c]),
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+    legend: { data: cs, textStyle: { color: t.ink2 }, top: 4 },
+    grid: baseGrid(t, { bottom: 70 }),
+    xAxis: { type: "category", data: years, axisLabel: axisText(t), axisLine: { lineStyle:{color:t.axis} }, name: "First-flight year", nameLocation:"middle", nameGap: 34, nameTextStyle:{color:t.muted} },
+    yAxis: { type: "value", name: "New astronauts", axisLabel: axisText(t), splitLine: { lineStyle:{color:t.grid} }, nameTextStyle:{color:t.muted} },
+    dataZoom: [{ type: "slider", start: 0, end: 100, bottom: 8, height: 18 }, { type: "inside" }],
+    series
+  };
+}
+
+// 2 · small multiples: count by bin, one grid per country
+function optFacets(t){
+  const cs = activeCountries();
+  const years = [...new Set(DATA.summary.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
+  const cols = cs.length <= 2 ? cs.length : 2;
+  const rows = Math.ceil(cs.length/cols);
+  const grids=[], xAxes=[], yAxes=[], series=[];
+  const gapX = 6, padL = 5, padR = 3, padT = 12, padB = 8;
+  const cellW = (100 - padL - padR - (cols-1)*gapX) / cols;
+  const gapY = 12, rowH = (100 - padT - padB - (rows-1)*gapY) / rows;
+  cs.forEach((c, i) => {
+    const r = Math.floor(i/cols), col = i % cols;
+    const left = padL + col*(cellW+gapX), top = padT + r*(rowH+gapY);
+    grids.push({ left: left+"%", top: top+"%", width: cellW+"%", height: (rowH-6)+"%" });
+    xAxes.push({ gridIndex:i, type:"category", data:years, axisLabel:{ color:t.muted, fontSize:9, interval: 14 }, axisLine:{lineStyle:{color:t.axis}} });
+    yAxes.push({ gridIndex:i, type:"value", axisLabel:{ color:t.muted, fontSize:9 }, splitLine:{lineStyle:{color:t.grid}} });
+    BINS.forEach((b, bi) => {
+      series.push({
+        name: BIN_SHORT[b], type:"line", smooth:true, symbol:"none", xAxisIndex:i, yAxisIndex:i,
+        lineStyle:{ width: 1.8, color: t.bins[bi] }, itemStyle:{ color: t.bins[bi] },
+        data: years.map(y => DATA.summary.filter(rr=>rr.FirstMissionYear===y && rr.CitizenCleaned===c && rr.DurationBinned===b).reduce((s,rr)=>s+rr.Count,0)),
+        emphasis:{ focus:"series" }
+      });
+    });
+  });
+  // title per facet
+  const titles = cs.map((c,i)=>({ text:c, left: grids[i].left, top: (parseFloat(grids[i].top)-4)+"%", textStyle:{ color:t.ink, fontSize:13, fontWeight:600 } }));
+  return {
+    title: titles,
+    color: t.bins,
+    tooltip: { trigger:"axis" },
+    legend: { data: BINS.map(b=>BIN_SHORT[b]), textStyle:{color:t.ink2}, bottom: 2, itemWidth: 18 },
+    grid: grids, xAxis: xAxes, yAxis: yAxes, series
+  };
+}
+
+// quartile helper
+function quartiles(sorted){
+  const q = p => { const idx=(sorted.length-1)*p, lo=Math.floor(idx), hi=Math.ceil(idx); return sorted[lo]+(sorted[hi]-sorted[lo])*(idx-lo); };
+  const Q1=q(0.25), Q2=q(0.5), Q3=q(0.75), iqr=Q3-Q1;
+  const lo=Math.max(sorted[0], Q1-1.5*iqr), hi=Math.min(sorted[sorted.length-1], Q3+1.5*iqr);
+  const outliers=sorted.filter(v=>v<lo||v>hi);
+  return { box:[lo,Q1,Q2,Q3,hi], outliers };
+}
+function boxOption(t, groups, dict, colorFn, xName){
+  const cats=[], boxData=[], outData=[];
+  groups.forEach((g,i) => {
+    const arr = (dict[g]||[]).filter(v=>v>0).sort((a,b)=>a-b);
+    if (!arr.length) return;
+    cats.push(g);
+    const q = quartiles(arr);
+    boxData.push({ value: q.box, itemStyle:{ color: colorFn(g,i), borderColor: colorFn(g,i) } });
+    q.outliers.forEach(o => outData.push([cats.length-1, o]));
+  });
+  return {
+    tooltip: { trigger:"item", formatter: p => Array.isArray(p.value) && p.value.length===5
+      ? `${cats[p.dataIndex]}<br/>max ${p.value[4].toFixed(1)} d<br/>Q3 ${p.value[3].toFixed(1)} d<br/>median <b>${p.value[2].toFixed(1)} d</b><br/>Q1 ${p.value[1].toFixed(1)} d<br/>min ${p.value[0].toFixed(1)} d`
+      : `outlier: ${(+p.value[1]).toFixed(1)} d` },
+    grid: baseGrid(t, { left: 62, bottom: 40 }),
+    xAxis: { type:"category", data: cats, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, name:xName, nameLocation:"middle", nameGap:30, nameTextStyle:{color:t.muted} },
+    yAxis: { type:"log", name:"days in space (career)", axisLabel:{ color:t.muted }, splitLine:{lineStyle:{color:t.grid}}, nameTextStyle:{color:t.muted} },
+    series: [
+      { name:"box", type:"boxplot", data: boxData, boxWidth:[10,40] },
+      { name:"outlier", type:"scatter", data: outData, symbolSize:5, itemStyle:{ color: t.muted, opacity:0.6 } }
+    ]
+  };
+}
+function optBoxCountry(t){
+  const cs = activeCountries();
+  return boxOption(t, cs, DATA.duration_by_group, g=>t.country[g], "citizenship group");
+}
+function optBoxDecade(t){
+  const decs = Object.keys(DATA.duration_by_decade);
+  return boxOption(t, decs, DATA.duration_by_decade, (g,i)=>t.bins[Math.min(i, t.bins.length-1)], "decade of first flight");
+}
+
+// 5 · bar by country
+function optBarCountry(t){
+  const cs = activeCountries();
+  const counts = cs.map(c => DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length);
+  return {
+    tooltip: { trigger:"axis", axisPointer:{type:"shadow"} },
+    grid: baseGrid(t, { left: 64, bottom: 36 }),
+    xAxis: { type:"value", axisLabel: axisText(t), splitLine:{lineStyle:{color:t.grid}} },
+    yAxis: { type:"category", data: cs, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, inverse:true },
+    series: [{ type:"bar", data: cs.map((c,i)=>({ value: counts[i], itemStyle:{ color: t.country[c] } })),
+      barWidth: "55%", itemStyle:{ borderRadius:[0,4,4,0] },
+      label:{ show:true, position:"right", color:t.ink2, formatter: p=>fmt.format(p.value) } }]
+  };
+}
+
+// 6 · composition 100% stacked
+function optComposition(t){
+  const cs = activeCountries();
+  const totby = Object.fromEntries(cs.map(c=>[c, DATA.astronaut_level.filter(a=>a.CitizenGroup===c && a.DurationBin).length]));
+  const series = BINS.map((b,bi)=>({
+    name: BIN_SHORT[b], type:"bar", stack:"x", itemStyle:{ color: t.bins[bi] },
+    emphasis:{focus:"series"},
+    data: cs.map(c => { const n = DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0); return totby[c]? +(100*n/totby[c]).toFixed(1):0; })
+  }));
+  return {
+    color: t.bins,
+    tooltip: { trigger:"axis", axisPointer:{type:"shadow"}, valueFormatter: v=>v+"%" },
+    legend: { data: BINS.map(b=>BIN_SHORT[b]), textStyle:{color:t.ink2}, top:2, itemWidth:16, itemHeight:10 },
+    grid: baseGrid(t, { top: 36, left: 64, bottom: 30 }),
+    xAxis: { type:"value", max:100, axisLabel:{ color:t.muted, formatter:"{value}%" }, splitLine:{lineStyle:{color:t.grid}} },
+    yAxis: { type:"category", data: cs, axisLabel: axisText(t), axisLine:{lineStyle:{color:t.axis}}, inverse:true },
+    series
+  };
+}
+
+// 7 · sankey country -> bin
+function optSankey(t){
+  const cs = activeCountries();
+  const nodes=[], links=[];
+  cs.forEach(c => nodes.push({ name: c, itemStyle:{ color:t.country[c] } }));
+  BINS.forEach((b,bi) => nodes.push({ name: BIN_SHORT[b], itemStyle:{ color:t.bins[bi] } }));
+  cs.forEach(c => BINS.forEach(b => {
+    const v = DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0);
+    if (v>0) links.push({ source:c, target:BIN_SHORT[b], value:v });
+  }));
+  return {
+    tooltip: { trigger:"item", triggerOn:"mousemove" },
+    series: [{ type:"sankey", data: nodes, links, emphasis:{focus:"adjacency"},
+      left: 8, right: 90, top: 12, bottom: 12,
+      label:{ color:t.ink, fontSize:11 }, lineStyle:{ color:"gradient", opacity:0.42 },
+      nodeGap: 10 }]
+  };
+}
+
+// 9 · network country - decade
+function optNetwork(t){
+  const cs = activeCountries();
+  const rows = DATA.decade_by_country.filter(r=>cs.includes(r.CitizenGroup));
+  const decades = [...new Set(rows.map(r=>r.Decade))].sort();
+  const nodes=[], links=[];
+  const maxC = Math.max(...cs.map(c=>DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length));
+  cs.forEach(c => nodes.push({ name:c, category:0, symbol:"rect", symbolSize: 18+34*DATA.astronaut_level.filter(a=>a.CitizenGroup===c).length/maxC, itemStyle:{color:t.country[c]}, label:{show:true,color:t.ink,fontWeight:600} }));
+  decades.forEach(d => nodes.push({ name:d, category:1, symbolSize: 14, itemStyle:{color:t.muted}, label:{show:true,color:t.ink2,fontSize:10} }));
+  rows.forEach(r => links.push({ source:r.CitizenGroup, target:r.Decade, value:r.Count, lineStyle:{ width: Math.max(1, Math.sqrt(r.Count)), color:t.country[r.CitizenGroup], opacity:0.5, curveness:0.08 } }));
+  return {
+    tooltip:{ formatter: p => p.dataType==="edge" ? `${p.data.source} → ${p.data.target}: ${p.data.value}` : p.name },
+    legend:{ data:["Country","Decade"], textStyle:{color:t.ink2}, top:2 },
+    series:[{ type:"graph", layout:"force", roam:true, draggable:true,
+      categories:[{name:"Country"},{name:"Decade"}],
+      force:{ repulsion: 220, edgeLength: [40,120], gravity:0.12, layoutAnimation:false },
+      data:nodes, links, emphasis:{focus:"adjacency"}, label:{position:"right"} }]
+  };
+}
+
+// 10 · radar
+function optRadar(t){
+  const cs = activeCountries();
+  const indicators = BINS.map(b => {
+    const mx = Math.max(...COUNTRIES.map(c => share(c,b)));
+    return { name: BIN_SHORT[b], max: Math.max(0.05, mx) };
+  });
+  function share(c,b){ const tot=DATA.astronaut_level.filter(a=>a.CitizenGroup===c && a.DurationBin).length;
+    const n=DATA.country_by_bin.filter(r=>r.CitizenGroup===c && r.DurationBin===b).reduce((s,r)=>s+r.Count,0); return tot? n/tot:0; }
+  return {
+    tooltip:{ trigger:"item" },
+    legend:{ data: cs, textStyle:{color:t.ink2}, top:2 },
+    color: cs.map(c=>t.country[c]),
+    radar:{ indicator: indicators, radius:"66%", center:["50%","56%"],
+      axisName:{ color:t.ink2, fontSize:11 }, splitLine:{lineStyle:{color:t.grid}},
+      splitArea:{ areaStyle:{ color:["transparent"] } }, axisLine:{lineStyle:{color:t.grid}} },
+    series:[{ type:"radar", data: cs.map(c=>({ name:c, value: BINS.map(b=>+share(c,b).toFixed(3)),
+      lineStyle:{color:t.country[c],width:2}, itemStyle:{color:t.country[c]}, areaStyle:{ color:t.country[c], opacity:0.08 } })) }]
+  };
+}
+
+// 11 · heatmap decade x bin
+function optHeat(t){
+  const decs = [...new Set(DATA.decade_by_country.map(r=>r.Decade))].sort();
+  const cells=[]; let mx=0;
+  decs.forEach((d,di) => BINS.forEach((b,bi) => {
+    const v = DATA.astronaut_level.filter(a=> (Math.floor(a.FirstMissionYear/10)*10)+"s"===d && a.DurationBin===b).length;
+    cells.push([bi,di,v]); if(v>mx)mx=v;
+  }));
+  return {
+    tooltip:{ position:"top", formatter: p=>`${decs[p.value[1]]} · ${BINS[p.value[0]]}<br/><b>${p.value[2]}</b> astronauts` },
+    grid: baseGrid(t, { left: 62, right: 20, top: 12, bottom: 78 }),
+    xAxis:{ type:"category", data: BINS.map(b=>BIN_SHORT[b]), axisLabel:{ color:t.muted, rotate: 30 }, splitArea:{show:true}, axisLine:{lineStyle:{color:t.axis}} },
+    yAxis:{ type:"category", data: decs, axisLabel: axisText(t), splitArea:{show:true}, axisLine:{lineStyle:{color:t.axis}} },
+    visualMap:{ min:0, max:mx, calculable:true, orient:"horizontal", left:"center", bottom:8,
+      inRange:{ color: t.dark ? ["#14202e","#1c5cab","#86b6ef"] : ["#eaf2fd","#5598e7","#104281"] }, textStyle:{color:t.muted} },
+    series:[{ type:"heatmap", data: cells, label:{ show:true, color:t.dark?"#dfe8f5":"#0b0b0b", fontSize:10 },
+      itemStyle:{ borderColor:t.surface, borderWidth:2 }, emphasis:{ itemStyle:{ borderColor:t.ink } } }]
+  };
+}
+
+// 12 · gender stacked area by year
+function optGender(t){
+  const years=[...new Set(DATA.gender_by_year.map(r=>r.FirstMissionYear))].sort((a,b)=>a-b);
+  const g = (y,sex)=> DATA.gender_by_year.filter(r=>r.FirstMissionYear===y && r.Gender===sex).reduce((s,r)=>s+r.Count,0);
+  const male = cssv("--muted"), female = cssv("--china");
+  return {
+    tooltip:{ trigger:"axis" },
+    legend:{ data:["Male","Female"], textStyle:{color:t.ink2}, top:2 },
+    grid: baseGrid(t, { left: 48, bottom: 40 }),
+    xAxis:{ type:"category", data: years, axisLabel:{ color:t.muted, interval: 9 }, axisLine:{lineStyle:{color:t.axis}} },
+    yAxis:{ type:"value", name:"new astronauts", axisLabel: axisText(t), splitLine:{lineStyle:{color:t.grid}}, nameTextStyle:{color:t.muted} },
+    series:[
+      { name:"Male", type:"bar", stack:"g", data: years.map(y=>g(y,"Male")), itemStyle:{ color: male } },
+      { name:"Female", type:"bar", stack:"g", data: years.map(y=>g(y,"Female")), itemStyle:{ color: female } }
+    ]
+  };
+}
+
+// 8 · D3 chord (custom, not ECharts)
+function drawChord(){
+  try { drawChordImpl(); } catch(e){ console.error("chord error", e); }
+}
+function drawChordImpl(){
+  if (!DATA) return;
+  const el = document.getElementById("c_chord");
+  el.innerHTML = "";
+  const t = theme();
+  const cs = activeCountries();
+  const decades = [...new Set(DATA.decade_by_country.map(r=>r.Decade))].sort();
+  const names = [...decades, ...cs];
+  const idx = Object.fromEntries(names.map((n,i)=>[n,i]));
+  const n = names.length;
+  const matrix = Array.from({length:n}, ()=>new Array(n).fill(0));
+  DATA.decade_by_country.filter(r=>cs.includes(r.CitizenGroup)).forEach(r => {
+    const a=idx[r.Decade], b=idx[r.CitizenGroup];
+    matrix[a][b]+=r.Count; matrix[b][a]+=r.Count;
+  });
+  const rect = el.getBoundingClientRect();
+  const W = rect.width || 520, H = rect.height || 480;
+  const outer = Math.max(80, Math.min(W,H)/2 - 24), inner = Math.max(60, outer - 14);
+  if (outer < 80) { requestAnimationFrame(drawChord); return; }
+  const color = name => cs.includes(name) ? t.country[name] : t.bins[Math.min(decades.indexOf(name), t.bins.length-1)];
+
+  const svg = d3.select(el).append("svg").attr("width", W).attr("height", H)
+    .append("g").attr("transform", `translate(${W/2},${H/2})`);
+  const chord = d3.chord().padAngle(0.045).sortSubgroups(d3.descending)(matrix);
+  const arc = d3.arc().innerRadius(inner).outerRadius(outer);
+  const ribbon = d3.ribbon().radius(inner);
+
+  const group = svg.append("g").selectAll("g").data(chord.groups).join("g");
+  group.append("path").attr("d", arc)
+    .attr("fill", d => color(names[d.index]))
+    .attr("stroke", t.surface).attr("stroke-width", 1.5);
+  group.append("text").each(d => { d.angle = (d.startAngle + d.endAngle)/2; })
+    .attr("dy", "0.35em")
+    .attr("transform", d => `rotate(${d.angle*180/Math.PI - 90}) translate(${outer+8}) ${d.angle > Math.PI ? "rotate(180)" : ""}`)
+    .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
+    .attr("fill", t.ink2).attr("font-size", "11px").attr("font-family","system-ui, sans-serif")
+    .text(d => names[d.index]);
+
+  svg.append("g").attr("fill-opacity", 0.62).selectAll("path").data(chord).join("path")
+    .attr("d", ribbon)
+    .attr("fill", d => color(names[d.source.index]))
+    .attr("stroke", t.surface).attr("stroke-width", 0.5)
+    .append("title").text(d => `${names[d.source.index]} ↔ ${names[d.target.index]}: ${matrix[d.source.index][d.target.index]}`);
+}
+
+// ---- table ----
+function buildTable(){
+  const tb = document.querySelector("#reportTable tbody");
+  tb.innerHTML = DATA.summary.map(r =>
+    `<tr data-c="${r.CitizenCleaned}"><td>${r.FirstMissionYear}</td><td>${r.CitizenCleaned}</td><td>${r.DurationBinned}</td><td class="num">${r.Count}</td></tr>`).join("");
+}
+function filterTable(){
+  const q = (document.getElementById("tblSearch").value||"").toLowerCase();
+  document.querySelectorAll("#reportTable tbody tr").forEach(tr => {
+    const okC = state.countries.has(tr.dataset.c);
+    const okQ = !q || tr.textContent.toLowerCase().includes(q);
+    tr.style.display = (okC && okQ) ? "" : "none";
+  });
+}
+</script>
+</body>
+</html>

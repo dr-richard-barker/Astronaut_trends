@@ -1,0 +1,19 @@
+CitizenGroup,DurationBin,Count
+China,1 hour to 1 week,1
+China,1 week to 50 days,2
+China,50 days to 1 year,21
+China,more than 1 year,3
+Other,1 hour to 1 week,6
+Other,1 week to 50 days,77
+Other,50 days to 1 year,21
+Other,less than 1 hour,45
+Other,more than 1 year,6
+Russia,1 hour to 1 week,15
+Russia,1 week to 50 days,27
+Russia,50 days to 1 year,50
+Russia,more than 1 year,39
+USA,1 hour to 1 week,30
+USA,1 week to 50 days,227
+USA,50 days to 1 year,99
+USA,less than 1 hour,89
+USA,more than 1 year,15

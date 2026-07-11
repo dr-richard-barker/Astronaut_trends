@@ -1,0 +1,295 @@
+FirstMissionYear,CitizenCleaned,DurationBinned,Count
+1961,Russia,1 hour to 1 week,2
+1961,USA,1 hour to 1 week,1
+1961,USA,1 week to 50 days,1
+1962,Russia,1 week to 50 days,2
+1962,USA,1 hour to 1 week,1
+1962,USA,1 week to 50 days,2
+1962,USA,less than 1 hour,1
+1963,Russia,1 hour to 1 week,1
+1963,Russia,1 week to 50 days,1
+1963,USA,1 week to 50 days,1
+1963,USA,less than 1 hour,2
+1964,Russia,1 hour to 1 week,3
+1965,Russia,1 hour to 1 week,1
+1965,Russia,1 week to 50 days,1
+1965,USA,1 hour to 1 week,1
+1965,USA,1 week to 50 days,7
+1965,USA,less than 1 hour,1
+1966,USA,1 week to 50 days,6
+1966,USA,less than 1 hour,1
+1967,USA,less than 1 hour,2
+1968,Russia,1 hour to 1 week,1
+1968,USA,1 hour to 1 week,1
+1968,USA,1 week to 50 days,2
+1969,Russia,1 hour to 1 week,2
+1969,Russia,1 week to 50 days,6
+1969,Russia,50 days to 1 year,1
+1969,USA,1 week to 50 days,1
+1969,USA,50 days to 1 year,1
+1970,Russia,50 days to 1 year,1
+1970,USA,1 hour to 1 week,2
+1971,Other,1 week to 50 days,1
+1971,Russia,1 week to 50 days,2
+1971,USA,1 week to 50 days,4
+1972,USA,1 week to 50 days,4
+1973,Russia,1 hour to 1 week,1
+1973,Russia,1 week to 50 days,1
+1973,Russia,50 days to 1 year,2
+1973,USA,1 week to 50 days,2
+1973,USA,50 days to 1 year,5
+1974,Russia,1 hour to 1 week,2
+1974,Russia,1 week to 50 days,1
+1975,Russia,1 week to 50 days,1
+1975,Russia,50 days to 1 year,1
+1975,USA,1 week to 50 days,2
+1976,Other,1 week to 50 days,1
+1976,Russia,1 hour to 1 week,2
+1976,Russia,1 week to 50 days,1
+1977,Russia,1 week to 50 days,1
+1977,Russia,50 days to 1 year,1
+1977,Russia,more than 1 year,2
+1978,Other,1 week to 50 days,3
+1978,Russia,50 days to 1 year,2
+1979,Other,1 hour to 1 week,1
+1979,Russia,50 days to 1 year,1
+1980,Other,1 week to 50 days,3
+1980,Russia,1 week to 50 days,1
+1980,Russia,50 days to 1 year,2
+1980,Russia,more than 1 year,1
+1981,Other,1 week to 50 days,2
+1981,Russia,50 days to 1 year,1
+1981,USA,1 week to 50 days,2
+1982,Other,1 week to 50 days,1
+1982,Russia,1 week to 50 days,1
+1982,Russia,50 days to 1 year,1
+1982,Russia,more than 1 year,1
+1982,USA,1 hour to 1 week,1
+1982,USA,1 week to 50 days,4
+1983,Other,1 week to 50 days,1
+1983,Russia,50 days to 1 year,1
+1983,Russia,more than 1 year,1
+1983,USA,1 hour to 1 week,1
+1983,USA,1 week to 50 days,11
+1983,USA,50 days to 1 year,2
+1984,Other,1 week to 50 days,2
+1984,Russia,1 week to 50 days,1
+1984,Russia,50 days to 1 year,2
+1984,USA,1 hour to 1 week,3
+1984,USA,1 week to 50 days,16
+1985,Other,1 hour to 1 week,1
+1985,Other,1 week to 50 days,5
+1985,Russia,50 days to 1 year,1
+1985,Russia,more than 1 year,1
+1985,USA,1 hour to 1 week,6
+1985,USA,1 week to 50 days,22
+1985,USA,50 days to 1 year,4
+1986,USA,1 hour to 1 week,2
+1986,USA,1 week to 50 days,1
+1986,USA,50 days to 1 year,1
+1987,Other,1 week to 50 days,1
+1987,Russia,1 week to 50 days,1
+1987,Russia,50 days to 1 year,1
+1987,Russia,more than 1 year,2
+1988,Other,1 week to 50 days,2
+1988,Russia,more than 1 year,3
+1988,USA,1 week to 50 days,1
+1988,USA,50 days to 1 year,1
+1989,USA,1 hour to 1 week,2
+1989,USA,1 week to 50 days,8
+1989,USA,50 days to 1 year,1
+1990,Other,1 week to 50 days,1
+1990,Russia,50 days to 1 year,2
+1990,Russia,more than 1 year,1
+1990,USA,1 week to 50 days,10
+1990,USA,50 days to 1 year,3
+1991,Other,1 week to 50 days,3
+1991,Other,50 days to 1 year,1
+1991,USA,1 hour to 1 week,1
+1991,USA,1 week to 50 days,15
+1991,USA,50 days to 1 year,2
+1992,Other,1 week to 50 days,8
+1992,Russia,more than 1 year,2
+1992,USA,1 week to 50 days,10
+1992,USA,50 days to 1 year,2
+1992,USA,more than 1 year,1
+1993,Other,1 week to 50 days,2
+1993,Other,50 days to 1 year,1
+1993,Russia,50 days to 1 year,1
+1993,Russia,more than 1 year,1
+1993,USA,1 week to 50 days,9
+1993,USA,50 days to 1 year,6
+1994,Other,1 week to 50 days,2
+1994,Other,50 days to 1 year,1
+1994,Russia,50 days to 1 year,1
+1994,Russia,more than 1 year,2
+1994,USA,1 week to 50 days,5
+1994,USA,50 days to 1 year,5
+1995,Other,50 days to 1 year,2
+1995,Russia,50 days to 1 year,2
+1995,Russia,more than 1 year,1
+1995,USA,1 week to 50 days,6
+1995,USA,50 days to 1 year,6
+1996,Other,1 week to 50 days,4
+1996,Other,50 days to 1 year,1
+1996,Other,more than 1 year,1
+1996,Russia,more than 1 year,2
+1996,USA,1 week to 50 days,5
+1996,USA,50 days to 1 year,2
+1997,Other,1 week to 50 days,4
+1997,Russia,50 days to 1 year,1
+1997,Russia,more than 1 year,1
+1997,USA,1 week to 50 days,8
+1997,USA,50 days to 1 year,2
+1998,Other,1 week to 50 days,2
+1998,Other,50 days to 1 year,1
+1998,Russia,1 week to 50 days,1
+1998,Russia,50 days to 1 year,1
+1998,Russia,more than 1 year,1
+1998,USA,1 week to 50 days,8
+1998,USA,50 days to 1 year,2
+1999,Other,1 week to 50 days,2
+1999,Russia,50 days to 1 year,1
+1999,USA,1 week to 50 days,2
+1999,USA,more than 1 year,1
+2000,Other,1 week to 50 days,1
+2000,Russia,1 week to 50 days,1
+2000,Russia,50 days to 1 year,1
+2000,USA,1 week to 50 days,1
+2000,USA,50 days to 1 year,2
+2000,USA,more than 1 year,1
+2001,Russia,1 week to 50 days,1
+2001,Russia,50 days to 1 year,1
+2001,Russia,more than 1 year,1
+2001,USA,1 week to 50 days,6
+2001,USA,50 days to 1 year,3
+2002,Other,1 week to 50 days,3
+2002,Other,50 days to 1 year,1
+2002,Russia,50 days to 1 year,1
+2002,Russia,more than 1 year,1
+2002,USA,1 week to 50 days,8
+2002,USA,50 days to 1 year,1
+2002,USA,more than 1 year,2
+2003,China,1 hour to 1 week,1
+2003,Other,1 week to 50 days,1
+2003,USA,1 week to 50 days,3
+2004,Other,50 days to 1 year,1
+2004,Russia,1 week to 50 days,1
+2004,USA,less than 1 hour,2
+2004,USA,more than 1 year,1
+2005,China,50 days to 1 year,2
+2005,Other,50 days to 1 year,1
+2005,USA,1 week to 50 days,2
+2006,Other,1 week to 50 days,2
+2006,USA,1 week to 50 days,8
+2006,USA,50 days to 1 year,1
+2006,USA,more than 1 year,1
+2007,Other,1 week to 50 days,1
+2007,Other,50 days to 1 year,1
+2007,Russia,more than 1 year,1
+2007,USA,1 week to 50 days,6
+2007,USA,50 days to 1 year,3
+2007,USA,more than 1 year,1
+2008,China,50 days to 1 year,3
+2008,Other,1 week to 50 days,1
+2008,Other,50 days to 1 year,1
+2008,Russia,more than 1 year,2
+2008,USA,1 week to 50 days,8
+2008,USA,50 days to 1 year,6
+2008,USA,more than 1 year,1
+2009,Other,1 week to 50 days,1
+2009,Russia,50 days to 1 year,2
+2009,USA,1 week to 50 days,5
+2009,USA,50 days to 1 year,11
+2009,USA,more than 1 year,3
+2010,Other,1 week to 50 days,1
+2010,Russia,50 days to 1 year,1
+2010,Russia,more than 1 year,3
+2010,USA,1 week to 50 days,2
+2010,USA,50 days to 1 year,2
+2011,Other,more than 1 year,1
+2011,Russia,50 days to 1 year,2
+2011,Russia,more than 1 year,2
+2012,China,1 week to 50 days,1
+2012,China,50 days to 1 year,1
+2012,Other,more than 1 year,1
+2012,Russia,50 days to 1 year,2
+2013,China,1 week to 50 days,1
+2013,China,50 days to 1 year,1
+2013,Other,more than 1 year,1
+2013,Russia,50 days to 1 year,2
+2013,USA,50 days to 1 year,1
+2014,Other,50 days to 1 year,1
+2014,Other,more than 1 year,1
+2014,Russia,50 days to 1 year,1
+2014,Russia,more than 1 year,1
+2014,USA,50 days to 1 year,1
+2015,Other,1 week to 50 days,1
+2015,Other,50 days to 1 year,3
+2015,USA,50 days to 1 year,1
+2016,China,more than 1 year,1
+2016,Other,50 days to 1 year,1
+2016,Other,more than 1 year,1
+2016,Russia,more than 1 year,2
+2016,USA,50 days to 1 year,1
+2017,Other,50 days to 1 year,1
+2017,USA,50 days to 1 year,2
+2017,USA,more than 1 year,1
+2018,Other,50 days to 1 year,1
+2018,Russia,more than 1 year,1
+2018,USA,50 days to 1 year,2
+2018,USA,less than 1 hour,1
+2018,USA,more than 1 year,1
+2019,Other,1 week to 50 days,1
+2019,Other,less than 1 hour,1
+2019,USA,1 hour to 1 week,2
+2019,USA,50 days to 1 year,2
+2020,Russia,more than 1 year,1
+2020,USA,50 days to 1 year,1
+2021,China,50 days to 1 year,1
+2021,China,more than 1 year,1
+2021,Other,1 week to 50 days,2
+2021,Other,50 days to 1 year,1
+2021,Other,less than 1 hour,5
+2021,Russia,1 week to 50 days,2
+2021,Russia,50 days to 1 year,1
+2021,USA,1 hour to 1 week,3
+2021,USA,1 week to 50 days,1
+2021,USA,50 days to 1 year,2
+2021,USA,less than 1 hour,12
+2022,China,50 days to 1 year,2
+2022,China,more than 1 year,1
+2022,Other,1 week to 50 days,2
+2022,Other,less than 1 hour,5
+2022,Russia,50 days to 1 year,3
+2022,Russia,more than 1 year,1
+2022,USA,1 week to 50 days,1
+2022,USA,50 days to 1 year,4
+2022,USA,less than 1 hour,12
+2022,USA,more than 1 year,1
+2023,China,50 days to 1 year,3
+2023,Other,1 week to 50 days,3
+2023,Other,50 days to 1 year,1
+2023,Other,less than 1 hour,9
+2023,Russia,50 days to 1 year,1
+2023,Russia,more than 1 year,1
+2023,USA,1 week to 50 days,1
+2023,USA,50 days to 1 year,3
+2023,USA,less than 1 hour,10
+2024,China,50 days to 1 year,4
+2024,Other,1 week to 50 days,3
+2024,Other,less than 1 hour,8
+2024,Russia,50 days to 1 year,2
+2024,USA,1 hour to 1 week,3
+2024,USA,50 days to 1 year,2
+2024,USA,less than 1 hour,17
+2025,China,50 days to 1 year,4
+2025,Other,1 hour to 1 week,4
+2025,Other,1 week to 50 days,3
+2025,Other,less than 1 hour,15
+2025,Russia,50 days to 1 year,3
+2025,USA,50 days to 1 year,3
+2025,USA,less than 1 hour,24
+2026,Other,1 week to 50 days,1
+2026,Other,less than 1 hour,2
+2026,USA,less than 1 hour,4

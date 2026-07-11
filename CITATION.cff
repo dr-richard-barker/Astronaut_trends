@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "Astronaut Trends: A reproducible analysis of global human-spaceflight participation, 1961–2026"
+message: "If you use this dataset, software, or figures, please cite it as below, and credit the underlying Planet4589 source data."
+type: dataset
+authors:
+  - given-names: Richard
+    family-names: Barker
+    affiliation: "AstroBotany Laboratory, University of Wisconsin–Madison; MadWest Rocketry"
+abstract: >-
+  Astronaut Trends is a reproducible data pipeline, published dataset, and
+  interactive dashboard analysing six decades of human spaceflight. Drawing on
+  Jonathan McDowell's General Catalogue of Astronauts (planet4589.org), it
+  classifies every flown astronaut (1961–2026) by year of first flight,
+  citizenship group (USA, Russia/USSR, China, Other), cumulative career duration
+  in space (binned into five bands), and gender. The repository provides tidy
+  machine-readable datasets, a Python reprocessing pipeline that can refresh the
+  analysis from the primary source, static figures, and a self-contained
+  interactive web dashboard with linked box-and-whisker, bar, sankey, chord,
+  network, radar, heatmap and time-series visualisations.
+keywords:
+  - astronauts
+  - human spaceflight
+  - space history
+  - data visualization
+  - open data
+  - reproducible research
+  - space biology
+  - commercial spaceflight
+license: CC-BY-4.0
+repository-code: "https://github.com/dr-richard-barker/Astronaut_trends"
+url: "https://dr-richard-barker.github.io/Astronaut_trends/"
+version: "2.0.0"
+date-released: "2026-07-11"
+references:
+  - type: data
+    title: "General Catalogue of Astronauts"
+    authors:
+      - given-names: Jonathan
+        family-names: McDowell
+    url: "https://planet4589.org/space/astro/lists/"
+    notes: "Primary source for astronaut and mission records."
