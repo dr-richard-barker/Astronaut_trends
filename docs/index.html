@@ -93,8 +93,9 @@
   .legend-inline span { display: inline-flex; align-items: center; gap: 6px; }
   .legend-inline i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
 </style>
+  <link rel="stylesheet" href="cose-assets/cose-theme.css">
 </head>
-<body>
+<body data-site-id="Astronaut_trends" data-cose-themetoggle="off" data-brand-logo="cose-assets/cose-logo.png">
 <div class="wrap">
 
   <header class="masthead">
@@ -720,5 +721,7 @@ function renderTable(){
     `<tr><td>${r.y}</td><td>${r.c}</td><td>${r.b}</td><td class="num">${r.v}</td></tr>`).join("");
 }
 </script>
+<script src="cose-assets/sites.js"></script>
+<script src="cose-assets/theme.js"></script>
 </body>
 </html>
