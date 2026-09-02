@@ -1,127 +1,99 @@
-# Astronaut Trends — Summary Report
+# Astronaut Trends — Research Report & Manuscript
 
-*A reproducible analysis of global human-spaceflight participation, 1961–2026.*
-Source data: Jonathan McDowell, [Planet4589 General Catalogue of Astronauts](https://planet4589.org/space/astro/lists/).
-Generated from `data/processed/` — see the [live dashboard](https://dr-richard-barker.github.io/Astronaut_trends/) for the interactive version.
+*Six Decades of Human Spaceflight: A Reproducible Analysis of Global Participation, Career Duration, and the Commercial Inflection Point (1961–2026)*
 
----
-
-## Overview
-
-This report analyses **773 flown astronauts** whose first spaceflight fell between
-**1961 and 2026**. Each person is placed in the year of their first flight, grouped
-by citizenship (USA, Russia/USSR, China, Other), and classified by the cumulative
-time they have spent in space across their career.
-
-The story that emerges is one of **three distinct national styles** layered over a
-**structural shift in what "being an astronaut" means** — from a handful of
-government test pilots to, in the 2020s, a wave of short-hop commercial flyers.
-
-![New astronauts per year, by country](../figures/fig1_timeline.png)
+**Dr. Richard Barker**  
+*AstroBotany Laboratory, Department of Botany, University of Wisconsin–Madison*  
+*MadWest Rocketry Education & Outreach Initiative*  
+Source data: Jonathan McDowell, [Planet4589 General Catalogue of Astronauts](https://planet4589.org/space/astro/lists/).  
+Interactive dashboard: [https://dr-richard-barker.github.io/Astronaut_trends/](https://dr-richard-barker.github.io/Astronaut_trends/)  
+Downloads: [PDF Manuscript](Astronaut_Trends_Manuscript.pdf) · [Word Document (DOCX)](Astronaut_Trends_Manuscript.docx)
 
 ---
 
-## 1. Who flies, and how the total has grown
+## Executive Summary
 
-Human spaceflight has come in **waves**, each tied to a programme:
+Over six decades since Yuriy Gagarin’s orbital flight in 1961, human spaceflight has expanded from a Cold War superpower contest to an international orbital station era, and now into an unprecedented commercial spaceflight expansion. This report analyzes **773 flown astronauts** spanning **1961 through 2026**, classified by year of maiden flight, nationality, cumulative career duration in space, orbital vs. suborbital flight class, and gender.
 
-- the **Apollo/early-Soyuz** era of the 1960s,
-- the **Space Shuttle** surge that peaks in **1985**,
-- the **ISS build-up** of the 1990s (the previous record decade),
-- and an unprecedented **2020s spike** that has *already* made it the busiest debut
-  decade on record — **199 new astronauts and counting**.
+The dataset reveals **three distinct national operating paradigms** layered beneath a **commercial suborbital inflection point** in the 2020s:
 
-| Decade | New astronauts | USA | Russia | China | Other |
-|---|--:|--:|--:|--:|--:|
-| 1960s | 53 | 32 | 21 | 0 | 0 |
-| 1970s | 47 | 19 | 22 | 0 | 6 |
-| 1980s | 129 | 89 | 22 | 0 | 18 |
-| 1990s | 168 | 111 | 21 | 0 | 36 |
-| 2000s | 120 | 86 | 13 | 6 | 15 |
-| 2010s | 57 | 19 | 17 | 5 | 16 |
-| 2020s | 199 | 104 | 15 | 16 | 64 |
-
-The 2010s dip and 2020s explosion is the Shuttle-retirement gap (2011) followed by
-the arrival of **commercial crew and suborbital tourism**.
+1. **United States (Headcount Breadth)**: 460 astronauts (59.5% of global total), median career duration of **19.8 days**. Driven by large Shuttle crews and recent commercial suborbital hops.
+2. **Russia / USSR (Long-Duration Endurance)**: 131 cosmonauts (16.9%), median career duration of **194.8 days** (nearly $10\times$ the US median) and the longest career on record (**1,110.6 cumulative days**, Oleg Kononenko).
+3. **China (Focused Space Station Programme)**: 27 astronauts (3.5%, all since 2003), median career duration of **192.2 days** clustered in 6-month Tiangong expedition increments.
+4. **Commercial & Suborbital Inflection**: **637 astronauts (82.4%)** achieved orbit, while **136 astronauts (17.6%)** flew exclusively suborbital—almost entirely post-2021 commercial passengers on Blue Origin and Virgin Galactic.
+5. **Gender Representation**: Women represent **14.7% (114/773)** of all spacefarers, rising over time but remaining far below parity.
 
 ---
 
-## 2. Three national styles
+## 1. Global Flight Growth & Decadal Dynamics
 
-| Country | Astronauts | Share | Median career (days) | Max career (days) |
-|---|--:|--:|--:|--:|
-| USA | 460 | 59.5% | 19.8 | 695.3 |
-| Russia | 131 | 16.9% | 194.8 | 1110.6 |
-| China | 27 | 3.5% | 192.2 | 418.6 |
-| Other | 155 | 20.1% | 9.1 | 545.1 |
+Human spaceflight has progressed in distinct programme-driven waves:
 
-- **USA — breadth.** Nearly 60% of all flyers, but a **median career under three
-  weeks**. The American programme has always flown *many people for short trips*
-  (Shuttle crews of seven; now suborbital hops).
-- **Russia — endurance.** Far fewer people, but a **median career near 200 days** and
-  the longest career on record (**> 1,100 cumulative days**). A station culture from
-  Salyut and Mir through the ISS.
-- **China — focused.** A young programme (all 27 astronauts since **2003**) that sits
-  almost entirely in the **50 days – 1 year** band — deliberate, station-oriented increments.
-- **Other — collaborative & short.** International partners flying as guests on
-  Shuttle/Soyuz/ISS, plus a recent surge of commercial tourists, give this group the
-  *shortest* median of all.
+![New astronauts per year by country](../figures/fig1_timeline.png)
+
+| Decade | Total Debuts | USA | Russia / USSR | China | Other Nations |
+|:---|---:|---:|---:|---:|---:|
+| **1960s** | 53 | 32 | 21 | 0 | 0 |
+| **1970s** | 47 | 19 | 22 | 0 | 6 |
+| **1980s** | 129 | 89 | 22 | 0 | 18 |
+| **1990s** | 168 | 111 | 21 | 0 | 36 |
+| **2000s** | 120 | 86 | 13 | 6 | 15 |
+| **2010s** | 57 | 19 | 17 | 5 | 16 |
+| **2020s** | 199 | 104 | 15 | 16 | 64 |
+| **Total** | **773** | **460** | **131** | **27** | **155** |
+
+The 2020s has already surpassed the 1990s ISS build-up (168 debuts) to become the **busiest debut decade in history (199 astronauts)**, driven by commercial spaceflight resurgence.
+
+---
+
+## 2. National Operating Styles & Duration Fingerprints
+
+| Country | Astronauts | Share | Median Career (Days) | Max Career (Days) |
+|:---|---:|---:|---:|---:|
+| **USA** | 460 | 59.5% | 19.8 | 695.3 |
+| **Russia** | 131 | 16.9% | 194.8 | 1,110.6 |
+| **China** | 27 | 3.5% | 192.2 | 418.6 |
+| **Other** | 155 | 20.1% | 9.1 | 545.1 |
 
 <p align="center">
   <img src="../figures/fig2_box_country.png" width="49%" alt="Career duration by country">
   <img src="../figures/fig4_radar.png" width="49%" alt="Duration fingerprints">
 </p>
 
-The radar "fingerprints" make the styles visible at a glance: the USA and Other groups
-bulge toward the short bands, Russia and China toward the long ones.
+The radar "fingerprints" highlight the stark operational contrast: the US and Other partner cohorts bulge toward short duration bands, while Russia and China concentrate in long-duration expedition profiles ($> 50\text{ days}$).
 
 ---
 
-## 3. The commercial-spaceflight inflection
+## 3. The Commercial & Suborbital Transformation
 
-| Duration band | Astronauts | Share |
-|---|--:|--:|
-| less than 1 hour | 134 | 17.3% |
-| 1 hour to 1 week | 52 | 6.7% |
-| 1 week to 50 days | 333 | 43.1% |
-| 50 days to 1 year | 191 | 24.7% |
-| more than 1 year | 63 | 8.2% |
-
-The **"less than 1 hour"** band — 17% of *all* astronauts ever — is almost entirely a
-post-2021 phenomenon: suborbital passengers on Blue Origin and Virgin Galactic. This is
-the single biggest change in the character of human spaceflight in the dataset, and it is
-why the 2020s "Other" and "USA" counts balloon while long-duration numbers stay flat.
-
-Making the **orbital / suborbital** split explicit sharpens the point. Of 773 astronauts,
-**637 (82%) reached orbit** and **136 (18%) flew suborbital only** — and that suborbital
-group is overwhelmingly a post-2021 wave. Russia and China have flown **zero** suborbital
-astronauts; the phenomenon is entirely a US-and-partners story. In the dashboard, a single
-*Flight* toggle re-draws every chart for just the orbital or just the suborbital population.
+| Duration Band | Time Threshold | Astronauts | Share |
+|:---|:---|---:|---:|
+| **less than 1 hour** | $< 3,600\text{ s}$ | 134 | 17.3% |
+| **1 hour to 1 week** | $3,600\text{ s} \le T \le 7\text{ days}$ | 52 | 6.7% |
+| **1 week to 50 days** | $7\text{ days} < T \le 50\text{ days}$ | 333 | 43.1% |
+| **50 days to 1 year** | $50\text{ days} < T \le 365\text{ days}$ | 191 | 24.7% |
+| **more than 1 year** | $> 365\text{ days}$ | 63 | 8.2% |
 
 ![Orbital vs suborbital over time](../figures/fig6_orbital_suborbital.png)
 
+Suborbital spaceflight accounts for **136 astronauts (17.6%)**, of which 128 debuted post-2021. Russia and China have flown **zero** suborbital astronauts; the suborbital boom is concentrated in the US (91 astronauts, 19.8% of US total) and international commercial flyers (45 astronauts, 29.0% of Other total).
+
 ---
 
-## 4. Women in spaceflight
+## 4. Women in Spaceflight
 
-Women make up just **14.7%** (114 of 773) of all flown astronauts. The share rises over
-the decades but has never approached parity, and remains sensitive to which programmes are
-flying in a given year.
+Women comprise **14.7% (114 of 773)** of all flown astronauts. Female debuts grew from 0 in the 1970s to 11 in the 1980s, 32 in the 1990s, 20 in the 2000s, 13 in the 2010s, and 38 in the 2020s.
 
 ![Women in human spaceflight](../figures/fig5_gender.png)
 
 ---
 
-## Methodology & caveats
+## 5. Methodology & Open Science Data
 
-- **Counting rule:** each astronaut is counted once, in the year of their first flight;
-  duration is their *cumulative* career total, not a single mission.
-- **Binning:** < 1 hour, 1 hour–1 week, 1 week–50 days, 50 days–1 year, > 1 year.
-- **Groups:** USA, Russia (incl. USSR), China, Other.
-- **Scope:** the *Flown Astronauts* section of the catalogue only; chimpanzee and
-  aborted-launch entries are excluded. A small number of records lacking a resolvable
-  first-flight year or duration are dropped from the aggregates.
-- **Provenance:** figures regenerate from `scripts/build_dataset.py` + `make_figures.py`;
-  the exact source snapshot is archived in `data/raw/`.
+- **Counting Rule**: Each individual is counted once in their maiden spaceflight year; duration is cumulative career time aloft.
+- **Duration Bins**: $< 1\text{ hr}$, $1\text{ hr}–1\text{ wk}$, $1\text{ wk}–50\text{ d}$, $50\text{ d}–1\text{ yr}$, $> 1\text{ yr}$.
+- **Cohorts**: USA, Russia (incl. USSR), China, Other Nations.
+- **Pipeline**: Automated ingestion and tidying via `scripts/build_dataset.py` from Planet4589 raw snapshots.
 
-*Full field definitions: [`data/DATA_DICTIONARY.md`](../data/DATA_DICTIONARY.md).*
+*Full field definitions: [`data/DATA_DICTIONARY.md`](../data/DATA_DICTIONARY.md).*  
+*Full manuscript: [`docs/MANUSCRIPT.md`](MANUSCRIPT.md).*

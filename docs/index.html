@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Astronaut Trends — Interactive Dashboard</title>
-<meta name="description" content="Interactive dashboard of global human-spaceflight trends 1961–2026, by country, mission duration, and gender. Data: planet4589.org (J. McDowell)." />
+<title>Astronaut Trends — Interactive Dashboard &amp; Research Manuscript</title>
+<meta name="description" content="Interactive dashboard and research manuscript of global human-spaceflight trends 1961–2026, by country, mission duration, orbital class, and gender. Data: planet4589.org (J. McDowell)." />
 <script src="libs/echarts.min.js"></script>
 <script src="libs/d3.min.js"></script>
 <style>
@@ -32,16 +32,31 @@
   html, body { margin: 0; padding: 0; }
   body {
     background: var(--page); color: var(--ink);
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    line-height: 1.5; -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55; -webkit-font-smoothing: antialiased;
   }
-  a { color: var(--accent); }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 20px 80px; }
 
   header.masthead { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 8px; }
-  h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
-  .sub { color: var(--ink-2); max-width: 640px; margin: 0; font-size: 0.98rem; }
-  .meta-line { color: var(--muted); font-size: 0.82rem; margin-top: 10px; }
+  h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--ink-2); max-width: 780px; margin: 0; font-size: 1.02rem; }
+  .meta-line { color: var(--muted); font-size: 0.85rem; margin-top: 10px; }
+  
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .action-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 16px; border-radius: 999px; font-size: 0.86rem; font-weight: 550;
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink);
+    cursor: pointer; transition: all 0.15s ease; box-shadow: var(--shadow);
+  }
+  .action-btn.primary {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+  }
+  .action-btn:hover {
+    transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
   .theme-btn {
     border: 1px solid var(--border); background: var(--surface); color: var(--ink-2);
     border-radius: 999px; padding: 8px 14px; cursor: pointer; font-size: 0.85rem; font-family: inherit;
@@ -49,7 +64,28 @@
   }
   .theme-btn:hover { color: var(--ink); }
 
-  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 14px; margin: 26px 0 8px; }
+  /* Narrative & Manuscript Showcase */
+  .narrative-hero {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; margin: 24px 0 16px; box-shadow: var(--shadow);
+  }
+  .narrative-hero h2 {
+    font-size: 1.35rem; margin: 0 0 12px; color: var(--ink); letter-spacing: -0.01em;
+  }
+  .narrative-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 16px;
+  }
+  .narrative-card {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+  }
+  .narrative-card h3 {
+    margin: 0 0 6px; font-size: 0.98rem; font-weight: 650; color: var(--ink);
+  }
+  .narrative-card p {
+    margin: 0; font-size: 0.87rem; color: var(--ink-2); line-height: 1.45;
+  }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 14px; margin: 24px 0 8px; }
   .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
   .kpi .v { font-size: 1.75rem; font-weight: 650; letter-spacing: -0.02em; }
   .kpi .l { color: var(--ink-2); font-size: 0.82rem; margin-top: 2px; }
@@ -57,8 +93,8 @@
 
   .controls { display: flex; align-items: center; gap: 10px 18px; flex-wrap: wrap;
     background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-    padding: 12px 16px; margin: 22px 0 8px; box-shadow: var(--shadow); position: sticky; top: 8px; z-index: 5; }
-  .controls .lbl { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    padding: 12px 16px; margin: 24px 0 8px; box-shadow: var(--shadow); position: sticky; top: 8px; z-index: 5; }
+  .controls .lbl { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
   .chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--border);
     border-radius: 999px; padding: 6px 13px; cursor: pointer; user-select: none; font-size: 0.87rem; background: var(--surface-2); }
   .chip .dot { width: 11px; height: 11px; border-radius: 3px; flex: none; }
@@ -70,16 +106,25 @@
   .seg button.active { background: var(--accent); color: #fff; }
   .seg button:not(.active):hover { color: var(--ink); }
 
-  section.block { margin-top: 34px; }
-  .block h2 { font-size: 1.18rem; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .block p.cap { color: var(--ink-2); font-size: 0.9rem; margin: 0 0 14px; max-width: 780px; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 12px 10px; box-shadow: var(--shadow); }
+  section.block { margin-top: 36px; }
+  .block h2 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .block p.cap { color: var(--ink-2); font-size: 0.92rem; margin: 0 0 14px; max-width: 820px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 14px 12px; box-shadow: var(--shadow); }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
   .chart { width: 100%; height: 420px; }
   .chart.tall { height: 500px; }
   .chart.short { height: 340px; }
 
+  /* Manuscript Section */
+  .manuscript-section {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 30px; margin-top: 40px; box-shadow: var(--shadow);
+  }
+  .manuscript-section h2 { font-size: 1.4rem; margin: 0 0 8px; }
+  .manuscript-section h3 { font-size: 1.1rem; margin: 20px 0 6px; color: var(--ink); }
+  .manuscript-section p { font-size: 0.92rem; color: var(--ink-2); line-height: 1.6; margin-bottom: 12px; }
+  
   table.report { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
   table.report th, table.report td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--grid); }
   table.report th { color: var(--muted); font-weight: 600; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; position: sticky; top: 0; background: var(--surface); }
@@ -87,32 +132,73 @@
   .tablewrap { max-height: 460px; overflow: auto; border: 1px solid var(--border); border-radius: 12px; }
   .searchbox { border: 1px solid var(--border); background: var(--surface-2); color: var(--ink); border-radius: 9px; padding: 8px 12px; font-size: 0.88rem; font-family: inherit; width: 220px; margin-bottom: 12px; }
 
-  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+  footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.84rem; }
   .note { color: var(--muted); font-size: 0.78rem; margin: 6px 0 0; }
-  .legend-inline { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.8rem; color: var(--ink-2); margin: 2px 0 10px; }
+  .legend-inline { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.82rem; color: var(--ink-2); margin: 2px 0 10px; }
   .legend-inline span { display: inline-flex; align-items: center; gap: 6px; }
   .legend-inline i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
 </style>
-  <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-theme.css">
+  <link rel="stylesheet" href="cose-assets/cose-theme.css">
 </head>
 <body data-site-id="Astronaut_trends" data-cose-themetoggle="off" data-brand-logo="cose-assets/cose-logo.png">
 <div class="wrap">
 
   <header class="masthead">
     <div>
-      <h1>Astronaut Trends</h1>
-      <p class="sub">Six decades of human spaceflight — how many people have flown, from where, for how long, and how that mix has shifted from the Space Race to the commercial era.</p>
+      <h1>🚀 Astronaut Trends</h1>
+      <p class="sub">Six decades of global human spaceflight participation (1961–2026) — who has flown, from where, for how long, and how the mix has shifted from the Space Race to the commercial era.</p>
       <p class="meta-line" id="metaLine">Loading data…</p>
-      <div class="cose-btns" style="margin-top:12px">
-        <a class="cose-btn primary" href="https://github.com/dr-richard-barker/Astronaut_trends">Code &amp; data (GitHub)</a>
-        <a class="cose-btn" href="https://planet4589.org/space/astro/web/index.html">Data source (planet4589)</a>
+      
+      <!-- Manuscript & Code Download Actions -->
+      <div class="btn-group">
+        <a class="action-btn primary" href="Astronaut_Trends_Manuscript.pdf" download title="Download Academic Paper PDF">
+          📄 Download Manuscript (PDF)
+        </a>
+        <a class="action-btn" href="Astronaut_Trends_Manuscript.docx" download title="Download Word Document">
+          📝 Download Manuscript (DOCX)
+        </a>
+        <a class="action-btn" href="#narrative-section">
+          📖 Research Narrative
+        </a>
+        <a class="action-btn" href="https://github.com/dr-richard-barker/Astronaut_trends" target="_blank" rel="noopener">
+          💻 Code &amp; Data (GitHub)
+        </a>
       </div>
     </div>
     <button class="theme-btn" id="themeBtn" title="Toggle light / dark">◐ Theme</button>
   </header>
 
+  <!-- Key Metrics (KPIs) -->
   <div class="kpis" id="kpis"></div>
 
+  <!-- Narrative & Executive Summary Showcase -->
+  <div class="narrative-hero" id="narrative-section">
+    <h2>📊 Research Narrative &amp; Executive Summary</h2>
+    <p style="color:var(--ink-2); font-size:0.94rem; margin:0 0 14px; max-width:850px;">
+      Drawing upon Jonathan C. McDowell's General Catalogue of Astronauts, this census analyses all <strong>773 flown astronauts (1961–2026)</strong>. Four key structural stories emerge from the data:
+    </p>
+    
+    <div class="narrative-grid">
+      <div class="narrative-card">
+        <h3>1. The 2020s Boom</h3>
+        <p>With <strong>199 debuts and counting</strong>, the 2020s is already the busiest maiden-flight decade in history, surpassing the 1990s ISS construction peak (168 debuts).</p>
+      </div>
+      <div class="narrative-card">
+        <h3>2. Three National Paradigms</h3>
+        <p><strong>USA (460 flyers)</strong> emphasizes headcount breadth (median career <strong>19.8 days</strong>). <strong>Russia (131 flyers)</strong> emphasizes long-duration station endurance (median <strong>194.8 days</strong>, record 1,110.6 d). <strong>China (27 flyers)</strong> maintains deliberate 6-month Tiangong increments (median <strong>192.2 days</strong>).</p>
+      </div>
+      <div class="narrative-card">
+        <h3>3. The Suborbital Inflection</h3>
+        <p><strong>82.4% (637)</strong> achieved orbit, while <strong>17.6% (136)</strong> flew suborbital only. 128 of the 136 suborbital flyers debuted post-2021 via commercial vehicles (Blue Origin &amp; Virgin Galactic). Russia and China have 0 suborbital flyers.</p>
+      </div>
+      <div class="narrative-card">
+        <h3>4. Gender Representation</h3>
+        <p>Women represent <strong>14.7% (114/773)</strong> of all human spacefarers. The proportion has grown from 8.5% in the 1980s to 19.1% in the 2020s, but remains far below parity.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Population Filters -->
   <div class="controls">
     <span class="lbl">Country</span>
     <span class="chip" data-c="USA"><span class="dot" style="background:var(--usa)"></span>USA</span>
@@ -231,7 +317,7 @@
 
   <!-- 13. Table -->
   <section class="block">
-    <h2>13 · Summary report table</h2>
+    <h2>13 · Searchable Summary Report Table</h2>
     <p class="cap">The full aggregated dataset (first-flight year × country × duration band × count). Search, then export from the repo's <code>data/processed/</code> folder.</p>
     <input class="searchbox" id="tblSearch" placeholder="Filter rows…" />
     <div class="tablewrap">
@@ -242,10 +328,34 @@
     </div>
   </section>
 
+  <!-- Complete Manuscript Section -->
+  <div class="manuscript-section">
+    <h2>📄 Academic Manuscript &amp; Methodological Notes</h2>
+    <p>
+      The complete, publication-ready research manuscript is deployed and available for download in both <strong>PDF</strong> and <strong>Word Document (.docx)</strong> formats.
+    </p>
+    <div class="btn-group" style="margin: 14px 0 20px;">
+      <a class="action-btn primary" href="Astronaut_Trends_Manuscript.pdf" download>
+        📥 Download Full Manuscript (PDF)
+      </a>
+      <a class="action-btn" href="Astronaut_Trends_Manuscript.docx" download>
+        📥 Download Full Manuscript (DOCX)
+      </a>
+      <a class="action-btn" href="MANUSCRIPT.md" target="_blank">
+        View Markdown Manuscript
+      </a>
+    </div>
+    
+    <h3>Citation</h3>
+    <p style="background:var(--surface-2); border:1px solid var(--border); padding:12px 14px; border-radius:8px; font-family:monospace; font-size:0.84rem;">
+      Barker, R. (2026). Six Decades of Human Spaceflight: A Reproducible Analysis of Global Participation, Career Duration, and the Commercial Inflection Point (1961–2026). <em>Astronaut Trends</em>, Version 2.1.0. https://doi.org/10.5281/zenodo.astronaut_trends
+    </p>
+  </div>
+
   <footer>
     <p><strong>Data source:</strong> Jonathan C. McDowell, <a href="https://planet4589.org/space/astro/lists/" target="_blank" rel="noopener">planet4589.org General Catalogue of Astronauts</a> (astronaut &amp; mission lists). Reprocessed by the <em>Astronaut Trends</em> pipeline (<code>scripts/build_dataset.py</code>).</p>
     <p id="footMeta"></p>
-    <p>Part of the MadWest Rocketry education &amp; outreach project. Code MIT · data CC-BY-4.0. Charts built with ECharts &amp; D3 (vendored locally for archival reproducibility).</p>
+    <p>Part of the MadWest Rocketry education &amp; outreach project. Code MIT · data CC-BY-4.0. Charts built with ECharts &amp; D3 (vendored locally in <code>libs/</code> and <code>cose-assets/</code> for archival reproducibility).</p>
   </footer>
 </div>
 
@@ -290,7 +400,7 @@ fetch("data/astronaut_data.json").then(r => r.json())
 function boot(){
   const m = DATA.meta;
   document.getElementById("metaLine").innerHTML =
-    `<strong>${fmt.format(m.n_astronauts)}</strong> flown astronauts · <strong>${fmt.format(m.n_missions)}</strong> crewed missions · ${m.year_min}–${m.year_max} · data generated ${m.generated}`;
+    `<strong>${fmt.format(m.n_astronauts)}</strong> flown astronauts · <strong>${fmt.format(m.n_missions)}</strong> crewed missions · ${m.year_min}–${m.year_max} · updated snapshot`;
   document.getElementById("footMeta").textContent = `Snapshot: ${m.n_astronauts} astronauts, ${m.n_missions} missions. Generated ${m.generated}. Source updated by J. McDowell.`;
   buildKPIs();
   renderTable();
@@ -312,13 +422,13 @@ function buildKPIs(){
   const kpis = [
     { v: fmt.format(total), l: "Flown astronauts", s: `${DATA.meta.year_min}–${DATA.meta.year_max}` },
     { v: fmt.format(orbital), l: "reached orbit", s: `${(100*orbital/total).toFixed(0)}% of all flyers` },
-    { v: fmt.format(sub), l: "suborbital only", s: `never reached orbit` },
+    { v: fmt.format(sub), l: "suborbital only", s: `128 post-2021 commercial` },
     { v: fmt.format(byC.USA), l: "from the USA", s: `${(100*byC.USA/total).toFixed(0)}% of all flyers` },
-    { v: fmt.format(byC.Russia), l: "from Russia / USSR", s: "longest-duration legacy" },
+    { v: fmt.format(byC.Russia), l: "from Russia / USSR", s: "median: 194.8 days" },
     { v: fmt.format(byC.China), l: "from China", s: "all since 2003" },
     { v: `${(100*female/total).toFixed(1)}%`, l: "were women", s: `${female} astronauts` },
-    { v: `${Math.round(longest.DurationDays)} d`, l: "longest career in space", s: longest.Name.split(",")[0] },
-    { v: fmt.format(overYear), l: "logged > 1 year aloft", s: "cumulative career time" },
+    { v: `${Math.round(longest.DurationDays)} d`, l: "longest career aloft", s: longest.Name.split(",")[0] },
+    { v: fmt.format(overYear), l: "logged > 1 yr in space", s: "63 individuals aloft" },
   ];
   document.getElementById("kpis").innerHTML = kpis.map(k =>
     `<div class="kpi"><div class="v">${k.v}</div><div class="l">${k.l}</div><div class="s">${k.s}</div></div>`).join("");
@@ -356,13 +466,11 @@ const activeCountries = () => COUNTRIES.filter(c => state.countries.has(c));
 
 // ---- filtering + aggregation over the per-astronaut table ----
 const decadeStr = y => (Math.floor(y/10)*10) + "s";
-// country ∩ flight-class — the population every country/duration chart uses
 function filtered(){
   return DATA.astronaut_level.filter(a =>
     state.countries.has(a.CitizenGroup) &&
     (state.flightClass === "All" || a.FlightClass === state.flightClass));
 }
-// country only (ignores the flight-class filter) — for the class chart itself
 function byCountryOnly(){
   return DATA.astronaut_level.filter(a => state.countries.has(a.CitizenGroup));
 }
@@ -393,7 +501,7 @@ function buildAll(){
   drawChord();
 }
 
-// ★ orbital vs suborbital over time (respects country filter, NOT class filter)
+// ★ orbital vs suborbital over time
 function optClass(t){
   const A = byCountryOnly();
   const years = allYears();
@@ -725,7 +833,7 @@ function renderTable(){
     `<tr><td>${r.y}</td><td>${r.c}</td><td>${r.b}</td><td class="num">${r.v}</td></tr>`).join("");
 }
 </script>
-<script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/sites.js"></script>
-<script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/theme.js"></script>
+<script src="cose-assets/sites.js"></script>
+<script src="cose-assets/theme.js"></script>
 </body>
 </html>

@@ -3,6 +3,16 @@
 All notable changes to this project are documented here.
 This project follows [Semantic Versioning](https://semver.org/).
 
+## [2.2.0] — 2026-09-02
+
+### Added
+- **Academic Research Manuscript Deployment**:
+  - Authored full research paper (*"Six Decades of Human Spaceflight: A Reproducible Analysis of Global Participation, Career Duration, and the Commercial Inflection Point (1961–2026)"*) in `docs/MANUSCRIPT.md` and `docs/SUMMARY_REPORT.md`.
+  - Built `scripts/generate_manuscript.py` to compile the manuscript into both standalone **PDF** (`docs/Astronaut_Trends_Manuscript.pdf` / `Astronaut_Trends_Manuscript.pdf`) and **Word Document (.docx)** (`docs/Astronaut_Trends_Manuscript.docx` / `Astronaut_Trends_Manuscript.docx`) formats with embedded high-resolution figures, styled tables, and formatted references.
+- **GitHub Pages Narrative & Showcase Upgrade**:
+  - Enhanced `docs/index.html` with an integrated Research Narrative & Executive Summary showcase, Key Findings cards, and prominent manuscript download buttons.
+  - Corrected external stylesheet/script dependency URLs in `docs/index.html` to point to locally vendored `cose-assets/` for complete offline and archival reliability.
+
 ## [2.1.0] — 2026-07-11
 
 ### Added
@@ -13,7 +23,7 @@ This project follows [Semantic Versioning](https://semver.org/).
   re-renders **every** chart for the selected population, plus a featured
   **orbital-vs-suborbital timeline**, two new KPIs, a static figure
   (`figures/fig6_orbital_suborbital.png`), and a `flightclass_by_year.csv` output.
-- Result: 637 astronauts (82%) reached orbit; 136 (18%) are suborbital-only, almost
+- Result: 637 astronauts (82.4%) reached orbit; 136 (17.6%) are suborbital-only, almost
   all post-2021 commercial passengers.
 
 ### Changed
